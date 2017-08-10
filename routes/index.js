@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const request = require('request');
-const Shopify = require('shopify-api-node');
 const moment = require('moment');
 const sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
 const pg = require('pg');
