@@ -1,0 +1,19 @@
+@media screen and (max-width: 400px) {
+  h2.product-header {
+    position: relative;
+    top: 6rem;
+  }
+  div.product-header {
+    position: relative;
+    top: 8rem;
+  }
+  img.product-header {
+    position: relative;
+    top: 8rem;
+  }
+}
+@media screen and (min-width: 400px) {
+  img.product-header {
+    margin-top: -50px !important;
+  }
+}

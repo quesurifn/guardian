@@ -1,0 +1,52 @@
+{
+  "name": "node-dome-prod",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "preinstall": "npm install pm2 -g",
+    "start": "pm2 start --attach bin/www"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": "8.1.0",
+    "npm": "4.1.2"
+  },
+  "dependencies": {
+    "body-parser": "~1.16.0",
+    "compression": "^1.6.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "dotenv": "^4.0.0",
+    "ejs": "~2.5.5",
+    "express": "~4.14.1",
+    "helmet": "^3.6.1",
+    "json2csv": "^3.8.0",
+    "marked": "0.3.6",
+    "moment": "2.18.1",
+    "morgan": "~1.7.0",
+    "node-schedule": "^1.2.3",
+    "nodemailer": "^4.0.1",
+    "pg": "^6.4.1",
+    "prismic.io": "^3.5.7",
+    "raven": "^2.1.0",
+    "request": "2.81.0",
+    "request-promise": "^4.2.1",
+    "sendgrid": "^5.1.2",
+    "serve-favicon": "~2.3.2",
+    "shopify-api-node": "2.5.0"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-tinify": "^1.0.2",
+    "gulp-uglify": "^2.1.2",
+    "livereload": "^0.6.2",
+    "mocha": "^3.2.0",
+    "pump": "^1.0.2",
+    "supertest": "^3.0.0"
+  }
+}

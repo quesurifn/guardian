@@ -1,0 +1,1 @@
+web: pm2 start --attach bin/www
