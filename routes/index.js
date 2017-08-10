@@ -15,4 +15,9 @@ var mobileRegex = new RegExp("(android|bb\d+|meego).+mobile|avantgo|bada\/|black
 
 const Prismic = require('prismic.io'); //CMS
 
+
+router.get('/', (req, res, next) => {
+  next()
+})
+
 module.exports = router;
