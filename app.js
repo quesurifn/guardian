@@ -1,15 +1,14 @@
-const express = require('express');
-const path = require('path');
-const favicon = require('serve-favicon');
-const logger = require('morgan');
-const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
-const compression = require('compression');
-const request = require('request');
-const helmet = require('helmet');
-const crypto = require('crypto');
+import express from 'express'
+import path from 'path'
+import logger from 'morgan'
+import cookieParser from 'cookie-parser'
+import bodyParser from 'body-parser'
+import compression from 'compression'
+import request from 'request'
+import helemt from 'helmet'
+import crypto from 'crypto'
+import Raven from 'raven' 
 
-const Raven = require('raven');
 Raven.config('https://c43292df94e74107ad0dcd5d0340a3bf:dc9b141ff009446687c737df9531f0c2@sentry.io/184060').install();
 
 require('dotenv').config()
@@ -22,7 +21,8 @@ app.use(helmet({
 
 app.use(compression({level: 9}))
 
-const index = require('./routes/index');
+import index from './routes/index'
+
 
 
 
@@ -30,6 +30,7 @@ const index = require('./routes/index');
 app.set('views', path.join(__dirname, 'views'));
 
 app.set('view engine', 'ejs');
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/search', express.static(__dirname + '/public'));
 
@@ -44,13 +45,13 @@ app.use(cookieParser());
 app.use('/', index);
 
 // error handler
-app.use(function(req, res, next) {
+app.use((req, res, next) => {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
 
-app.use(function(err, req, res, next) {
+app.use((err, req, res, next) => {
  // set locals, only providing error in development
    res.locals.message = err.message;
    res.locals.error = req.app.get('env') === 'development' ? err : {};
