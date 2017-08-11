@@ -1,13 +1,15 @@
-import express from 'express'
-import path from 'path'
-import logger from 'morgan'
-import cookieParser from 'cookie-parser'
-import bodyParser from 'body-parser'
-import compression from 'compression'
-import request from 'request'
-import helemt from 'helmet'
-import crypto from 'crypto'
-import Raven from 'raven' 
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const compression = require('compression');
+const request = require('request');
+const helmet = require('helmet');
+const crypto = require('crypto');
+
+const Raven = require('raven');
 
 Raven.config('https://c43292df94e74107ad0dcd5d0340a3bf:dc9b141ff009446687c737df9531f0c2@sentry.io/184060').install();
 
@@ -21,7 +23,8 @@ app.use(helmet({
 
 app.use(compression({level: 9}))
 
-import index from './routes/index'
+const index = require('./routes/index');
+
 
 
 

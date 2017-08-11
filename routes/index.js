@@ -1,9 +1,10 @@
-import express from 'express'
-import request from 'request'
-import moment from 'moment'
-import pg from 'pg'
+const express = require('express');
 const router = express.Router();
+const request = require('request');
+const Shopify = require('shopify-api-node');
+const moment = require('moment');
 const sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+const pg = require('pg');
 
 
 
@@ -18,7 +19,7 @@ const Prismic = require('prismic.io'); //CMS
 
 
 router.get('/', (req, res, next) => {
-  next()
+  res.render('comingsoon')
 })
 
 module.exports = router;
