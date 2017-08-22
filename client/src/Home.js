@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
+import './css/gallery.css';
 
 import cardOne from './images/leak.png'
 import cardTwo from './images/faceb.png'
-
+import guardian from './images/guardian.png'
+import {Card, Row, Col, CardPanel, CardTitle} from 'react-materialize'
 
 import {connect} from 'react-redux'
 
@@ -13,59 +15,94 @@ export class Home extends Component {
 
     return (
       <div className="App">
-        <div className='row'>
-          <div className='col-md-12'>
-            <div className='heroBG'></div>
-          </div>
-        </div>
-        <div className='row'>
-          <div className='col-md-12'>
-            <div className='sectionTwo'>
-              <p>There are more than 14,000 water damage claims each day, costing U.S. insurance companies and homeowners billions of dollars.</p>
-            </div>
-          </div>
-        </div>
-        <div className='row sectionThree'>
-          <div className='col-md-6'>
-            <div className='cardOne'>
+        <Row>
+          <Col s={12} m={12} >
+                <div className="gallery items-3 autoplay vue100">
+                  <div id="item-1" className="control-operator"></div>
+                  <div id="item-2" className="control-operator"></div>
+                  <div id="item-3" className="control-operator"></div>
 
-              <div className="cardOneImg"></div>
-              <div className='cardOneBottom'> 
-                <h2>Toolless Installation</h2>
+                  <figure className="item vue100">
+                    <div className='bg'></div>
+                  </figure>
 
-                <p>No plumbing. No tools. Guardian was designed so that anyone can install it in minutes.</p>
+                  <figure className="item vue100">
+                    <div className='bg2'></div>
+                  </figure>
 
-                <div className='watch'>
-                  <span>WATCH VIDEO<i className="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                  <figure className="item vue100">
+                    <h1>3</h1>
+                  </figure>
+
+                  <div className="controls">
+                    <a href="#item-1" className="control-button">•</a>
+                    <a href="#item-2" className="control-button">•</a>
+                    <a href="#item-3" className="control-button">•</a>
+                  </div>
                 </div>
-              </div> 
-            </div>
-          </div>
-          <div className='col-md-6'>
-            <div className='cardTwo'>
 
-              <div className="cardTwoImg"></div>
-              <div className='cardTwoBottom'> 
-                <h2>RF Based Communication</h2>
-
-                <p>Learn more about our ambitious move to provide long range RF based system that communicates directly over Wi-Fi.</p>
-
-                <div className='watch'>
-                  <span>LEARN MORE<i className="fa fa-long-arrow-right" aria-hidden="true"></i></span>
-                </div>
-              </div> 
-            </div>
-          </div>
-        </div>
-        <div className='row banner'>
-       </div>
-      </div>
 
       
+          </Col>
+        </Row>
+        <Row>
+          <Col s={12} m={12} className='sectionTwo'>
+             <p>There are more than 14,000 water damage claims each day, costing U.S. insurance companies and homeowners billions of dollars.</p>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col s={12} m={6} className='normalHeight'>
+            <Card header={<CardTitle reveal image={cardOne} waves='light'/>}
+                title="Toolless Installation"
+                reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
+                <p>No plumbing, no tools. Guardian was designed so that anyone can install in minutes.</p>
+            </Card>
+          </Col>
+          <Col s={12} m={6} className='normalHeight'>
+          <div className="gallery items-3 autoplay">
+                  <div id="item-1" className="control-operator"></div>
+                  <div id="item-2" className="control-operator"></div>
+                  <div id="item-3" className="control-operator"></div>
+
+                  <figure className="item vue100">
+                    <Card  header={<CardTitle reveal image={cardTwo} waves='light' />}
+                        title="RF Based Communication"
+                        reveal={<p>Here is some more information about this product that is only revealed once clicked on.</p>}>
+                        <p>Learn more about our ambitious move to provide a long range RF based system that communicates directly over Wifi.</p>
+                    </Card>
+                  </figure>
+
+                  <figure className="item">
+                    <div className='bg2'></div>
+                  </figure>
+
+                  <figure className="item">
+                    <h1>3</h1>
+                  </figure>
+
+                  <div className="controls">
+                    <a href="#item-1" className="control-button">•</a>
+                    <a href="#item-2" className="control-button">•</a>
+                    <a href="#item-3" className="control-button">•</a>
+                  </div>
+                </div>
+           
+          </Col>
+        </Row>
+        
+        
+       
+          <div className='row banner'>
+        </div>
+       </div>
+   
 
     
     );
   }
 }
+
+
 
 

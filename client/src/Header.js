@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Navbar, NavItem, Button} from 'react-materialize'
+import {Navbar, NavItem, Button, Row, Col} from 'react-materialize'
+import {Link} from 'react-router-dom'
 import logo from './images/guradian.png'
 
 
@@ -15,24 +16,24 @@ export class Header extends Component {
 
             <Navbar fixed >
 
-                    <div className='row'>
+                    <Row>
                         
-                        <div className="logo col-3">
+                        <Col s={12} m={12} l={3} className="logo col-3">
                             <img src={logo} alt='Guradian Logo' />
-                        </div>
+                        </Col>
 
 
-                        <div className="col-6 centerHeader">
+                        <Col s={12} m={12} l={6} className="col-6 centerHeader">
                             <NavItem>Solutions</NavItem>
                             <NavItem>Development</NavItem>
                             <NavItem>Research</NavItem>
                             <NavItem>About</NavItem>
-                        </div>
+                        </Col>
 
-                        <div className="col-3 textCenter">
-                            <a className='blueButton'>PURCHASE OPTIONS</a>
-                        </div>
-                </div>
+                        <Col s={12} m={12} l={3} className="col-3 textCenter">
+                            <Link to='/options' className='blueButton'>PURCHASE OPTIONS</Link>
+                        </Col>
+                </Row>
             </Navbar>
 
         </div>
