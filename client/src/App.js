@@ -10,6 +10,7 @@ import {Newsletter} from './Newsletter'
 import {GetNotified} from './GetNotified'
 
 
+
 export const App = () => (
   <div>
 
@@ -24,7 +25,7 @@ export const App = () => (
       </Switch>
     </main>
 
-
+    <Foot />
 
   </div>
 )

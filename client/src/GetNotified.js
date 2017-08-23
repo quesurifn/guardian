@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Redirect} from 'react-router-dom'
+import axios from 'axios'
 
 export class GetNotified extends Component {
      constructor() {
