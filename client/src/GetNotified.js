@@ -3,7 +3,29 @@ import './App.css';
 import {Redirect} from 'react-router-dom'
 
 export class GetNotified extends Component {
+     constructor() {
+        super() 
+            this.submitEmail= this.submitEmail.bind(this);
+        
+    }
  
+
+    submitEmail() {
+        let email = this.refs.newsletter.value
+
+        axios.post('/email', {
+            list: 'getnotified',
+            email: email
+        })
+        .then(r => {
+            console.log(r)
+            this.props.history.push('/')
+        })
+        .catch(e => {
+            console.log(e)
+        })
+    }
+
 
   render() {
     return (
@@ -15,7 +37,7 @@ export class GetNotified extends Component {
                 <input className='form-text noborder' placeholder='you@yourdomain.com' type='email'  required/>
                 
             </div>
-            <button className='blueButton bradius h50'>Get Notified</button>
+            <button className='blueButton bradius h50' onClick={this.submitEmail}> Get Notified</button>
         </div>
       </div>   
     );

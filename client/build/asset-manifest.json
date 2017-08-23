@@ -1,9 +1,11 @@
 {
-  "main.css": "static/css/main.7350455a.css",
-  "main.css.map": "static/css/main.7350455a.css.map",
-  "main.js": "static/js/main.c3643428.js",
-  "main.js.map": "static/js/main.c3643428.js.map",
-  "static/media/boxoffood.png": "static/media/boxoffood.6a0ee1dc.png",
-  "static/media/food.jpg": "static/media/food.a550142e.jpg",
-  "static/media/logo.svg": "static/media/logo.f0793d9f.svg"
+  "main.css": "static/css/main.e1f1901b.css",
+  "main.css.map": "static/css/main.e1f1901b.css.map",
+  "main.js": "static/js/main.e6db287d.js",
+  "main.js.map": "static/js/main.e6db287d.js.map",
+  "static/media/faceb.png": "static/media/faceb.7a4410bb.png",
+  "static/media/guardian.png": "static/media/guardian.07815923.png",
+  "static/media/guardianTwo.png": "static/media/guardianTwo.f68a7ee7.png",
+  "static/media/guradianhero.png": "static/media/guradianhero.5610de86.png",
+  "static/media/leak.png": "static/media/leak.5d44f13a.png"
 }
