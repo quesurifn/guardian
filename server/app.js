@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var compression = require('compression')
-var session = require('express-session');
+
 
 var index = require('./routes/index');
 
@@ -13,7 +13,7 @@ var app = express();
 
 
 app.use(compression({level: 9}))
-app.use(session({ secret: process.env.SECRET, cookie: { maxAge: 600000 }}));
+
 
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
@@ -33,7 +33,6 @@ app.use('/api', index);
 //our headers to allow CORS with middleware like so:
 app.use(function(req, res, next) {
  res.setHeader('Access-Control-Allow-Origin', '*');
- res.setHeader('Access-Control-Allow-Credentials', 'true');
  res.setHeader('Access-Control-Allow-Methods', 'GET,HEAD,OPTIONS,POST,PUT,DELETE');
  res.setHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
 //and remove cacheing so we get the most recent comments
@@ -54,10 +53,10 @@ app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
-  console.error(err)
+
   // render the error page
-  res.status(err.status || 500);
-  res.send('ERROR: ', err.message)
+  console.log(err)
+  res.status(err.status || 500).send('ERROR: ', err.message)
 });
 
 process.on('uncaughtException', function (err) {

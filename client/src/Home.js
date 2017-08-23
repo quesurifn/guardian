@@ -1,82 +1,62 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import axios from 'axios'
 
-import {connect} from 'react-redux'
-import Background from './images/food.jpg'
-import Logo from './images/logo.svg'
 
-import {Button} from 'react-materialize'
+
+import {Row, Container, Col, Button} from 'react-materialize'
+import soon from './images/comingsoon.png'
 
 export class Home extends Component {
   constructor() {
     super() 
-    this.startCheckout= this.startCheckout.bind(this);
+
+    this.submit = this.submit.bind(this);
   }
 
-  startCheckout() {
-    this.props.history.push('/stepone')
+  submit() {
+    if (this.refs.email.checkValidity()) {
+      axios.post('/api/email', {
+        email: this.refs.email
+      })
+      .then(r => {
+        this.refs.thx.style.display = 'block'
+        this.refs.container.style.display = 'none'
+      })
+      .catch(e => {
+        console.log(e)
+      })
+    }
   }
 
   render() {
-    var sectionStyle = {
-      width: "100%",
-      height: "450px",
-      backgroundImage: `url(${Background})`,
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      display: 'flex',
-      justifyContent: 'center',
-      alignContent: 'center',
-      alignItems: 'center',
-      flexDirection: 'column'
-    };
+   
     return (
-      <div className="App">
-            <div className="hero" style={sectionStyle} >
-                
-              <h1>Food is better when you know where it comes from</h1>
-              <Button waves='light' onClick={this.startCheckout}>Shop Plans</Button>
-            </div>
-            <div className="row">
-              <div className="col-md-12">
-                <h3 className="subheader resfont">Dinner, the Blue Apron way</h3> 
-              </div>
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-4">
-                    <img className="margin80" src="https://placehold.it/200x200" />
+      <div className="app">
+        <Container>
+          <Row>
+            <Col s={6}>
+              <img src={soon} alt='guardian' className='responsive-img' />
+            </Col>
 
-                     <img className="margin80" src="https://placehold.it/200x200" />
+            <Col s={6}>
+            
+                <h1>Sign up for updates</h1>
+                <div ref='container' className='inlineFlex'> 
+                  <div className='form-container'>
+                    <input type='email' ref='email' className='form-text' placeholder='you@yourdomain.com' />
                   </div>
-
-
-                  <div className="col-md-4">
-                      <img className="center margin80 hideMobile" src="https://placehold.it/200x600" alt=""/>
-                  </div>
-
-                   <div className="col-md-4">
-                    <img className="margin80" src="https://placehold.it/200x200" />
-                     <img className="margin80" src="https://placehold.it/200x200" />
-                  </div>
-
-
+                  <Button waves='light' onClick={this.submit}>Submit</Button>
                 </div>
+                <p className='thx' ref='thx'>Thank you!</p>
 
-                <p className="center margin40 width40">Blue Apron's uniquely integrated model means better ingredients, better pricing and a better planet for us all.</p>
-
-                 <Button waves='light' className="margin40" onClick={this.startCheckout}>Get Cooking</Button>
-
+            </Col>
 
 
-                 <img className="responsive-img img-responsive margin80" src="https://placehold.it/1169x670" />
-
-
-                 <h3 className="subtitle margin80 width60 center resfont">When you cook with Blue Apron, you're building a better food system</h3>
-              </div>
-              </div>
-            </div>
+          </Row>
+        </Container>
+      </div>
     
     );
   }
