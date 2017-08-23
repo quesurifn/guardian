@@ -216,8 +216,8 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   height:52px !important;
 }
 .noborder {
-  border-bottom: none;
-  border: none;
+  border-bottom: none !important;
+  border: none !important;
 }
 .borderSmoothed {
   border-radius: 6px 0px 0 6px !important;

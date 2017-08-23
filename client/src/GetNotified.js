@@ -12,7 +12,7 @@ export class GetNotified extends Component {
           <h2>...when you can find Guardian in stores</h2>
          <div className='inlineFlex'>
             <div className='form-container borderSmoothed'>
-                <input className='form-text' type='email'  required/>
+                <input className='form-text noborder' placeholder='you@yourdomain.com' type='email'  required/>
                 
             </div>
             <button className='blueButton bradius h50'>Get Notified</button>
