@@ -19,7 +19,7 @@ export class Home extends Component {
   submit() {
 
     if (this.refs.email.checkValidity()) {
-          axios.post('http://localhost:3000/api/email', {
+          axios.post('/api/email', {
             email: this.refs.email.value
           })
             .then(r => {

@@ -31,10 +31,8 @@ app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.use('/api', index);
 
-//To prevent errors from Cross Origin Resource Sharing, we will set 
-//our headers to allow CORS with middleware like so:
-app.use(function(req, res, next) {
 
+app.use(function(req, res, next) {
 //and remove cacheing so we get the most recent comments
  res.setHeader('Cache-Control', 'no-cache');
  next();
