@@ -126,4 +126,8 @@ h2 {
 	.logo {
 		width: 35%;
 	}
+	.support a {
+		top: 50px;
+		right:20px;
+	}
 }
