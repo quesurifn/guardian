@@ -51,7 +51,7 @@ export class Home extends Component {
                 <h2>Notify Me When Guardian Arrives</h2>
                 <div ref='container' className='inlineFlex'> 
                   <div className='form-container'>
-                    <input type='email' ref='email' className='form-text' placeholder='you@yourdomain.com' />
+                    <input type='email' ref='email' className='form-text' placeholder='email' />
                   </div>
                   <Button waves='light' onClick={this.submit}>Notify Me</Button>
                 </div>
