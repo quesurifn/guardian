@@ -7,6 +7,7 @@ var sg = require('sendgrid')(process.env.SENDGRID_KEY);
 
 router.post('/email', (req, res) => {
     let email = req.body.email;
+    console.log(email)
     let base64Email = Buffer.from(email).toString('base64');
        
 

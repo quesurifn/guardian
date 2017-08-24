@@ -17,15 +17,13 @@ export class Home extends Component {
   }
 
   submit() {
+
     if (this.refs.email.checkValidity()) {
-            fetch('/api/email', {
-              method: 'post',
-              body: JSON.stringify({
-                email: this.refs.email.value
-                
-              })
-            })
+          axios.post('http://localhost:3000/api/email', {
+            email: this.refs.email.value
+          })
             .then(r => {
+                console.log(r)
                 this.refs.thx.style.display = 'block'
                 this.refs.container.style.display = 'none'
             })
