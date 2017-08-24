@@ -44,6 +44,9 @@ export class Home extends Component {
 
             <Col s={12}>
                 <img src={logo} alt='guardian Logo' className='logo' /> 
+                <div className='support'>
+                  <a href='https://support.getguardian.com'>SUPPORT</a>
+                </div>
                 <h1>Prevent Water Damage</h1>
                 <h2>Notify Me When Guardian Arrives</h2>
                 <div ref='container' className='inlineFlex'> 
@@ -54,7 +57,7 @@ export class Home extends Component {
                 </div>
                 <p className='thx' ref='thx'>Thank you!</p>
                 <div className='bottom'>
-                  <a href='https://support.getguardian.com'>SUPPORT</a>
+                  <a href='https://elexausa.com'>WWW.ELEXAUSA.COM</a>
                 </div>
             </Col>
 
