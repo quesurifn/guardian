@@ -9,8 +9,5 @@ export const App = () => (
         <Route exact path="/" component={Home} />
       </Switch>
     </main>
-
-
-
   </div>
 )

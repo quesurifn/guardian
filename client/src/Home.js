@@ -54,7 +54,7 @@ export class Home extends Component {
                 </div>
                 <p className='thx' ref='thx'>Thank you!</p>
                 <div className='bottom'>
-                  <a href='http://elexausa.com'>WWW.ELEXAUSA.COM</a>
+                  <a href='https://support.getguardian.com'>SUPPORT</a>
                 </div>
             </Col>
 
