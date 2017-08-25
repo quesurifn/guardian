@@ -26,7 +26,7 @@ export class Header extends Component {
                         <Col s={12} m={12} l={6} className="col-6 centerHeader">
                             <NavItem>Solutions</NavItem>
                             <NavItem>Development</NavItem>
-                            <NavItem>Research</NavItem>
+                            <NavItem><Link to='/research'>Research</Link></NavItem>
                             <NavItem>About</NavItem>
                         </Col>
 

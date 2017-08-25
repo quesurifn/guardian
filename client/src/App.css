@@ -299,6 +299,9 @@ nav .hide-on-med-and-down .col-6, .col-3 {
 .footerLast .footerFlex a:first-child {
   margin-left: 0 !important;
 }
+.nav ul a {
+	transition: none !important;
+}
 
 @media screen and (min-width: 992px) {
   #nav-mobile {
@@ -347,7 +350,19 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   }
   .footerFlex {
     justify-content: center;
-  }
+	}
+	.optionsContainer {
+		margin-top: 120px;
+	}
+	.optionsContainer h1 {
+		font-size: 25px;
+	}
+	.optionsContainer .inlineFlex {
+		flex-direction: column;
+	}
+	.optionsContainer * {
+		text-align: center;
+	}
 }
 @media screen and (max-width: 482px) {
   .sectionTwo p {
