@@ -9,6 +9,7 @@ import {Options} from './Options'
 import {Newsletter} from './Newsletter'
 import {GetNotified} from './GetNotified'
 import {Research} from './Research'
+import {Purchase} from './Purchase'
 
 
 export const App = () => (
@@ -22,6 +23,7 @@ export const App = () => (
         <Route exact path='/newsletter' component={Newsletter} />
         <Route exact path='/notify' component={GetNotified} />
         <Route exact path='/research' component={Research} />
+        <Route exact path='/purchase' component={Purchase} />
         <Route component={NotFound} />
       </Switch>
     </main>

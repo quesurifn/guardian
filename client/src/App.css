@@ -46,7 +46,7 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   align-items: center;
 }
 .blueButton {
-  background: #2866C1; 
+  background: #1C56C0; 
   height:50px; 
   border: none;
   display: inline;
@@ -75,7 +75,21 @@ nav .hide-on-med-and-down .col-6, .col-3 {
 .optionsContainer {
   margin-top: 300px;
 }
+.nohoverb:hover {
+  background-color:#1c56c0;
 
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  margin-top:20px;
+  float: right;
+  margin-right: 20px;
+  height: 35px;
+  border-radius: 0;
+}
 /* Home Page */
 .heroBG {
   background: url('./images/guradianhero.png');
@@ -230,6 +244,7 @@ nav .hide-on-med-and-down .col-6, .col-3 {
 .footer {
   background: #363636;
   min-height:500px;
+  padding-top:40px;
 }
 .footerFlex {
   display: flex;
@@ -299,8 +314,119 @@ nav .hide-on-med-and-down .col-6, .col-3 {
 .footerLast .footerFlex a:first-child {
   margin-left: 0 !important;
 }
-.nav ul a {
-	transition: none !important;
+.nav  ul   a  a:hover{
+  transition: none !important;
+  background-color: rgba(0,0,0,0.0) !important;
+}
+.blackit a {
+  color: #363636;
+}
+.reserve {
+  width:100px;
+}
+.firstResearch {
+  height:100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstResearch p {
+  font-size:35px;
+  width: 50%;
+}
+.secondResearch img{
+ max-width: 100%;
+}
+.thirdResearch {
+  height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thirdResearch p {
+  font-size: 25px;
+  line-height: 50px;
+  max-width: 50%;
+}
+.fourthReseachOne {
+  height: 100vh;
+}
+.fourthResearchOne div {
+  background: url('./images/cad.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh;
+}
+.fourthResearchTwo {
+  height: 100vh;
+  background: #0077b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fourthResearchTwo p {
+  color:white; 
+  font-size:35px;
+  max-width: 55%;
+  text-align: center;
+}
+.fifthResearch {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fifthResearch *{
+  max-width: 50%;
+}
+.fifthResearch p:first-child {
+  font-size: 35px;
+}
+.fifthResearch p:last-child {
+  font-size: 20px;
+  line-height: 50px;
+}
+.sixthResearch {
+  height: 70vh;
+}
+.sixthResearch div {
+  background: url('./images/programming.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+.seventhResearch {
+  height: 100vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.seventhResearch * {
+  max-width: 50%;
+}
+.seventhResearch p:first-child {
+  font-size: 35px;
+}
+.seventhResearch p:last-child {
+  font-size: 20px;
+  line-height: 55px;
+}
+.eighthResearch {
+  height: 100vh;
+}
+.eighthResearch div {
+  background: url('./images/valve.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 @media screen and (min-width: 992px) {
