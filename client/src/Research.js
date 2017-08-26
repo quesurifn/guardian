@@ -6,6 +6,8 @@ import {Link} from 'react-router-dom'
 
 import first from './images/researchFirst.png'
 import cad from './images/cad.png'
+import app from './images/valve.png'
+import program from './images/programming.png'
 
 
 
@@ -14,7 +16,7 @@ export class Research extends Component {
   render() {
   
     return (
-        <div>
+        <div className='research'>
             <Row>
                 <Col s={12} className='firstResearch'>
                     <p>
@@ -54,7 +56,7 @@ export class Research extends Component {
             </Row>
             <Row>
                 <Col s={12} className='sixthResearch'>
-                  <div />
+                  <img src={program} alt='programming' />
                 </Col>
             </Row>
             <Row>
@@ -66,7 +68,7 @@ export class Research extends Component {
             </Row>
             <Row>
                 <Col s={12} className='eighthResearch'>
-                  <div />
+                  <img src={app} alt='app' />
                 </Col>
             </Row>
        </div>

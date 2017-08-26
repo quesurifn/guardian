@@ -393,12 +393,8 @@ nav .hide-on-med-and-down .col-6, .col-3 {
 .sixthResearch {
   height: 70vh;
 }
-.sixthResearch div {
-  background: url('./images/programming.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 70vh;
+.sixthResearch img {
+  width:100vw;
 }
 .seventhResearch {
   height: 100vh;
@@ -421,12 +417,11 @@ nav .hide-on-med-and-down .col-6, .col-3 {
 .eighthResearch {
   height: 100vh;
 }
-.eighthResearch div {
-  background: url('./images/valve.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
+.eighthResearch img {
+  width:100vw;
+}
+.footer {
+  position: relative;
 }
 
 @media screen and (min-width: 992px) {
@@ -437,6 +432,33 @@ nav .hide-on-med-and-down .col-6, .col-3 {
 
 /* Mobile Screens */ 
 @media screen and (max-width: 992px) {
+  .research {
+    text-align: center;
+  }
+  .firstResearch p{
+    font-size: 22px !important;
+  }
+  .sixthResearch  {
+    height: auto !important;
+  }
+  .thirdResearch p {
+     font-size: 18px !important;
+    line-height: 30px;
+  }
+  .fifthResearch p:first-child {
+    font-size: 22px !important;
+  }
+  .fourthResearchOne div {
+    background-size: cover !important;
+    height: 100vw !important;
+  }
+  .fourthResearchOne {
+    height: auto !important;
+  }
+  .fifthResearch p:last-child {
+    font-size: 18px !important;
+    line-height: 30px;
+  }
   .centerHeader {
     height: auto;
     display: block;
@@ -450,6 +472,16 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   .logo img {
     position: absolute;
     left: 25px;
+  }
+  .seventhResearch p:first-child {
+    font-size: 22px !important;
+  }
+  .seventhResearch p:last-child {
+    font-size: 18px !important;
+    line-height: 30px;
+  }
+  .eighthResearch {
+    height: auto !important;
   }
 }
 @media screen and (max-width:768px) { 
@@ -489,6 +521,15 @@ nav .hide-on-med-and-down .col-6, .col-3 {
 	.optionsContainer * {
 		text-align: center;
 	}
+}
+@media screen and (max-width: 550px) {
+  .fifthResearch {
+    height: 200vh;
+  }
+  .eighthResearch img {
+    position: relative;
+    top: 8px;
+  }
 }
 @media screen and (max-width: 482px) {
   .sectionTwo p {
