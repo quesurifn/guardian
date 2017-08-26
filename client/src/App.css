@@ -423,7 +423,69 @@ nav .hide-on-med-and-down .col-6, .col-3 {
 .footer {
   position: relative;
 }
-
+.purchaseHero {
+  max-width: 100%;
+}
+.gBlue {
+  background: #0077b5;
+}
+.anton {
+  background: url('./images/duckie.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+.anton .text {
+  position: absolute;
+  bottom: 170px;
+  left: 100px;
+}
+.anton img {
+  height: 80px;
+  cursor: pointer;
+  position: relative;
+  top: 20px;
+}
+.anton h2 {
+  font-family: 'Anton', sans-serif !important;
+  color: #1c56c0;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 30px;
+  margin: 0;
+}
+.anton h3 {
+  font-family: 'Anton', sans-serif !important;
+  color: #1c56c0;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 70px;
+  margin:0;
+  line-height: 55px;
+}
+.purchaseThree {
+  height: 30vh; 
+  background: #1c56c0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.purchaseThree p {
+  color: white;
+  font-size: 22px;
+}
+.purchaseFour {
+  height: 100vh;
+  
+}
+.purchaseFour div {
+  background: url('./images/leak-detector-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 @media screen and (min-width: 992px) {
   #nav-mobile {
     display: none !important;
