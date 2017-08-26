@@ -1,5 +1,6 @@
 html, body {
   height:100%;
+  overflow-x: hidden;
 }
 /* Bootstrap RESETS */
 .col-md-12, .col-md-6 {
@@ -30,7 +31,7 @@ nav ul {
   font-weight: 600;
 }
 .logo img {
-  height: 35px;
+  width: 150px !important;
 }
 .centerHeader {
   display: flex;
@@ -476,15 +477,74 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   font-size: 22px;
 }
 .purchaseFour {
-  height: 100vh;
-  
+  height: 100vh; 
+  position: relative;
 }
-.purchaseFour div {
+.purchaseFour .first > img {
+  width: 45vw;
+  position: absolute;
+  right: -250px;
+
+}
+.purchaseFour .first{
   background: url('./images/leak-detector-background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+}
+.find {
+  position: relative; 
+  left: 100px;
+  top: 15vh;
+}
+.find img {
+  width: 200px;
+}
+.find p {
+  font-size: 30px;
+  width: 55%;
+  color: #363636;
+  font-weight: 200;
+}
+.lolo {
+ cursor: pointer; 
+}
+.cardTwo * {
+  color:white !important;
+}
+.cardTwo * {
+  background: #1c56c0;
+}
+video.purchase {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.leakingPipe {
+  height: 100vh;
+}
+.leakingPipe div {
+  max-width: 55%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.leakingPipe div img {
+  width:90%;
+  margin: 40px 0;
+}
+.leakingPipe h2 {
+  color: #363636;
+  font-size: 30px;
+  font-weight: 200;
+}
+.leakingPipe p {
+  max-width: 40%;
+  text-align: center;
 }
 @media screen and (min-width: 992px) {
   #nav-mobile {
