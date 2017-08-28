@@ -450,8 +450,9 @@ nav .hide-on-med-and-down .col-6, .col-3 {
 .gBlue img {
   max-width: 100%;
   position: absolute;
-      bottom: -110px;
-    z-index: 999;
+  bottom: -13%;
+  z-index: 999;
+  width:100%;
 }
 .gBlue h1 {
   color:white;
@@ -533,7 +534,7 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   z-index: 1000;
   left: 50%;
   transform: translateX(-50%);
-  top: -15px;
+  top: 2px;
 }
 .purchaseFour {
   height: 100vh; 
@@ -610,6 +611,92 @@ video.purchase {
   letter-spacing: 3px;
   font-size: 28px;
   color: #1C56C0;
+}
+@media screen and (max-width: 1200px) {
+  .gBlue {
+    height: 90vh;
+  }
+}
+@media screen and (max-width: 812px) {
+  .gBlue {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 749px) {
+  .purchaseThree p {
+    text-align: center;
+    font-size: 18px;
+  }
+  .purchaseThree {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 716px) {
+  .gBlue {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .find * {
+    text-align: center;
+  }
+  .find {
+    top: 0; 
+    left: 0;
+    margin: auto;
+    text-align: center;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  .find p {
+    width: 100%;
+    font-size: 20px;
+  }
+  .anton .text {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .text .h3 {
+    font-size: 25px !important;
+  }
+  .leakingPipe div {
+    width:100vw !important;
+    max-width: 100%;
+  }
+  .leakingPipe div h2 {
+    text-align: center;
+    padding: 0 15px;
+  }
+  .leakingPipe p {
+    max-width: 100%;
+    font-size: 20px;
+    padding: 0 15px;
+  }
+
+}
+@media screen and (max-width: 495px) {
+  .gBlue img {
+    bottom: -10%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .gBlue img {
+    top:20px;
+    position: relative;
+  }
+  .gBlue h1 {
+    font-size: 35px;
+  }
+  .gBlue {
+    height: 100vh;
+  }
+  .lolo1 {
+    top: -200px;
+  }
 }
 @media screen and (min-width: 992px) {
   #nav-mobile {
