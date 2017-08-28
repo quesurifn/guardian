@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var compression = require('compression')
 var cors = require('cors')
+var robots = require('express-robots')
 
 var index = require('./routes/index');
 
@@ -14,6 +15,9 @@ var app = express();
 
 app.use(compression({level: 9}))
 app.use(cors())
+app.use(robots({UserAgent: '*', Disallow: ''}))
+
+
 
 
 app.engine('html', require('ejs').renderFile);
@@ -25,17 +29,18 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 //app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, '../client/build')));
-
-
-
-app.use('/api', index);
-
-
 app.use(function(req, res, next) {
 //and remove cacheing so we get the most recent comments
  res.setHeader('Cache-Control', 'no-cache');
  next();
 });
+
+app.use('/api', index);
+
+
+
+
+
 
 
 // catch 404 and forward to error handler
