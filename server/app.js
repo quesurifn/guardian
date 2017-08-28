@@ -36,7 +36,7 @@ app.use('/api', index);
 
 
 app.get('*', function(req, res) {
-  res.sendFile(__dirname + '../client/build/index.html');
+  res.sendFile(__dirname, '../client/build/index.html');
 })
 
 //To prevent errors from Cross Origin Resource Sharing, we will set 
