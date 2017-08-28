@@ -54,6 +54,9 @@ nav ul {
   align-items: center;
   height: 65px;
 }
+.centerHeader li a {
+  font-weight: 300 !important;
+}
 .row .col {
   padding: 0;
 }
@@ -184,6 +187,13 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   text-align: center;
   color:white;
 
+}
+.logo span {
+  color: #1c56c0;
+  font-size: 30px;
+  font-family: 'evogria', sans-serif;
+  letter-spacing: 2px;
+  text-align: left;
 }
 .vue100pc {
   height: 100% !important;
@@ -611,6 +621,9 @@ video.purchase {
   letter-spacing: 3px;
   font-size: 28px;
   color: #1C56C0;
+}
+.card-content * {
+  text-align: left;
 }
 @media screen and (max-width: 1200px) {
   .gBlue {
