@@ -6,7 +6,6 @@ import {Link} from 'react-router-dom'
 
 
 import first from './images/researchFirst.png'
-import cad from './images/cad.png'
 import app from './images/valve.png'
 import program from './images/programming.png'
 

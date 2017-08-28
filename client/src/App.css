@@ -443,14 +443,15 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   max-width: 100%;
 }
 .gBlue {
-  height: 130vh;
+  height: 110vh;
   position: relative;
   background: #1c56c0;
 }
 .gBlue img {
   max-width: 100%;
   position: absolute;
-  bottom: 0;
+      bottom: -110px;
+    z-index: 999;
 }
 .gBlue h1 {
   color:white;
@@ -474,6 +475,9 @@ nav .hide-on-med-and-down .col-6, .col-3 {
 .first {
   position: absolute;
   width: 100%;
+}
+.purchaseTwo {
+  position: relative;
 }
 .anton {
   background: url('./images/duckie.jpg');
@@ -522,6 +526,14 @@ nav .hide-on-med-and-down .col-6, .col-3 {
 .purchaseThree p {
   color: white;
   font-size: 22px;
+  font-weight: 300;
+}
+.lolo1 {
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -15px;
 }
 .purchaseFour {
   height: 100vh; 

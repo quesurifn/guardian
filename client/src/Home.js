@@ -4,10 +4,7 @@ import './css/gallery.css';
 
 import cardOne from './images/leak.png'
 import cardTwo from './images/faceb.png'
-import guardian from './images/guardian.png'
-import {Card, Row, Col, CardPanel, CardTitle} from 'react-materialize'
-
-import {connect} from 'react-redux'
+import {Card, Row, Col,CardTitle} from 'react-materialize'
 
 export class Home extends Component {
 

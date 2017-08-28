@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {Button, Row, Col} from 'react-materialize'
+import {Row, Col} from 'react-materialize'
 import {Link} from 'react-router-dom'
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import {Card, CardActions, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 
 import hero from './images/herotransweb.png'
@@ -74,6 +74,7 @@ export class Purchase extends Component {
         </Row>
         <Row>
             <Col s={12} className='purchaseTwo'>
+             <img src={reserve} alt='logo'  className='lolo1'/>
                <div className='anton'>
                    <div className='text'>
                         <h2>one less thing...</h2>

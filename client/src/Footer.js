@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {connect} from 'react-redux'
 import {Row, Col, Container} from 'react-materialize'
-
-
-import axios from 'axios'
 
 export class Foot extends Component {
 
