@@ -5,6 +5,7 @@ import {Row, Col} from 'react-materialize'
 import {Link} from 'react-router-dom'
 import {Card, CardActions, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
+import './css/gallery.css'
 
 import hero from './images/herotransweb.png'
 import duck from './images/duckie.jpg'
@@ -27,8 +28,21 @@ export class Purchase extends Component {
         super() 
 
         this.playvideo = this.playvideo.bind(this)
+        this.waypointOneEnter = this.waypointOneEnter.bind(this)
+        this.waypointOneLeave = this.waypointOneLeave.bind(this)
     }
 
+    waypointOneEnter() {
+        console.log('nono')
+        document.querySelector('.headerLogo').style.color = '#1C56C0'
+        this.refs.wpHide.style.display = 'none'
+
+    }
+    waypointOneLeave() {
+        document.querySelector('.headerLogo').style.color = 'white'
+        this.refs.wpHide.style.display = 'block'
+
+    }
     
       componentDidMount() {
         document.querySelector('nav').style.backgroundColor = 'transparent'
@@ -37,6 +51,7 @@ export class Purchase extends Component {
         document.querySelector('.nav-wrapper').style.backgroundColor = 'transparent'
         document.querySelector('.navbar-fixed').style.position = 'absolute'
         document.querySelector('.navbar-fixed').style.width = '100%'
+        document.querySelector('.headerLogo').style.color = 'white'
         
         
         
@@ -74,15 +89,39 @@ export class Purchase extends Component {
         </Row>
         <Row>
             <Col s={12} className='purchaseTwo'>
-             <img src={reserve} alt='logo'  className='lolo1'/>
-               <div className='anton'>
-                   <div className='text'>
-                        <h2>one less thing...</h2>
-                        <h3>to worry about</h3>
-                        <img src={red} alt='red button' />
-                    </div>
-               </div>
+            <div className="gallery items-3 autoplay vue100">
+                  <div id="item-1" className="control-operator"></div>
+                  <div id="item-2" className="control-operator"></div>
+                  <div id="item-3" className="control-operator"></div>
 
+                  <figure className="item vue100">
+                       <img src={reserve} alt='logo'  className='lolo1'/>
+                        <div className='anton'>
+                            <div className='text'>
+                                    <h2>one less thing...</h2>
+                                    <h3>to worry about</h3>
+                                    <img src={red} alt='red button' />
+                                </div>
+                        </div>
+
+                  </figure>
+
+                  <figure className="item vue100">
+                    <div className='bg2'></div>
+                  </figure>
+
+                  <figure className="item vue100">
+                    <h1>3</h1>
+                  </figure>
+
+                  <div className="controls">
+                    <a href="#item-1" className="control-button">•</a>
+                    <a href="#item-2" className="control-button">•</a>
+                    <a href="#item-3" className="control-button">•</a>
+                  </div>
+                </div>
+
+          
 
             </Col>
         </Row>
@@ -92,11 +131,14 @@ export class Purchase extends Component {
             </Col>
         </Row>
         <Row>
+            <Waypoint onEnter={this.waypointOneEnter} onLeave={this.waypointOneLeave} />
+            
             <Col s={12} className='purchaseFour'>
+            
                 <div className='first'>
                     <img src={splash} alt='splash' />
                     <div className='find'>
-                        <h2>Guardian</h2>
+                        <h2 ref='wpHide'>Guardian</h2>
                         <p>There are more than 14,000  water damage claims each day causing US insurance companies and homeowners billions of dollars.</p>
                         <img src={reserve} alt='logo'  className='lolo'/>
                     </div>

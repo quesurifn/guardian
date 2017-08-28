@@ -31,7 +31,7 @@ export class Header extends Component {
                     <Row>
                         
                         <Col s={12} m={12} l={3} className="logo col-3">
-                            <span>Guardian</span>
+                            <span className='headerLogo' >Guardian</span>
                         </Col>
 
 

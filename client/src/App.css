@@ -625,6 +625,9 @@ video.purchase {
 .card-content * {
   text-align: left;
 }
+.lolo1 {
+  z-index: 1000;
+}
 @media screen and (max-width: 1200px) {
   .gBlue {
     height: 90vh;
