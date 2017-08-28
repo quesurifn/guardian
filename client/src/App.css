@@ -501,6 +501,7 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   position: absolute;
   bottom: 170px;
   left: 100px;
+  text-align: left;
 }
 .anton img {
   height: 80px;
