@@ -6,10 +6,10 @@ import {Link} from 'react-router-dom'
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 
-import hero from './images/hero.png'
+import hero from './images/herotransweb.png'
 import duck from './images/duckie.jpg'
 import red from './images/btn-get-guardian-red.png'
-import splash from './images/splash.png'
+import splash from './images/splash2.png'
 import bluelogo from './images/guradian.png'
 import reserve from './images/btn-reserve-one.png'
 import cardone from './images/purchaseOne.png'
@@ -17,6 +17,8 @@ import cardtwo from './images/purchaseTwo.png'
 import poster from './images/video-slate.jpg'
 import pipe from './images/leaking-pipe.jpg'
 
+
+var Waypoint = require('react-waypoint');
 
 
 
@@ -64,7 +66,10 @@ export class Purchase extends Component {
       <div>
         <Row>
             <Col s={12} className='gBlue'>
-                <img src={hero} alt='yoyoyo' className='purchaseHero'/>
+            <h1>prevent water damage</h1>
+            <p>Meet <span>Guardian</span>, a stand alone system for leaks and floods.</p>
+                <img src={hero} alt='hero' />
+                
             </Col>
         </Row>
         <Row>
@@ -90,7 +95,7 @@ export class Purchase extends Component {
                 <div className='first'>
                     <img src={splash} alt='splash' />
                     <div className='find'>
-                        <img src={bluelogo} alt='blue guardian logo' />
+                        <h2>Guardian</h2>
                         <p>There are more than 14,000  water damage claims each day causing US insurance companies and homeowners billions of dollars.</p>
                         <img src={reserve} alt='logo'  className='lolo'/>
                     </div>

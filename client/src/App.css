@@ -1,3 +1,18 @@
+@font-face {
+font-family: 'Evogria';
+font-style: normal;
+font-weight: normal;
+src: local('Evogria'), url('./css/fonts/Evogria.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Evogria Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Evogria Italic'), url('./css/fonts/Evogria Italic.woff') format('woff');
+}
+
 html, body {
   height:100%;
   overflow-x: hidden;
@@ -428,7 +443,37 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   max-width: 100%;
 }
 .gBlue {
-  background: #0077b5;
+  height: 130vh;
+  position: relative;
+  background: #1c56c0;
+}
+.gBlue img {
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.gBlue h1 {
+  color:white;
+  font-size: 65px;
+  text-align: center;
+  font-family: 'evogria', sans-serif;
+  margin-top:100px;
+  letter-spacing: 2px;
+
+}
+.gBlue p {
+  color: white;
+  margin: auto;
+  text-align: center;
+  font-weight: 200;
+}
+.gBlue span {
+  font-family: 'Evogria', sans-serif;
+  letter-spacing: 3px;
+}
+.first {
+  position: absolute;
+  width: 100%;
 }
 .anton {
   background: url('./images/duckie.jpg');
@@ -449,21 +494,23 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   top: 20px;
 }
 .anton h2 {
-  font-family: 'Anton', sans-serif !important;
+  font-family: 'evogria', sans-serif !important;
   color: #1c56c0;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 30px;
   margin: 0;
+  letter-spacing: 2px;
 }
 .anton h3 {
-  font-family: 'Anton', sans-serif !important;
+  font-family: 'evogria', sans-serif !important;
   color: #1c56c0;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 70px;
   margin:0;
   line-height: 55px;
+  letter-spacing: 2px;
 }
 .purchaseThree {
   height: 30vh; 
@@ -545,6 +592,12 @@ video.purchase {
 .leakingPipe p {
   max-width: 40%;
   text-align: center;
+}
+.find h2 {
+  font-family: 'Evogria', sans-serif;
+  letter-spacing: 3px;
+  font-size: 28px;
+  color: #1C56C0;
 }
 @media screen and (min-width: 992px) {
   #nav-mobile {
