@@ -11,7 +11,7 @@ import program from './images/programming.png'
 
 
 
-
+ 
 export class Research extends Component {
 
   render() {
