@@ -34,13 +34,12 @@ export class Purchase extends Component {
 
     waypointOneEnter() {
         console.log('nono')
-        document.querySelector('.headerLogo').style.color = '#1C56C0'
-        this.refs.wpHide.style.display = 'none'
-
+        document.querySelector('.headerLogo').setAttribute('class', 'blueColor')
+        this.refs.wpHide.setAttribute('class' , 'displayNone')
     }
     waypointOneLeave() {
-        document.querySelector('.headerLogo').style.color = 'white'
-        this.refs.wpHide.style.display = 'block'
+        document.querySelector('.headerLogo').setAttribute('class', 'whiteColor')
+        this.refs.wpHide.setAttribute('class', 'displayNone')
 
     }
     
@@ -83,8 +82,8 @@ export class Purchase extends Component {
             <Col s={12} className='gBlue'>
             <h1>prevent water damage</h1>
             <p>Meet <span>Guardian</span>, a stand alone system for leaks and floods.</p>
-                <img src={hero} alt='hero' />
-                
+                <img src={hero} alt='hero' className='heroImg' />
+                <img src={reserve} alt='logo'  className='lolo1'/>
             </Col>
         </Row>
         <Row>
@@ -95,7 +94,7 @@ export class Purchase extends Component {
                   <div id="item-3" className="control-operator"></div>
 
                   <figure className="item vue100">
-                       <img src={reserve} alt='logo'  className='lolo1'/>
+                       
                         <div className='anton'>
                             <div className='text'>
                                     <h2>one less thing...</h2>

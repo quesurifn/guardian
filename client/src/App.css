@@ -457,7 +457,7 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   position: relative;
   background: #1c56c0;
 }
-.gBlue img {
+.gBlue .heroImg{
   max-width: 100%;
   position: absolute;
   bottom: -13%;
@@ -545,7 +545,8 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   z-index: 1000;
   left: 50%;
   transform: translateX(-50%);
-  top: 2px;
+  bottom:-100px;
+  width: 300px !important;
 }
 .purchaseFour {
   height: 100vh; 
@@ -577,6 +578,18 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   width: 55%;
   color: #363636;
   font-weight: 200;
+}
+.whiteColor {
+  color:white !important;
+}
+.blueColor {
+  color: #1c56c0;
+}
+.displayNone {
+  display: none !important;
+}
+.displayBlock {
+  display: block !important;
 }
 .lolo {
  cursor: pointer; 
@@ -626,9 +639,7 @@ video.purchase {
 .card-content * {
   text-align: left;
 }
-.lolo1 {
-  z-index: 1000;
-}
+
 @media screen and (max-width: 1200px) {
   .gBlue {
     height: 90vh;
