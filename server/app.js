@@ -17,9 +17,6 @@ app.use(compression({level: 9}))
 app.use(cors())
 app.use(robots({UserAgent: '*', Disallow: ''}))
 
-
-
-
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 app.use(logger('dev'));
@@ -36,11 +33,6 @@ app.use(function(req, res, next) {
 });
 
 app.use('/api', index);
-
-
-
-
-
 
 
 // catch 404 and forward to error handler
