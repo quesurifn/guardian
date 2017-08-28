@@ -54,7 +54,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   console.log(err)
-  res.status(err.status || 500).send('ERROR: ', err.message)
+  res.status(500).send(err.message)
 });
 
 process.on('uncaughtException', function (err) {
