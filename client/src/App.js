@@ -18,6 +18,7 @@ import {RF} from './RF'
 import {Controller} from './Controller'
 import {Detector} from './Detector'
 import {About} from './About'
+import {Howto} from './Howto'
 
 
 export const App = () => (
@@ -38,6 +39,7 @@ export const App = () => (
         <Route exact path='/notify' component={GetNotified} />
         <Route exact path='/research' component={Research} />
         <Route exact path='/purchase' component={Purchase} />
+        <Route exact path='/howto' component={Howto} />
         <Route component={NotFound} />
       </Switch>
     </main>

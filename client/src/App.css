@@ -15,6 +15,9 @@ src: local('Evogria Italic'), url('./css/fonts/Evogria Italic.woff') format('wof
 
 html, body {
   height:100%;
+
+}
+body {
   overflow-x: hidden;
 }
 /* Bootstrap RESETS */
@@ -658,7 +661,86 @@ video.purchase {
   color: white;
   font-weight: 200;
 }
+.howto {
+  background: -moz-linear-gradient(0deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(192,192,192,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(128,128,128,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(0deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(0deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(0deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); /* ie10+ */
+  background: linear-gradient(90deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0c0c0', endColorstr='#808080',GradientType=1 ); /* ie6-9 */
+  height: 100vh;
+}
+.howto .container .flex {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.howto h1 {
+  font-weight: 300;
+  text-align: center;
+  padding-top: 40px;
+  margin: 0;
+  font-size: 52px;
+}
+.howto p.one {
+  max-width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-top:20px;
+  font-size: 22px;
+  line-height: 45px;
+  font-weight: 200;
 
+}
+.howtoCard {
+  margin: 20px 0;
+  width: 350px;
+  height: 530px;
+  background: white;
+  -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.54);
+  -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.54);
+  box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.54);
+  position: relative;
+}
+.cardOneBg {
+  height:200px;
+  background: url('./images/077.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.howtoContent {padding:15px;}
+.howtoContent h2 {
+  font-size: 18px;
+  color: #1c56c0;
+  font-weight: bold;
+}
+.howtoContent p {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 24px;
+  text-align: left
+
+}
+.howtoFooter {
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #d3d3d3;
+  width:100%;
+  left: 0;
+}
+.footerRelativeContainer {
+  position: relative;
+}
+.footerRelativeContainer a {
+  font-weight: 200;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+
+}
 @media screen and (max-width: 1200px) {
   .gBlue {
     height: 90vh;

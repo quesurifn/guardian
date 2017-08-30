@@ -19,8 +19,8 @@ import cardtwo from './images/purchaseTwo.png'
 import poster from './images/video-slate.jpg'
 import pipe from './images/leaking-pipe.jpg'
 
+import ScrollAnimation from 'react-animate-on-scroll'
 
-var Waypoint = require('react-waypoint');
 
 
 
@@ -126,7 +126,9 @@ export class Purchase extends Component {
         </Row>
         <Row>
             <Col s={12} className='purchaseThree'>
-                <p>Americans are more likely to experience water damage than fire.</p>
+                <ScrollAnimation animateIn="fadeIn">
+                    <p>Americans are more likely to experience water damage than fire.</p>
+                </ScrollAnimation>
             </Col>
         </Row>
         <Row>
