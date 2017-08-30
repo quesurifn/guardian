@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollTrigger from 'react-scroll-trigger';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {Row, Col} from 'react-materialize'
@@ -28,20 +29,12 @@ export class Purchase extends Component {
         super() 
 
         this.playvideo = this.playvideo.bind(this)
-        this.waypointOneEnter = this.waypointOneEnter.bind(this)
-        this.waypointOneLeave = this.waypointOneLeave.bind(this)
+
+        this.onEnter = this.onEnter.bind(this)
+        this.onExit = this.onExit.bind(this)
     }
 
-    waypointOneEnter() {
-        console.log('nono')
-        document.querySelector('.headerLogo').setAttribute('class', 'blueColor')
-        this.refs.wpHide.setAttribute('class' , 'displayNone')
-    }
-    waypointOneLeave() {
-        document.querySelector('.headerLogo').setAttribute('class', 'whiteColor')
-        this.refs.wpHide.setAttribute('class', 'displayNone')
 
-    }
     
       componentDidMount() {
         document.querySelector('nav').style.backgroundColor = 'transparent'
@@ -72,6 +65,13 @@ export class Purchase extends Component {
             video.pause()
         }
     }
+    onEnter() {
+        this.refs.titleOne.setAttribute('class', 'fadeInUp')
+        this.refs.titleTwo.setAttribute('class', 'fadeInLeft')
+    }
+    onExit() {
+
+    }
     
 
   render() {
@@ -94,11 +94,11 @@ export class Purchase extends Component {
                   <div id="item-3" className="control-operator"></div>
 
                   <figure className="item vue100">
-                       
                         <div className='anton'>
+                            <ScrollTrigger onEnter={this.onEnter} onExit={this.onExit} />
                             <div className='text'>
-                                    <h2>one less thing...</h2>
-                                    <h3>to worry about</h3>
+                                    <h2 ref='titleOne'>one less thing...</h2>
+                                    <h3 ref='titleTwo'>to worry about</h3>
                                     <img src={red} alt='red button' />
                                 </div>
                         </div>
@@ -130,7 +130,7 @@ export class Purchase extends Component {
             </Col>
         </Row>
         <Row>
-            <Waypoint onEnter={this.waypointOneEnter} onLeave={this.waypointOneLeave} />
+         
             
             <Col s={12} className='purchaseFour'>
             
