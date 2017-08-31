@@ -101,7 +101,7 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   background-color:#1c56c0;
 
 }
-.center {
+.centerIt {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -474,6 +474,8 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   font-family: 'evogria', sans-serif;
   margin-top:100px;
   letter-spacing: 2px;
+  position: relative;
+  z-index: 2000;
 
 }
 .gBlue p {
@@ -481,6 +483,8 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   margin: auto;
   text-align: center;
   font-weight: 200;
+  position: relative;
+  z-index: 2000;
 }
 .gBlue span {
   font-family: 'Evogria', sans-serif;
@@ -694,9 +698,10 @@ video.purchase {
 
 }
 .howtoCard {
-  margin: 20px 0;
+  margin: 20px 40px;
   width: 350px;
   height: 530px;
+
   background: white;
   -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.54);
   -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.54);
@@ -706,6 +711,13 @@ video.purchase {
 .cardOneBg {
   height:200px;
   background: url('./images/077.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.cardTwoBg {
+  height: 200px; 
+  background: url('./images/098.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -741,6 +753,64 @@ video.purchase {
   right: 20px;
 
 }
+.firstBuyOne, .firstBuyTwo {
+  padding-top: 100px;
+}
+.firstBuyTwo h1 {
+  margin-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+
+}
+  .firstBuyTwo div:first-child{
+    padding: 0 20%;
+  }
+  .firstBuyTwo h2 {
+    font-weight: 200;
+    font-size: 25px;
+  }
+   .firstBuyTwo p {
+    line-height: 35px;
+    font-weight: 300;
+  }
+  .included {
+    display: flex;
+    align-items: center;
+  }
+  .included img:first-child {
+    margin-left: 0px !important;
+  }
+  .included img {
+    border-radius: 50%;
+    margin: 0 20px;
+  }
+  .firstBuyTwo h3 {
+    margin-top: 10px;
+    font-weight: 300;
+  }
+  .buyAbout {
+    height: 500px;
+    margin:80px auto;
+    width:70%;
+    flex-direction: column;
+    position: relative;
+  }
+  .buyAbout h2 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    color: #333;
+  }
+  .buyAbout p {
+    margin-top: 17px;
+    line-height: 1.8;
+    width:400px;
+    color:#777;
+  }
 @media screen and (max-width: 1200px) {
   .gBlue {
     height: 90vh;
@@ -938,7 +1008,10 @@ video.purchase {
     color: white;
     font-weight: 200;
     text-align: center;
-}
+  }
+  .gBlue .heroImg {
+    position: relative !important;
+  }
 }
 @media screen and (max-width: 482px) {
   .sectionTwo p {

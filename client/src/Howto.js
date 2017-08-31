@@ -31,6 +31,23 @@ export class Howto extends Component {
                     </div>
                 </div>
 
+                <div className='howtoCard'>
+                    <div className='cardTwoBg' />
+                    <div className='howtoContent'>
+                        <h2>The Water Detector</h2>
+                        <p>Place near appliances, sinks, and other plumbing fixtures. Includes remote sensor probe in hard to reach areas. </p>
+                        <p>The Water Detector will report status automatically to the app.</p>
+
+                        <div className='howtoFooter'>
+                            <div className='footerRelativeContainer'>
+
+                                <Link to='/'>Learn More</Link>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </Container>
       </div>   

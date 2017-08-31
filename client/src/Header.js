@@ -16,7 +16,7 @@ export class Header extends Component {
 
       if (document.location.pathname === '/purchase') {
           logoFactor = logoWhite; 
-          button =  <Link to='/options' className='blueButton nohoverb center'><img src={reserve} alt='resrve' className='reserve' /></Link>
+          button =  <Link to='/options' className='blueButton nohoverb centerIt'><img src={reserve} alt='resrve' className='reserve' /></Link>
       } else {
           logoFactor = logoBlue;
           button =  <Link to='/options' className='blueButton'>PURCHASE OPTIONS</Link>;
@@ -31,7 +31,9 @@ export class Header extends Component {
                     <Row>
                         
                         <Col s={12} m={12} l={3} className="logo col-3">
-                            <span className='headerLogo' >Guardian</span>
+                            <Link to='/'>
+                                <span className='headerLogo' >Guardian</span>
+                            </Link>
                         </Col>
 
 

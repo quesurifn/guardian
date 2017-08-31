@@ -30,8 +30,7 @@ export class Purchase extends Component {
 
         this.playvideo = this.playvideo.bind(this)
 
-        this.onEnter = this.onEnter.bind(this)
-        this.onExit = this.onExit.bind(this)
+ 
     }
 
 
@@ -65,14 +64,7 @@ export class Purchase extends Component {
             video.pause()
         }
     }
-    onEnter() {
-        this.refs.titleOne.setAttribute('class', 'fadeInUp')
-        this.refs.titleTwo.setAttribute('class', 'fadeInLeft')
-    }
-    onExit() {
 
-    }
-    
 
   render() {
   
@@ -83,10 +75,21 @@ export class Purchase extends Component {
             <h1>prevent water damage</h1>
             <p>Meet <span>Guardian</span>, a stand alone system for leaks and floods.</p>
                 <img src={hero} alt='hero' className='heroImg' />
-                <img src={reserve} alt='logo'  className='lolo1'/>
+                
             </Col>
         </Row>
+
+       
+      
         <Row>
+            <Col s={12}>
+                <video className='purchase' poster={poster} ref='video' onClick={this.playvideo}>
+                    <source src='https://s3.us-east-2.amazonaws.com/dome-web-assets/purple-passion.mp4' type='video/mp4' />
+                    Your browser does not support HTML5
+                </video>
+            </Col>
+        </Row>
+                <Row>
             <Col s={12} className='purchaseTwo'>
             <div className="gallery items-3 autoplay vue100">
                   <div id="item-1" className="control-operator"></div>
@@ -122,77 +125,6 @@ export class Purchase extends Component {
 
           
 
-            </Col>
-        </Row>
-        <Row>
-            <Col s={12} className='purchaseThree'>
-                <ScrollAnimation animateIn="fadeIn">
-                    <p>Americans are more likely to experience water damage than fire.</p>
-                </ScrollAnimation>
-            </Col>
-        </Row>
-        <Row>
-         
-            
-            <Col s={12} className='purchaseFour'>
-            
-                <div className='first'>
-                    <img src={splash} alt='splash' />
-                    <div className='find'>
-                        <h2 ref='wpHide'>Guardian</h2>
-                        <p>There are more than 14,000  water damage claims each day causing US insurance companies and homeowners billions of dollars.</p>
-                        <img src={reserve} alt='logo'  className='lolo'/>
-                    </div>
-                </div>
-            </Col>
-        </Row>
-        <Row>
-            <Col s={12} m={12} l={6} >
-            <MuiThemeProvider>
-
-                <Card>
-                    <CardMedia>
-                    <img src={cardone} alt="nooo" />
-                    </CardMedia>
-                    <CardTitle title="Card title" subtitle="Card subtitle" />
-                    <CardText>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-                        Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-                        Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-                    </CardText>
-                    <CardActions>
-                        <FlatButton label="Action1" />
-                    </CardActions>
-                </Card>
-                </MuiThemeProvider>
-            </Col>
-             <Col s={12} m={12} l={6} className='cardTwo'>
-                <MuiThemeProvider>
-                    <Card>
-                        <CardMedia>
-                        <img src={cardtwo} alt="nooo" />
-                        </CardMedia>
-                        <CardTitle title="Card title" subtitle="Card subtitle" />
-                        <CardText>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-                            Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-                            Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-                        </CardText>
-                        <CardActions>
-                            <FlatButton label="Action1" />
-                        </CardActions>
-                    </Card>
-                </MuiThemeProvider>
-            </Col>
-        </Row>
-        <Row>
-            <Col s={12}>
-                <video className='purchase' poster={poster} ref='video' onClick={this.playvideo}>
-                    <source src='https://s3.us-east-2.amazonaws.com/dome-web-assets/purple-passion.mp4' type='video/mp4' />
-                    Your browser does not support HTML5
-                </video>
             </Col>
         </Row>
         <Row>
