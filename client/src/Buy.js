@@ -10,7 +10,7 @@ import guardian from './images/herotransweb.png'
 import three from './images/how-slider-2.png'
 import sldier3Valve from './images/how-slider-3.png' 
 import slider4Valve from './images/how-slider-4.png'
-import slider5Valve from './images/animated-valve.gif'
+import slider5Valve from './images/how-slider-5.png'
 
 
 import cardOne from './images/buy-page-card-1.jpg'
@@ -185,7 +185,7 @@ export class Buy extends Component {
                                     Connect the Valve Controller to your WiFi and control and monitor your system from the app. Take the Water Detector out of the box and place it anywhere in your home.
                                     It will connect automatically to your Valve Controller.
                                 </p>
-                                <a href='#item-4'><span>continue<i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+                                <a href='#item-5'><span>continue<i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
 
 
                            </Col>
@@ -202,7 +202,7 @@ export class Buy extends Component {
                                     The Valve Controller automatically shuts off the water when the Leak Detectors detect leaks, floods, earthquakes, or other events to limit the damage done to your home. Manage your 
                                     system remotely and get notifications when things go wrong from anywhere in then world.
                                 </p>
-                                <a href='#item-4'><span>continue<i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+                                <a href='#item-1'><span>continue<i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
 
 
                            </Col>

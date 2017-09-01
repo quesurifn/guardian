@@ -45,7 +45,7 @@ export const App = () => (
       </Switch>
     </main>
 
-    <Foot />
+    {/*<Foot /> */}
 
   </div>
 )

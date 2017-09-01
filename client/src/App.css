@@ -909,7 +909,7 @@ video.purchase {
   .featuresOneContainer img {
       width:100%;
   }
-  .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span,  .featureFourContainer span { 
+  .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span,  .featureFourContainer span , .featureFiveContainer span{ 
     position: absolute; 
     top: 50%;
     transform: translateY(-50%);
@@ -919,7 +919,7 @@ video.purchase {
     font-size: 40px;
 
   }
-  .featuresOneContainer span i, .featureTwoContainer span i, .featureThreeContainer span i , .featureFourContainer span i{
+  .featuresOneContainer span i, .featureTwoContainer span i, .featureThreeContainer span i , .featureFourContainer span i, .featureFiveContainer span i{
     color: white;
     font-size: 70px;
     vertical-align: middle;
@@ -999,21 +999,12 @@ video.purchase {
     position: relative;
     top: 100px;
   }
-  .featureThreeContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .featureThreeContainer h1{
-    color:white;
-    font-size: 22px;
 
-  }
+
   .featureThreeContainer img {
     width: 100%;
   }
-  .featureThreeContainer p, .featureFourContainer p {
+  .featureThreeContainer p, .featureFourContainer p, .featureFiveContainer p {
     color: white;
     text-align: center;
     max-width: 40%;
@@ -1021,7 +1012,7 @@ video.purchase {
     top: 25px;
     line-height: 35px;
   }
-  .featureThreeContainer h2, .featureFourContainer h2 {
+  .featureThreeContainer h2, .featureFourContainer h2, .featureFiveContainer h2 {
     color: white;
     font-family: 'evogria', sans-serif;
     letter-spacing: 2px;
@@ -1030,17 +1021,21 @@ video.purchase {
   .buyPage .gallery .item .row,   .buyPage .gallery .item .row .col {
     height: 100%;
   }
-  .featureFourContainer {
+  .featureFourContainer , .featureFiveContainer, .featureThreeContainer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  .featureFourContainer h1 {
+  .featureFourContainer h1, .featureFiveContainer h1, .featureThreeContainer h1 {
     color:white;
     font-size: 22px;
   }
   .featureFourContainer img { 
+    max-width: 100%;
+  }
+ 
+  .featureFiveContainer img {
     max-width: 100%;
   }
 
@@ -1055,10 +1050,10 @@ video.purchase {
 
 }
 @media screen and (max-width: 1176px) {
-  .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span , .featureFourContainer span{
+  .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span , .featureFourContainer span, .featureFiveContainer span{
     font-size: 20px !important;
   }
-  .featuresOneContainer span i, .featureTwoContainer span i, .featureThreeContainer span i, .featureFourContainer span i {
+  .featuresOneContainer span i, .featureTwoContainer span i, .featureThreeContainer span i, .featureFourContainer span i, .featureFiveContainer span i {
     font-size: 30px !important;
   }
 }
@@ -1066,7 +1061,7 @@ video.purchase {
   .width70 {
     max-width: 100%;
   }
-  .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span, .featureFourContainer span {
+  .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span, .featureFourContainer span, .featureFiveContainer span  {
     top: 100px; 
     right: 20px;
   } 
@@ -1147,7 +1142,7 @@ video.purchase {
   .gBlue img {
     bottom: -10%;
   }
-  .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span, .featureFourContainer span {
+  .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span, .featureFourContainer span, .featureFiveContainer span {
     top: 80px !important; 
   }
 
@@ -1190,7 +1185,10 @@ video.purchase {
  
   .featuresOneContainer p {
     line-height: 25px;
-    max-width: 95%;
+    max-width: 90%;
+  }
+  .featureFourContainer p,   .featureFiveContainer p {
+    max-width: 90% !important;
   }
   
   
