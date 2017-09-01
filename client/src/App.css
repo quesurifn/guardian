@@ -902,7 +902,6 @@ video.purchase {
      color: white;
      text-align: center;
      max-width:40%;
-     margin: auto;
      font-weight: 300;
      line-height: 40px;
 
@@ -910,7 +909,7 @@ video.purchase {
   .featuresOneContainer img {
       width:100%;
   }
-  .featuresOneContainer span, .featureTwoContainer span{ 
+  .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span,  .featureFourContainer span { 
     position: absolute; 
     top: 50%;
     transform: translateY(-50%);
@@ -920,7 +919,7 @@ video.purchase {
     font-size: 40px;
 
   }
-  .featuresOneContainer span i, .featureTwoContainer span i {
+  .featuresOneContainer span i, .featureTwoContainer span i, .featureThreeContainer span i , .featureFourContainer span i{
     color: white;
     font-size: 70px;
     vertical-align: middle;
@@ -972,6 +971,12 @@ video.purchase {
     max-width: 70%;
     margin: auto;
   }
+  .featuresOneContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   .featureTwoContainer {
     display: flex; 
     justify-content: center;
@@ -986,7 +991,7 @@ video.purchase {
     position: relative;
     bottom:100px;
   }
-  .featureTwoContainer {
+  .featureTwoContainer img{
     max-width: 100%;
   }
   .featureTwoContainer p {
@@ -994,8 +999,49 @@ video.purchase {
     position: relative;
     top: 100px;
   }
-  .buyPage .gallery .item .row {
+  .featureThreeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .featureThreeContainer h1{
+    color:white;
+    font-size: 22px;
+
+  }
+  .featureThreeContainer img {
+    width: 100%;
+  }
+  .featureThreeContainer p, .featureFourContainer p {
+    color: white;
+    text-align: center;
+    max-width: 40%;
+    position: relative;
+    top: 25px;
+    line-height: 35px;
+  }
+  .featureThreeContainer h2, .featureFourContainer h2 {
+    color: white;
+    font-family: 'evogria', sans-serif;
+    letter-spacing: 2px;
+    font-size: 80px;
+  }
+  .buyPage .gallery .item .row,   .buyPage .gallery .item .row .col {
     height: 100%;
+  }
+  .featureFourContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .featureFourContainer h1 {
+    color:white;
+    font-size: 22px;
+  }
+  .featureFourContainer img { 
+    max-width: 100%;
   }
 
 @media screen and (max-width: 992px) {
@@ -1009,20 +1055,20 @@ video.purchase {
 
 }
 @media screen and (max-width: 1176px) {
-  .featuresOneContainer span {
-    font-size: 20px;
+  .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span , .featureFourContainer span{
+    font-size: 20px !important;
   }
-  .featuresOneContainer span i {
-    font-size: 30px;
+  .featuresOneContainer span i, .featureTwoContainer span i, .featureThreeContainer span i, .featureFourContainer span i {
+    font-size: 30px !important;
   }
 }
 @media screen and (max-width: 1460px) {
   .width70 {
     max-width: 100%;
   }
-  .featuresOneContainer span {
+  .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span, .featureFourContainer span {
     top: 100px; 
-    right: 20px ;
+    right: 20px;
   } 
 }
 @media screen and (max-width: 1400px) {
@@ -1101,9 +1147,10 @@ video.purchase {
   .gBlue img {
     bottom: -10%;
   }
-  .featuresOneContainer span {
-    top: 40px ; 
+  .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span, .featureFourContainer span {
+    top: 80px !important; 
   }
+
 }
 @media screen and (max-width: 400px) {
   .gBlue img {
@@ -1124,12 +1171,37 @@ video.purchase {
   #nav-mobile {
     display: none !important;
   }
+ 
 }
 
 /* Mobile Screens */ 
 @media screen and (max-width: 992px) {
   .research {
     text-align: center;
+  }
+  .featuresOneContainer img {
+    margin-top: 40px !important;
+  }
+  .featureThreeContainer p {
+    max-width: 95%;
+    position: relative;
+    bottom: 20px;
+  }
+ 
+  .featuresOneContainer p {
+    line-height: 25px;
+    max-width: 95%;
+  }
+  
+  
+   .featureTwoContainer h1 {
+    bottom: 0;
+  }
+  .featureTwoContainer p {
+    top: 0;
+  }
+  .featureTwoContainer img {
+    max-width: 90%;
   }
   .firstResearch p{
     font-size: 22px !important;
@@ -1180,10 +1252,10 @@ video.purchase {
     height: auto !important;
   }
   .buyPage .gallery {
-    height: auto !important;
+    height: calc(100vh - 56px) !important;
   }
   .buyPage .gallery .item{
-    height: auto !important;
+    height: calc(100vh - 56px) !important;
   }
 }
 @media screen and (max-width:768px) { 
@@ -1236,7 +1308,9 @@ video.purchase {
   .firstBuyTwo h3, .firstBuyTwo h4 {
     text-align: center;
   }
-
+  .firstBuyOne {
+    padding-top: 0px;
+  }
  .featuresOneContainer p{
     line-height: 30px !important;
     max-width: 80% !important;
