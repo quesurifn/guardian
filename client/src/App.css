@@ -246,6 +246,11 @@ nav .hide-on-med-and-down .col-6, .col-3 {
 	-webkit-transition: all .4s ease!important;
 	-ms-flex-positive: 1!important;
 }
+.inline-form {
+  display: flex;
+  margin-top:10px;
+  height: 52px;
+}
 .newsletter h1 {
   color: white;
   text-align: center;
@@ -756,12 +761,13 @@ video.purchase {
 .firstBuyOne, .firstBuyTwo {
   padding-top: 100px;
 }
-.firstBuyTwo h1 {
+.firstBuyTwo h1, .firstBuyTwo h3 {
   margin-bottom: 0;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #333;
+    font-size: 50px;
 
 }
   .firstBuyTwo div:first-child{
@@ -771,9 +777,20 @@ video.purchase {
     font-weight: 200;
     font-size: 25px;
   }
+  .bannerBuy {
+    background: #1c56c0;
+    color:white;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
    .firstBuyTwo p {
     line-height: 35px;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 22px;
   }
   .included {
     display: flex;
@@ -787,15 +804,38 @@ video.purchase {
     margin: 0 20px;
   }
   .firstBuyTwo h3 {
-    margin-top: 10px;
-    font-weight: 300;
+    margin: 0 !important;
+  }
+  .firstBuyTwo h4 {
+    margin: 0;
+    font-size: 22px;
+  }
+  .firstBuyTwo  button.yolo{
+    background: #1c56c0;
+    color: white;
+    border:none;
+    height: 50px;
+    width: 100%;
+    margin-top:20px;
+  }
+  .firstBuyTwo button:last-child {
+    border: none;
+    width:20px;
+  }
+  .firstBuyTwo .inline-form .form-container {
+    width: 70%;
   }
   .buyAbout {
-    height: 500px;
+    height: 450px;
     margin:80px auto;
     width:70%;
     flex-direction: column;
     position: relative;
+    background:white;
+    width:341px;
+  }
+  .buyAbout div {
+    padding: 0 20px;
   }
   .buyAbout h2 {
     font-size: 16px;
@@ -804,13 +844,192 @@ video.purchase {
     letter-spacing: 1px;
     margin-bottom: 0;
     color: #333;
+    text-align: center;
   }
   .buyAbout p {
     margin-top: 17px;
     line-height: 1.8;
-    width:400px;
+    width:321px;
     color:#777;
   }
+  .buyAbout a {
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+  .firstBuyTwo button:nth-child(2) {
+    width:27%;
+    background: #d3d3d3;
+    margin: 0 0 0 3%;
+    font-size: 22px;
+  }
+  .form-container {
+    padding: 0 !important;
+  }
+  .form-container input {
+    padding: 0 0 0 20px !important;
+  }
+  input:focus, input:active {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+  .firstBuyTwo div span {
+    position: relative;
+    top: 10px;
+  }
+  .secondBuy h2.yup {
+    text-align: center;
+    font-size: 22px;
+    margin-top:80px;
+    padding-top:100px;
+  }
+  .secondBuy {
+    background: #f4f4f4;
+  }
+
+  .featuresOneContainer {
+    height: 140vh;
+    background: #1c56c0;
+    position: relative;
+  }
+  .featuresOneContainer h2 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 100px 0 0 0;
+  }
+   .featuresOneContainer  p {
+     color: white;
+     text-align: center;
+     max-width:40%;
+     margin: auto;
+     font-weight: 300;
+     line-height: 40px;
+
+   }
+  .featuresOneContainer img {
+      width:100%;
+  }
+  .featuresOneContainer span, .featureTwoContainer span{ 
+    position: absolute; 
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+    font-weight: 200;
+    color:white;
+    font-size: 40px;
+
+  }
+  .featuresOneContainer span i, .featureTwoContainer span i {
+    color: white;
+    font-size: 70px;
+    vertical-align: middle;
+    padding-left:20px;
+  }
+  .moreFeaturesContainer .moreFeatures:nth-child(2) {
+    padding-bottom: 100px;
+  }
+  .moreFeaturesCard .col h2{
+    font-size: 22px !important;
+  }
+  .moreFeatures {
+    padding: 0 20px;
+    padding-top: 40px;
+  }
+
+  .moreFeaturesCard p {
+    margin: 0 0 0 10px;
+
+  }
+  .moreFeatures h1 {
+    font-size: 22px;
+    text-align: center;
+    margin: 80px 0;
+
+  }
+  .moreFeatures h2 {
+    margin: 0 0 0 10px;
+  }
+  .moreFeatures img {
+    max-width: 100%;
+  }
+  .moreFeatures.two {
+    padding-top: 40px;
+  }
+  .buyBanner2 {
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background: #213660;
+    display: flex;
+  }
+  .buyBanner2 p {
+    color:white;
+    text-align: center;
+    max-width: 40%;
+  }
+  .width70 {
+    max-width: 70%;
+    margin: auto;
+  }
+  .featureTwoContainer {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  
+  }
+  .featureTwoContainer h1{
+    color: white;
+    font-size: 22px;
+    position: relative;
+    bottom:100px;
+  }
+  .featureTwoContainer {
+    max-width: 100%;
+  }
+  .featureTwoContainer p {
+    color:white;
+    position: relative;
+    top: 100px;
+  }
+  .buyPage .gallery .item .row {
+    height: 100%;
+  }
+
+@media screen and (max-width: 992px) {
+  .featuresOneContainer {
+    height: auto;
+    padding-bottom: 40px !important;
+  }
+  .featuresOneContainer img {
+    margin-top: 40px;
+  }
+
+}
+@media screen and (max-width: 1176px) {
+  .featuresOneContainer span {
+    font-size: 20px;
+  }
+  .featuresOneContainer span i {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1460px) {
+  .width70 {
+    max-width: 100%;
+  }
+  .featuresOneContainer span {
+    top: 100px; 
+    right: 20px ;
+  } 
+}
+@media screen and (max-width: 1400px) {
+  .firstBuyTwo .inline-form button {
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .gBlue {
     height: 90vh;
@@ -875,11 +1094,15 @@ video.purchase {
     font-size: 20px;
     padding: 0 15px;
   }
+  
 
 }
 @media screen and (max-width: 495px) {
   .gBlue img {
     bottom: -10%;
+  }
+  .featuresOneContainer span {
+    top: 40px ; 
   }
 }
 @media screen and (max-width: 400px) {
@@ -956,6 +1179,12 @@ video.purchase {
   .eighthResearch {
     height: auto !important;
   }
+  .buyPage .gallery {
+    height: auto !important;
+  }
+  .buyPage .gallery .item{
+    height: auto !important;
+  }
 }
 @media screen and (max-width:768px) { 
  .sectionTwo p{
@@ -995,6 +1224,27 @@ video.purchase {
 		text-align: center;
 	}
 }
+@media screen and (max-width: 600px) {
+  .firstBuyTwo h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .firstBuyTwo p {
+   font-size: 20px;
+   text-align: center;
+  }
+  .firstBuyTwo h3, .firstBuyTwo h4 {
+    text-align: center;
+  }
+
+ .featuresOneContainer p{
+    line-height: 30px !important;
+    max-width: 80% !important;
+  }
+  .buyBanner2 p {
+    max-width: 90%;
+  }
+} 
 @media screen and (max-width: 550px) {
   .fifthResearch {
     height: 200vh;
