@@ -1,17 +1,71 @@
 import React, { Component } from 'react';
 import './App.css';
+import './css/gallery.css'
+import {Row, Col} from 'react-materialize'
+import halfg from './images/half-g.png'
 
 export class Controller extends Component {
-    componentDidMount() {
-        setTimeout(() => {
-            this.props.history.push('/')
-        }, 5000)
+   componentDidMount() {
+        document.querySelector('nav').style.backgroundColor = 'transparent'
+        document.querySelector('nav').style.position = 'absolute'
+        document.querySelector('nav').style.boxShadow = 'none'
+        document.querySelector('.nav-wrapper').style.backgroundColor = 'transparent'
+        document.querySelector('.navbar-fixed').style.position = 'absolute'
+        document.querySelector('.navbar-fixed').style.width = '100%'
+        document.querySelector('.headerLogo').style.color = '#2050c2'
+        
+        
+        
+        //ALL White
+        var nodes = document.querySelector('nav').getElementsByTagName('a')
+
+        for(var i=0; i<nodes.length; i++) {
+            nodes[i].style.color = '#363636';
+        }
+                
     }
+
+
 
   render() {
     return (
-      <div className="notfound">
-         <h1>Uh Oh... The page you were looking for doesn't exist. Hang tight while we redirect you to the homepage.</h1>
+      <div className="valvePage">
+        <div className="gallery items-3 hundredHeight">
+          <div id="item-1" className="control-operator"></div>
+          <div id="item-2" className="control-operator"></div>
+          <div id="item-3" className="control-operator"></div>
+
+          <figure className="item gradient hundredHeight controllerSlideOne">
+            <Row>
+              <Col s={12}>
+                <h1>Introducing the Valve Controller</h1>
+              </Col>
+              <Col s={7} className='relative'>
+                <img src={halfg} alt='half guardian' />
+              </Col>
+              <Col s={5} className='padding20'>
+                <h2>ROBUST &amp; RELIABLE</h2>
+                <p>Battery Backup, offline functionality, and more.</p>
+                <button>Learn More</button>
+              </Col>
+            </Row>
+          </figure> 
+
+          <figure className="item gradient hundredHeight">
+            <h1>2</h1>
+          </figure>
+
+          <figure className="item gradient hundredHeight">
+            <h1>3</h1>
+          </figure>
+
+          <div className="controls">
+            <a href="#item-1" className="control-button" style={{color:'#363636'}}>•</a>
+            <a href="#item-2" className="control-button"style={{color:'#363636'}}>•</a>
+            <a href="#item-3" className="control-button"style={{color:'#363636'}}>•</a>
+          </div>
+        </div>
+         
       </div>   
     );
   }

@@ -817,10 +817,14 @@ video.purchase {
     height: 50px;
     width: 100%;
     margin-top:20px;
+    font-size: 18px;
   }
   .firstBuyTwo button:last-child {
     border: none;
     width:20px;
+  }
+  .inline-form button {
+    font-size: 14px !important;
   }
   .firstBuyTwo .inline-form .form-container {
     width: 70%;
@@ -833,6 +837,9 @@ video.purchase {
     position: relative;
     background:white;
     width:341px;
+  }
+  .firstBuyTwo p {
+    margin-left: -
   }
   .buyAbout div {
     padding: 0 20px;
@@ -851,6 +858,7 @@ video.purchase {
     line-height: 1.8;
     width:321px;
     color:#777;
+    padding-top: 20px;
   }
   .buyAbout a {
     text-align: center;
@@ -880,11 +888,20 @@ video.purchase {
   .secondBuy h2.yup {
     text-align: center;
     font-size: 22px;
-    margin-top:80px;
+
     padding-top:100px;
   }
   .secondBuy {
     background: #f4f4f4;
+  }
+  .buyAbout {
+    position: relative;
+  }
+  .buyAbout a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%)
   }
 
   .featuresOneContainer {
@@ -967,6 +984,7 @@ video.purchase {
     color:white;
     text-align: center;
     max-width: 40%;
+    font-weight: 300;
   }
   .width70 {
     max-width: 70%;
@@ -1042,6 +1060,64 @@ video.purchase {
   .featureFiveContainer img {
     max-width: 100%;
   }
+  .hundredHeight {
+    height: 100vh !important;
+  }
+  .controllerSlideOne img{ 
+    position: absolute;
+    left: 0;
+    width:844px;
+    max-width: 100%;
+    height: auto;
+  }
+  .padding20 {
+    padding: 20px;
+  }
+
+  .valvePage, .gradient {
+  background: -moz-linear-gradient(0deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%) !important; /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(192,192,192,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(128,128,128,1))) !important; /* safari4+,chrome */
+  background: -webkit-linear-gradient(0deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%) !important; /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(0deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%) !important; /* opera 11.10+ */
+  background: -ms-linear-gradient(0deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%) !important; /* ie10+ */
+  background: linear-gradient(90deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%) !important; /* w3c */
+  }
+.controllerSlideOne h1{
+  font-weight: 300;
+  font-size: 50px;
+  margin-top:120px;
+}
+.controllerSlideOne h2 {
+  padding-top:80px;
+  font-size: 30px;
+  text-align: left;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.controllerSlideOne button {
+  color:white;
+  background: #2050c2;
+  border:none;
+  height: 50px;
+  width:250px;
+  padding: 5px 10px;
+  float: left;
+  margin-top: 20px;
+}
+.controllerSlideOne p {
+  text-align: left;
+  font-size: 40px;
+  max-width: 60%;
+  margin: 20px 0 0 0;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.controllerSlideOne .col {
+  padding-top:20px;
+}
+.relative {
+  position: relative;
+}
 
 @media screen and (max-width: 992px) {
   .featuresOneContainer {
@@ -1311,7 +1387,7 @@ video.purchase {
   }
   .firstBuyTwo p {
    font-size: 20px;
-   text-align: center;
+   font-weight: 300;
   }
   .firstBuyTwo h3, .firstBuyTwo h4 {
     text-align: center;
