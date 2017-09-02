@@ -72,7 +72,7 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   height:50px; 
   border: none;
   display: inline;
-  padding: 1rem 2rem;
+  padding: .7rem 2rem;
 
   color:white !important;
 }
@@ -922,6 +922,8 @@ video.purchase {
      max-width:40%;
      font-weight: 300;
      line-height: 40px;
+         position: relative;
+    bottom: 20px;
     
 
    }
@@ -1128,7 +1130,7 @@ video.purchase {
   align-content: center;
   justify-content:center;
   flex-direction: column;
-  max-width: 60%;
+  max-width: 65%;
   position: relative;
 }
 .featuresInline h2 {
@@ -1153,6 +1155,18 @@ video.purchase {
   }
   .featureThreeContainer p, .featureFourContainer p, .featureFiveContainer p {
     line-height: 23px;
+  }
+  .featuresInline h2 {
+    font-size: 18px;
+  }
+  .featuresInline p {
+    font-size: 13px;
+  }
+  .two {
+    padding-top: 0px !important;
+  }
+  .featuresCard {
+    margin: 20px 0;
   }
 
 }
@@ -1199,11 +1213,16 @@ video.purchase {
    .featureFourContainer img { 
     max-width: 80%;
   }
+  .moreFeatures {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 716px) {
   .gBlue {
     height: 70vh;
   }
+
+  
 }
 @media screen and (max-width: 500px) {
   .find * {
@@ -1244,6 +1263,10 @@ video.purchase {
     max-width: 100%;
     font-size: 20px;
     padding: 0 15px;
+  }
+  .featuresOneContainer p {
+    bottom: initial;
+    top: 20px;
   }
   
 
