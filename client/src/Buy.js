@@ -40,7 +40,7 @@ export class Buy extends Component {
                 Guardian will begin shipping in October, 2017.
             </div>
             <Row className='firstBuyOne'>
-                <Col s={12} m={6}>
+                <Col s={12} m={12} l={6}>
                         <ImageGallery
                             items={images}
                             slideInterval={2000}
@@ -48,7 +48,7 @@ export class Buy extends Component {
 
 
                 </Col>
-                <Col s={12} m={6} className='firstBuyTwo'>
+                <Col s={12} m={12} l={6} className='firstBuyTwo'>
                     <div>
                         <h1 className='yup'>Guardian Leak Prevention Kit</h1>
                         

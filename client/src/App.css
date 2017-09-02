@@ -1192,6 +1192,13 @@ video.purchase {
     font-size: 15px;
   }
 }
+@media screen and (max-width: 1300px) {
+  .firstBuyTwo div:first-child {
+    padding:0 3% 0 10%;
+
+  }
+
+}
 @media screen and (max-width: 1200px) {
   .gBlue {
     height: 90vh;
@@ -1315,7 +1322,13 @@ video.purchase {
     position: relative;
     bottom: 20px;
   }
- 
+  .firstBuyTwo div:first-child {
+    padding: 0 10px;
+  }
+  .firstBuyTwo p { 
+    text-align: center;
+  }
+  
   .featuresOneContainer p {
     line-height: 22px;
     max-width: 90%;
@@ -1323,6 +1336,14 @@ video.purchase {
   .featureFourContainer p,   .featureFiveContainer p {
     max-width: 90% !important;
   }
+  .firstBuyTwo div span { 
+    text-align: center;
+    margin: auto;
+    display: block;
+
+  }
+
+
   
   
    .featureTwoContainer h1 {
@@ -1466,6 +1487,14 @@ video.purchase {
   }
   .gBlue .heroImg {
     position: relative !important;
+  }
+  .firstBuyTwo div span { 
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding-bottom:40px;
+    position: relative;
+    top:30px;
   }
 }
 @media screen and (max-width: 482px) {
