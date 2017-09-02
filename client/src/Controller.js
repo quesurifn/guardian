@@ -40,10 +40,10 @@ export class Controller extends Component {
               <Col s={12}>
                 <h1>Introducing the Valve Controller</h1>
               </Col>
-              <Col s={7} className='relative'>
+              <Col s={12} m={7} className='relative'>
                 <img src={halfg} alt='half guardian' />
               </Col>
-              <Col s={5} className='padding20'>
+              <Col s={12} m={5} className='padding20'>
                 <h2>ROBUST &amp; RELIABLE</h2>
                 <p>Battery Backup, offline functionality, and more.</p>
                 <button>Learn More</button>
@@ -65,6 +65,14 @@ export class Controller extends Component {
             <a href="#item-3" className="control-button"style={{color:'#363636'}}>•</a>
           </div>
         </div>
+
+
+        <Row>
+          <Col s={12}>
+
+
+          </Col>
+        </Row>
          
       </div>   
     );

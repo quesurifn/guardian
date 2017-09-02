@@ -1061,7 +1061,7 @@ video.purchase {
     max-width: 100%;
   }
   .hundredHeight {
-    height: 100vh !important;
+    height: 120vh !important;
   }
   .controllerSlideOne img{ 
     position: absolute;
@@ -1117,6 +1117,29 @@ video.purchase {
 }
 .relative {
   position: relative;
+}
+.featuresCard {
+  display: inline-flex;
+  align-items: end;
+}
+.featuresInline {
+  display: flex;
+  align-content: center;
+  justify-content:center;
+  flex-direction: column;
+  max-width: 60%;
+  position: relative;
+}
+.featuresInline h2 {
+  font-size: 25px;
+}
+.featuresInline p {
+  margin-left:10px;
+}
+.moreFeatures {
+  max-width: 80%;
+  margin: auto !important;
+  display: block;
 }
 
 @media screen and (max-width: 992px) {

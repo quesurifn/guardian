@@ -221,45 +221,45 @@ export class Buy extends Component {
             
                     <h1>Additional Features</h1>
                     <Col s={12} m={12} l={4}>
-                        <Row className='moreFeaturesCard'>
-                            <Col s={2} m={2} l={3}>
+                            <div className='featuresCard'>
+               
                                 <img src='http://placehold.it/120x120' alt='Logo' /> 
-                            </Col>
-                            <Col s={10} m={10} l={9} >
-                                <h2>Extreme Long Range</h2>
-                                <p>Water Detectors can be placed up to 1000' away from the Valve Controller, that's more that an entire city block.</p>
-                            </Col>
 
-                        </Row>
+                                <div className='featuresInline'>
+                                    <h2>Extreme Long Range</h2>
+                                    <p>Water Detectors can be placed up to 1000' away from the Valve Controller, that's more that an entire city block.</p>
+                                </div>
+                                    
+                            </div>
+
                     </Col>
 
 
                     <Col s={12} m={12} l={4}>
-                        <Row className='moreFeaturesCard'>
-                            <Col s={2} m={2} l={3}>
+                        <div className='featuresCard'>
+               
                                 <img src='http://placehold.it/120x120' alt='Logo' /> 
-                            </Col>
-                            <Col s={10} m={10} l={9}>
+
+                                <div className='featuresInline'>
                                 <h2>Offline Functionality</h2>
                                 <p>The internet is only required for off-site control and notifications, so Guardian will protect your home without internet connectivity.</p>
-                            </Col>
+                         </div>
 
-                        </Row>
+                    </div>
                     </Col>
 
 
 
                     <Col s={12} m={12} l={4}>
-                        <Row className='moreFeaturesCard'>
-                            <Col s={2} m={2} l={3}>
+                      <div className='featuresCard'>
+               
                                 <img src='http://placehold.it/120x120' alt='Logo' /> 
-                            </Col>
-                            <Col s={10} m={10} l={9}>
+
+                                <div className='featuresInline'>
                                 <h2>Battery Backup</h2>
                                 <p>An optional battery backup powers the Valve Controller for an extra twelve hours to protect your home during power outages.</p>
-                            </Col>
-
-                        </Row>
+                        </div>
+                    </div>
                     </Col>
                     
             
@@ -270,42 +270,39 @@ export class Buy extends Component {
                 <Row className='moreFeatures two'>
                     
                     <Col s={12} m={12} l={4}>
-                        <Row className='moreFeaturesCard'>
-                            <Col s={2} m={2} l={3}>
+                        <div className='featuresCard'>
+               
                                 <img src='http://placehold.it/120x120' alt='Logo' /> 
-                            </Col>
-                            <Col s={10} m={10} l={9}>
+
+                                <div className='featuresInline'>
                                 <h2>No Tools Required</h2>
                                 <p>Guardian install without any tools or professional help - configuration usually takes under ten minutes.</p>
-                            </Col>
-
-                        </Row>
+                          </div>
+                        </div>
                     </Col>
 
                      <Col s={12} m={12} l={4}>
-                        <Row className='moreFeaturesCard'>
-                            <Col s={2} m={2} l={3}>
+                       <div className='featuresCard'>
+               
                                 <img src='http://placehold.it/120x120' alt='Logo' /> 
-                            </Col>
-                            <Col s={10} m={10} l={9}>
+
+                                <div className='featuresInline'>
                                 <h2>Completely Standalone</h2>
                                 <p>The Water Detectors communicate with directly with the Valve Controller, avoiding the need for hubs or other useless hardware.</p>
-                            </Col>
-
-                        </Row>
+                       </div>
+                    </div>
                     </Col>
 
                     <Col s={12} m={12} l={4}>
-                        <Row className='moreFeaturesCard'>
-                            <Col s={2} m={2} l={3}>
+                     <div className='featuresCard'>
+               
                                 <img src='http://placehold.it/120x120' alt='Logo' /> 
-                            </Col>
-                            <Col s={10} m={10} l={9}>
+
+                                <div className='featuresInline'>
                                 <h2>Routine Self Tests </h2>
                                 <p>The Valve Controller will regularly check your valve to make sure it's not stuck during an emergency.</p>
-                            </Col>
-
-                        </Row>
+                           </div>
+                        </div>
                     </Col>
 
                 </Row>
