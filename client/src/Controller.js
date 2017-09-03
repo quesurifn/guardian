@@ -96,6 +96,100 @@ export class Controller extends Component {
           </Row>
           </div>
         </Row>
+
+ <div className='moreFeaturesContainer controllerAdtlFeat'>
+
+                <Row className='moreFeatures'>
+            
+                    <h1 style={{color: 'white', fontWeight: '300', letterSpacing: '1px'}}>Additional Features</h1>
+                    <Col s={12} m={12} l={4}>
+                            <div className='featuresCard'>
+               
+                                <img src='http://placehold.it/120x120' alt='Logo' /> 
+
+                                <div className='featuresInline'>
+                                    <h2>Extreme Long Range</h2>
+                                    <p>Water Detectors can be placed up to 1000' away from the Valve Controller, that's more that an entire city block.</p>
+                                </div>
+                                    
+                            </div>
+
+                    </Col>
+
+
+                    <Col s={12} m={12} l={4}>
+                        <div className='featuresCard'>
+               
+                                <img src='http://placehold.it/120x120' alt='Logo' /> 
+
+                                <div className='featuresInline'>
+                                <h2>Offline Functionality</h2>
+                                <p>The internet is only required for off-site control and notifications, so Guardian will protect your home without internet connectivity.</p>
+                         </div>
+
+                    </div>
+                    </Col>
+
+
+
+                    <Col s={12} m={12} l={4}>
+                      <div className='featuresCard'>
+               
+                                <img src='http://placehold.it/120x120' alt='Logo' /> 
+
+                                <div className='featuresInline'>
+                                <h2>Battery Backup</h2>
+                                <p>An optional battery backup powers the Valve Controller for an extra twelve hours to protect your home during power outages.</p>
+                        </div>
+                    </div>
+                    </Col>
+                    
+            
+                </Row>
+
+
+
+                <Row className='moreFeatures two'>
+                    
+                    <Col s={12} m={12} l={4}>
+                        <div className='featuresCard'>
+               
+                                <img src='http://placehold.it/120x120' alt='Logo' /> 
+
+                                <div className='featuresInline'>
+                                <h2>No Tools Required</h2>
+                                <p>Guardian install without any tools or professional help - configuration usually takes under ten minutes.</p>
+                          </div>
+                        </div>
+                    </Col>
+
+                     <Col s={12} m={12} l={4}>
+                       <div className='featuresCard'>
+               
+                                <img src='http://placehold.it/120x120' alt='Logo' /> 
+
+                                <div className='featuresInline'>
+                                <h2>Completely Standalone</h2>
+                                <p>The Water Detectors communicate with directly with the Valve Controller, avoiding the need for hubs or other useless hardware.</p>
+                       </div>
+                    </div>
+                    </Col>
+
+                    <Col s={12} m={12} l={4}>
+                     <div className='featuresCard'>
+               
+                                <img src='http://placehold.it/120x120' alt='Logo' /> 
+
+                                <div className='featuresInline'>
+                                <h2>Routine Self Tests </h2>
+                                <p>The Valve Controller will regularly check your valve to make sure it's not stuck during an emergency.</p>
+                           </div>
+                        </div>
+                    </Col>
+
+                </Row>
+
+            </div>
          
       </div>   
     );

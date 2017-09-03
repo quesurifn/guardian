@@ -1192,8 +1192,15 @@ margin: 80px auto;
   position: relative;
   right: 80px;
 }
-
-
+.controllerAdtlFeat {
+  background: #2050C2;
+}
+.controllerAdtlFeat * {
+  color: white !important;
+}
+.controllerAdtlFeat p {
+  font-weight: 300 !important;
+}
 
 
 @media screen and (max-width: 992px) {
