@@ -1226,6 +1226,15 @@ margin: 80px auto;
   .featuresCard {
     margin: 20px 0;
   }
+  .schemaFlex p {
+    right: 0!important;
+    left: 0 !important;
+    max-width: 90%;
+}
+  .controllerFeatures img {
+    display: block;
+    margin:auto;
+  }
 
 }
 @media screen and (max-width: 1176px) {
@@ -1280,6 +1289,12 @@ margin: 80px auto;
   }
   .moreFeatures {
     max-width: 100%;
+  }
+    .schemaFlex p {
+font-size: 14px;
+}
+  .controllerFeatures {
+    max-width: 95%;
   }
 }
 @media screen and (max-width: 716px) {
