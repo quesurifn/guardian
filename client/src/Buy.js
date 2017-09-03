@@ -167,7 +167,7 @@ export class Buy extends Component {
                                     no pipe cutting - simply Install, Connect and Protect!
                                 </p>
 
-                                <a href='#item-2'><span><span>continue</span><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+                                <a href='#item-2'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
                             </Col>
                         </Row>
 
@@ -179,7 +179,7 @@ export class Buy extends Component {
                                 <h1>How it works</h1> 
                                 <img src={three} alt='install connect protect' />
                                 <p>Click continue and learn how to setup guardian.</p>
-                                <a href='#item-3'><span><span>continue</span><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+                                <a href='#item-3'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
 
                             </Col>
                         </Row>
@@ -194,7 +194,7 @@ export class Buy extends Component {
                                 <p>Align the valve controller over the existing valve and mount in seconds and place water detectors near appliances, sinks, and other plumbing 
                                     fixtures. Includes remote sensor probe for hard-to-reach areas. No tools or plumbing necessary.
                                 </p>
-                                <a href='#item-4'><span><span>continue</span><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+                                <a href='#item-4'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
                             </Col>
 
                         </Row>
@@ -210,7 +210,7 @@ export class Buy extends Component {
                                     Connect the Valve Controller to your WiFi and control and monitor your system from the app. Take the Water Detector out of the box and place it anywhere in your home.
                                     It will connect automatically to your Valve Controller.
                                 </p>
-                                <a href='#item-5'><span><span>continue</span><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+                                <a href='#item-5'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
 
 
                            </Col>
@@ -227,7 +227,7 @@ export class Buy extends Component {
                                     The Valve Controller automatically shuts off the water when the Leak Detectors detect leaks, floods, earthquakes, or other events to limit the damage done to your home. Manage your 
                                     system remotely and get notifications when things go wrong from anywhere in then world.
                                 </p>
-                                <a href='#item-1'><span><span>continue</span><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+                                <a href='#item-1'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
 
 
                            </Col>
