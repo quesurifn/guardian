@@ -48,11 +48,10 @@ export class Purchase extends Component {
                 document.querySelector('.navbar-fixed').style.width = '100%'
                 document.querySelector('.headerLogo').style.color = 'white'
                 document.querySelector('.headerLogo').style.color = 'white'
-                            var nodes = document.querySelector('nav').getElementsByTagName('a')
-
-                                for(var i=0; i<nodes.length; i++) {
-                                    nodes[i].style.color = 'white';
-                                }
+                var nodes = document.querySelector('nav').getElementsByTagName('a')
+                    for(var i=0; i<nodes.length; i++) {
+                        nodes[i].style.color = 'white';
+                    }
 
 
                     setInterval(function() {

@@ -1254,6 +1254,10 @@ video.purchase {
     flex-direction: column;
     height: 100%;
   }
+    .featuresOneContainer span span, .featureTwoContainer span span , .featureThreeContainer span span,  .featureFourContainer span span, .featureFiveContainer span span{ 
+      display: none;
+
+    }
   .find p {
     width: 100%;
     font-size: 20px;
@@ -1290,7 +1294,8 @@ video.purchase {
     bottom: -10%;
   }
   .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span, .featureFourContainer span, .featureFiveContainer span {
-    top: 40px !important; 
+        top: 50%;
+    transform: translateY(-50%);
   }
 
 }
@@ -1349,15 +1354,11 @@ video.purchase {
     display: block;
 
   }
-
-
-  
-  
    .featureTwoContainer h1 {
-    bottom: 0;
+    bottom: 40px;
   }
   .featureTwoContainer p {
-    top: 0;
+    top: 40px;
   }
   .featureTwoContainer img {
     max-width: 90%;
@@ -1476,6 +1477,9 @@ video.purchase {
   }
   .buyBanner2 p {
     max-width: 90%;
+  }
+  .featureTwoContainer img {
+    max-width: 73%;
   }
 } 
 @media screen and (max-width: 550px) {
