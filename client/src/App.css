@@ -1151,6 +1151,50 @@ video.purchase {
   margin: auto !important;
   display: block;
 }
+.controllerFeatures {
+  max-width: 70%;
+  background: white;
+-webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+margin: 80px auto;
+
+
+}
+.controllerFeatures h2 {
+  text-align: center;
+  padding: 40px 0 0 0;
+  font-size: 25px;
+  font-weight: 300;
+}
+.controllerFeatures img {
+  max-width: 100%;
+}
+.controllerFeatures p {
+  max-width:  70%;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+.controllerFeatures span {
+  margin-right: 5px;
+  font-weight: bold;
+  color:#2c60bf;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.schemaFlex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.schemaFlex p {
+  position: relative;
+  right: 80px;
+}
+
+
+
 
 @media screen and (max-width: 992px) {
   .featuresOneContainer {

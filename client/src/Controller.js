@@ -3,6 +3,7 @@ import './App.css';
 import './css/gallery.css'
 import {Row, Col} from 'react-materialize'
 import halfg from './images/half-g.png'
+import schematic from './images/guardian-wire-1.jpg'
 
 export class Controller extends Component {
    componentDidMount() {
@@ -67,11 +68,33 @@ export class Controller extends Component {
         </div>
 
 
-        <Row>
-          <Col s={12}>
+        <Row >
+          <div className='controllerFeatures'>
+           <Row>
+             <h2>Features</h2>
+            <Col l={6} m={12}>
+              <img src={schematic} alt='valve schematic' />
+
+            </Col>
+            <Col l={6} m={12} className='schemaFlex'>
+              <p>
+                <span>No Tools Needed</span>     The Valve Controller is ready to install out of the box, without any tools - the hand-tightened clamps grip the unit securely to your valve. 
+              </p>
 
 
-          </Col>
+               <p>
+                <span>Use Your Existing Valve</span>    You don't need a special valve to use Guardian - only a standard quarter-turn ball valve. Click here to see what valves Guardian is compatible with. 
+              </p>
+
+               <p>
+                <span>Valve Calibration</span>   You don't need a special valve to use Guardian - only a standard quarter-turn ball valve. Click here to see what valves Guardian is compatible with. 
+              </p>
+
+            </Col>
+
+
+          </Row>
+          </div>
         </Row>
          
       </div>   
