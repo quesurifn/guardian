@@ -96,8 +96,8 @@ export class Buy extends Component {
             </Row>
             <Row className='secondBuy'>
                 <h2 className='yup'>Guardian Prevents Water Damage</h2>
-                <div className='width70'>
-                <Col s={12} m={12} l={4}>
+                <div className='width70 flex'>
+         
                     <div className='buyAbout'>
                         <img src={cardOne} alt='blog one' />
                         <div>
@@ -112,9 +112,8 @@ export class Buy extends Component {
 
                     </div>
 
-                </Col>
+       
 
-                 <Col s={12} m={12} l={4}>
                     <div className='buyAbout'>
                         <img src={cardTwo} alt='blog one' />
                             <div>
@@ -128,8 +127,7 @@ export class Buy extends Component {
 
                     </div>
 
-                </Col>
-                 <Col s={12} m={12} l={4}>
+                
                     <div className='buyAbout'>
                         <img src={cardThree} alt='blog one' />
                         <div>
@@ -144,7 +142,7 @@ export class Buy extends Component {
 
                     </div>
 
-                </Col>
+               
             </div>
             </Row>
             <Row>

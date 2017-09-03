@@ -768,6 +768,11 @@ video.purchase {
 .firstBuyOne, .firstBuyTwo {
   padding-top: 100px;
 }
+.firstBuyOne {
+  max-width: 83%;
+  margin: auto !important;
+  padding-bottom: 60px;
+}
 .firstBuyTwo h1, .firstBuyTwo h3 {
   margin-bottom: 0;
     font-weight: 700;
@@ -778,7 +783,7 @@ video.purchase {
 
 }
   .firstBuyTwo div:first-child{
-    padding: 0 20%;
+    padding: 0 5%;
   }
   .firstBuyTwo h2 {
     font-weight: 200;
@@ -838,16 +843,14 @@ video.purchase {
   }
   .buyAbout {
     height: 450px;
-    margin:80px auto;
+    margin: 0 20px 80px 20px;
     width:70%;
     flex-direction: column;
     position: relative;
     background:white;
     width:341px;
   }
-  .firstBuyTwo p {
-    margin-left: -
-  }
+  
   .buyAbout div {
     padding: 0 20px;
   }
@@ -896,7 +899,7 @@ video.purchase {
   .secondBuy h2.yup {
     text-align: center;
     font-size: 22px;
-    padding: 60px 0 50px 0;
+    padding: 60px 0 40px 0;
   }
   .secondBuy {
     background: #f4f4f4;
@@ -953,7 +956,7 @@ video.purchase {
     padding-left:20px;
   }
   .moreFeaturesContainer .moreFeatures:nth-child(2) {
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
   .moreFeaturesCard .col h2{
     font-size: 22px !important;
@@ -999,6 +1002,12 @@ video.purchase {
     max-width: 70%;
     margin: auto;
   }
+  .width70.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
   .featuresOneContainer {
     display: flex;
     justify-content: center;
@@ -1270,6 +1279,11 @@ margin: 80px auto;
     height: 90vh;
   }
 }
+@media screen and (max-width: 1010px) {
+  .width70.flex {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 812px) {
   .gBlue {
     height: 80vh;
@@ -1393,6 +1407,9 @@ font-size: 14px;
 @media screen and (max-width: 992px) {
   .research {
     text-align: center;
+  }
+  .firstBuyTwo h1:first-child {
+    text-align: center !important;
   }
   .featuresOneContainer img {
     margin-top: 40px !important;
