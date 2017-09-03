@@ -467,7 +467,7 @@ nav .hide-on-med-and-down .col-6, .col-3 {
 }
 .gBlue .heroImg{
   max-width: 100%;
-  position: absolute;
+  position: relative;
   bottom: -13%;
   z-index: 999;
   width:100%;
@@ -482,6 +482,13 @@ nav .hide-on-med-and-down .col-6, .col-3 {
   position: relative;
   z-index: 2000;
 
+}
+video {
+ background:transparent url('./images/video-slate.jpg') no-repeat 0 0;
+   -webkit-background-size:cover;
+   -moz-background-size:cover;
+   -o-background-size:cover;
+   background-size:cover;
 }
 .gBlue p {
   color: white;

@@ -26,7 +26,10 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 export class Purchase extends Component {
     constructor() {
-        super() 
+        super()
+            this.state = {
+                firstSlide: true
+            }
 
         this.playvideo = this.playvideo.bind(this)
 
@@ -36,25 +39,45 @@ export class Purchase extends Component {
 
     
       componentDidMount() {
+
         document.querySelector('nav').style.backgroundColor = 'transparent'
-        document.querySelector('nav').style.position = 'absolute'
-        document.querySelector('nav').style.boxShadow = 'none'
-        document.querySelector('.nav-wrapper').style.backgroundColor = 'transparent'
-        document.querySelector('.navbar-fixed').style.position = 'absolute'
-        document.querySelector('.navbar-fixed').style.width = '100%'
-        document.querySelector('.headerLogo').style.color = 'white'
-        
-        
-        
-        //ALL White
-        var nodes = document.querySelector('nav').getElementsByTagName('a')
+                document.querySelector('nav').style.position = 'absolute'
+                document.querySelector('nav').style.boxShadow = 'none'
+                document.querySelector('.nav-wrapper').style.backgroundColor = 'transparent'
+                document.querySelector('.navbar-fixed').style.position = 'absolute'
+                document.querySelector('.navbar-fixed').style.width = '100%'
+                document.querySelector('.headerLogo').style.color = 'white'
+                document.querySelector('.headerLogo').style.color = 'white'
+                            var nodes = document.querySelector('nav').getElementsByTagName('a')
 
-        for(var i=0; i<nodes.length; i++) {
-            nodes[i].style.color = 'white';
-        }
-                
-    }
+                                for(var i=0; i<nodes.length; i++) {
+                                    nodes[i].style.color = 'white';
+                                }
 
+
+                    setInterval(function() {
+                        if (document.querySelector('.headerLogo').style.color === 'white') {
+                            document.querySelector('.headerLogo').style.color = '#1C56C0'
+
+                            var nodes = document.querySelector('nav').getElementsByTagName('a')
+
+                                for(var i=0; i<nodes.length; i++) {
+                                    nodes[i].style.color = '#2C60BF';
+                                }
+                        } else {
+                            document.querySelector('.headerLogo').style.color = 'white'
+                            var nodes = document.querySelector('nav').getElementsByTagName('a')
+
+                                for(var i=0; i<nodes.length; i++) {
+                                    nodes[i].style.color = 'white';
+                                }
+                        }
+                    }, 7000)
+
+      }
+
+
+        
     playvideo() {
         const video = this.refs.video;
 
@@ -71,30 +94,23 @@ export class Purchase extends Component {
     return (
       <div>
         <Row>
-            <Col s={12} className='gBlue'>
-            <h1>prevent water damage</h1>
-            <p>Meet <span>Guardian</span>, a stand alone system for leaks and floods.</p>
-                <img src={hero} alt='hero' className='heroImg' />
-                
-            </Col>
-        </Row>
-
-       
-      
-        <Row>
-            <Col s={12}>
-                <video className='purchase' poster={poster} ref='video' onClick={this.playvideo}>
-                    <source src='https://s3.us-east-2.amazonaws.com/dome-web-assets/purple-passion.mp4' type='video/mp4' />
-                    Your browser does not support HTML5
-                </video>
-            </Col>
-        </Row>
-                <Row>
+          
             <Col s={12} className='purchaseTwo'>
-            <div className="gallery items-3 autoplay vue100">
-                  <div id="item-1" className="control-operator"></div>
-                  <div id="item-2" className="control-operator"></div>
-                  <div id="item-3" className="control-operator"></div>
+            <div className="gallery items-2 autoplay vue100">
+                  <div id="slide1" className="control-operator"></div>
+                  <div id="slide2" className="control-operator"></div>
+
+
+                  <figure className="item vue100">
+                    <Row>
+                        <Col s={12} className='gBlue'>
+                            <h1>prevent water damage</h1>
+                            <p>Meet <span>Guardian</span>, a stand alone system for leaks and floods.</p>
+                            <img src={hero} alt='hero' className='heroImg' />
+                            <img src={reserve} alt='logo'  className='lolo1'/>
+                        </Col>
+                    </Row>
+                  </figure>
 
                   <figure className="item vue100">
                         <div className='anton'>
@@ -108,18 +124,14 @@ export class Purchase extends Component {
 
                   </figure>
 
-                  <figure className="item vue100">
-                    <div className='bg2'></div>
-                  </figure>
+                  
 
-                  <figure className="item vue100">
-                    <h1>3</h1>
-                  </figure>
+              
 
                   <div className="controls">
-                    <a href="#item-1" className="control-button">•</a>
-                    <a href="#item-2" className="control-button">•</a>
-                    <a href="#item-3" className="control-button">•</a>
+                    <a href="#slide1" className="control-button">•</a>
+                    <a href="#slide2" className="control-button">•</a>
+
                   </div>
                 </div>
 
@@ -127,6 +139,42 @@ export class Purchase extends Component {
 
             </Col>
         </Row>
+
+
+        <Row>
+            <Col s={12}>
+                <video className='purchase' ref='video' poster='http://www.cityrider.com/fixed/43aspect.png' onClick={this.playvideo}>
+                    <source src='https://s3.us-east-2.amazonaws.com/dome-web-assets/purple-passion.mp4' type='video/mp4' />
+                    Your browser does not support HTML5
+                </video>
+            </Col>
+        </Row>
+       
+        <Row style={{position: 'relative', bottom: '6px'}}>
+            <Col s={12} className='purchaseThree'>
+                <ScrollAnimation animateIn="fadeIn">
+                    <p>Americans are more likely to experience water damage than fire.</p>
+                </ScrollAnimation>
+            </Col>
+        </Row>
+        {/*}
+        <Row>
+         
+            
+            <Col s={12} className='purchaseFour'>
+            
+                <div className='first'>
+                    <img src={splash} alt='splash' />
+                    <div className='find'>
+                        <h2 ref='wpHide'>Guardian</h2>
+                        <p>There are more than 14,000 water damage claims each day causing US insurance companies and homeowners billions of dollars.</p>
+                        <img src={reserve} alt='logo'  className='lolo'/>
+                    </div>
+                </div>
+            </Col>
+        </Row>
+        */}
+      
         <Row>
             <Col s={12}  className='leakingPipe'>
                 <div>

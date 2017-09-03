@@ -28,7 +28,7 @@ export const App = () => (
     <Header />
     <main>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Purchase} />
         <Route exact path="/options" component={Options} />
         <Route exact path='/newsletter' component={Newsletter} />
         <Route exact path='/about' component={About} />
