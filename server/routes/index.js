@@ -4,7 +4,7 @@ var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
 
 
 router.post('/email', (req, res) => {
-
+  let email = req.body.email
   if (req.body.list === 'newsletter') {
 
       let base64Email = Buffer.from(email).toString('base64');
@@ -23,11 +23,12 @@ router.post('/email', (req, res) => {
            // console.log(response.statusCode)
            // console.log(response.body)
            // console.log(response.headers)
-
+            console.log(response.body)
               var request2 = sg.emptyRequest()
               request2.method = 'POST'
               request2.path = '/v3/contactdb/lists/1822202/recipients/' + base64Email;
               sg.API(request2, function (error2, response2) {
+                console.log(response2.body)
                 //console.log(response2.statusCode)
                 //console.log(response2.body)
                 //console.log(response2.headers)

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import './css/gallery.css'
-
+import axios from 'axios'
 import ImageGallery from 'react-image-gallery';
 
 import {Row, Col, Container} from 'react-materialize'
@@ -18,6 +18,31 @@ import cardTwo from './images/buy-page-card-2.jpg'
 import cardThree from './images/buy-page-card-3.jpg'
 
 export class Buy extends Component {
+    constructor() {
+        super() 
+            this.submitEmail= this.submitEmail.bind(this);
+        
+    }
+
+
+    submitEmail() {
+        let email = this.refs.emailBuy.value
+        console.log(email)
+        axios.post('/api/email', {
+            list: 'newsletter',
+            email: email
+        })
+        .then(r => {
+            console.log(r)
+            //this.props.history.push('/')
+            this.refs.BuyContainer.style.display = 'none'
+            this.refs.thankyou.innerHTML = 'Thank you!'
+        })
+        .catch(e => {
+            console.log(e)
+        })
+    }
+
   
   render() {
          const images = [
@@ -58,14 +83,14 @@ export class Buy extends Component {
                         
                         <button className='yolo'>Reserve Today And Save $100</button>
 
-                        <div className='inline-form'>
+                        <div className='inline-form' ref='BuyContainer'>
                             <div className='form-container'> 
-                                <input className='form-text' style={{borderBottom: 'none', width:'100%'}} placeholder='Email Address' />
+                                <input className='form-text' style={{borderBottom: 'none', width:'100%'}} placeholder='Email Address' ref='emailBuy'/>
                             </div>
-                            <button>Notify Me</button>
+                            <button  onClick={this.submitEmail} >Notify Me</button>
 
                         </div>
-                        <span>Notify me when it begins shipping at full price</span>
+                        <span ref='thankyou'>Notify me when it begins shipping at full price</span>
                     </div>
                 </Col>
             </Row>
