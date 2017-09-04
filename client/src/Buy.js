@@ -174,7 +174,7 @@ export class Buy extends Component {
                     <figure className="item" style={{height:'140vh', background: '#2050C2'}}>
                         <Row>
                             <Col s={12} className='featureTwoContainer'>
-                                <h1>How it works</h1> 
+                                <h1>How it Works</h1> 
                                 <img src={three} alt='install connect protect' />
                                 <p>Click continue and learn how to setup guardian.</p>
                                 <a href='#item-3'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
