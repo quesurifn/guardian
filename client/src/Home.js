@@ -14,30 +14,8 @@ export class Home extends Component {
       <div className="App">
         <Row>
           <Col s={12} m={12} >
-                <div className="gallery items-3 autoplay vue100">
-                  <div id="item-1" className="control-operator"></div>
-                  <div id="item-2" className="control-operator"></div>
-                  <div id="item-3" className="control-operator"></div>
-
-                  <figure className="item vue100">
-                    <div className='bg'></div>
-                  </figure>
-
-                  <figure className="item vue100">
-                    <div className='bg2'></div>
-                  </figure>
-
-                  <figure className="item vue100">
-                    <h1>3</h1>
-                  </figure>
-
-                  <div className="controls">
-                    <a href="#item-1" className="control-button">•</a>
-                    <a href="#item-2" className="control-button">•</a>
-                    <a href="#item-3" className="control-button">•</a>
-                  </div>
-                </div>
-
+               
+             <div className='bg2'></div>
 
       
           </Col>

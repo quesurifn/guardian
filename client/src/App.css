@@ -1247,6 +1247,39 @@ margin: 80px auto;
 .controllerAdtlFeat p {
   font-weight: 300 !important;
 }
+.homeOne {
+  background: url('./images/home-duckie.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homeOne h2 {
+  font-size: 50px;
+  font-weight: 300;
+  color:#2050c2;
+}
+.homeOne h1 {
+  font-family: 'evogria', sans-serif;
+  font-size:150px;
+  color: #2050c2;
+  margin: 0;
+}
+.homeOne button {
+  border:none;
+  color: white;
+  background:#2050c2;
+  font-family: 'evogria', sans-serif;
+  letter-spacing: 2px;
+  font-size: 32px;
+  height: 80px;
+  padding: 0 40px;
+  margin:1.78rem 0 1.424rem 0;
+}
 
 
 @media screen and (max-width: 992px) {

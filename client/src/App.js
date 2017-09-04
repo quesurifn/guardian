@@ -42,7 +42,9 @@ export const App = () => (
         <Route exact path='/purchase' component={Purchase} />
         <Route exact path='/howto' component={Howto} />
         <Route exact path='/buy' component={Buy} />
+        <Route path='*' component={NotFound} />
       </Switch>
+
     </main>
 
     {/*<Foot /> */}

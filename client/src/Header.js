@@ -14,7 +14,7 @@ export class Header extends Component {
       var logoFactor;
       var button;
 
-      if (document.location.pathname === '/purchase') {
+      if (document.location.pathname === '/purchase' || document.location.pathname === '/') {
           logoFactor = logoWhite; 
           button =  <Link to='/options' className='blueButton nohoverb centerIt'><img src={reserve} alt='resrve' className='reserve' /></Link>
       } else {

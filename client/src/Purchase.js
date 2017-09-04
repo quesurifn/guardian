@@ -46,33 +46,11 @@ export class Purchase extends Component {
                 document.querySelector('.nav-wrapper').style.backgroundColor = 'transparent'
                 document.querySelector('.navbar-fixed').style.position = 'absolute'
                 document.querySelector('.navbar-fixed').style.width = '100%'
-                document.querySelector('.headerLogo').style.color = 'white'
-                document.querySelector('.headerLogo').style.color = 'white'
-                var nodes = document.querySelector('nav').getElementsByTagName('a')
-                    for(var i=0; i<nodes.length; i++) {
-                        nodes[i].style.color = 'white';
-                    }
-
-
-                    setInterval(function() {
-                        if (document.querySelector('.headerLogo').style.color === 'white') {
-                            document.querySelector('.headerLogo').style.color = '#1C56C0'
-
-                            var nodes = document.querySelector('nav').getElementsByTagName('a')
-
-                                for(var i=0; i<nodes.length; i++) {
-                                    nodes[i].style.color = '#2C60BF';
-                                }
-                        } else {
-                            document.querySelector('.headerLogo').style.color = 'white'
-                            var nodes = document.querySelector('nav').getElementsByTagName('a')
-
-                                for(var i=0; i<nodes.length; i++) {
-                                    nodes[i].style.color = 'white';
-                                }
-                        }
-                    }, 7000)
-
+                document.querySelector('.headerLogo').style.color = '#1C56C0'
+                var nodes = document.querySelector('nav').getElementsByTagName('a');
+                for(var i=0; i<nodes.length; i++) {
+                    nodes[i].style.color = '#2C60BF';
+                }    
       }
 
 
@@ -95,44 +73,26 @@ export class Purchase extends Component {
         <Row>
           
             <Col s={12} className='purchaseTwo'>
-            <div className="gallery items-2 autoplay vue100">
-                  <div id="slide1" className="control-operator"></div>
-                  <div id="slide2" className="control-operator"></div>
+       
+            
 
-
-                  <figure className="item vue100">
-                    <Row>
-                        <Col s={12} className='gBlue'>
-                            <h1>prevent water damage</h1>
-                            <p>Meet <span>Guardian</span>, a stand alone system for leaks and floods.</p>
-                            <img src={hero} alt='hero' className='heroImg' />
-                            <img src={reserve} alt='logo'  className='lolo1'/>
-                        </Col>
-                    </Row>
-                  </figure>
-
-                  <figure className="item vue100">
-                        <div className='anton'>
-                            <ScrollTrigger onEnter={this.onEnter} onExit={this.onExit} />
-                            <div className='text'>
-                                    <h2 ref='titleOne'>one less thing...</h2>
-                                    <h3 ref='titleTwo'>to worry about</h3>
-                                    <img src={red} alt='red button' />
-                                </div>
-                        </div>
-
-                  </figure>
 
                   
 
+               
+                        <div className='homeOne'>
+                          <h2>#WATERDAMAGESUCKS</h2>
+                          <h1>NEVER AGAIN</h1>
+                          <button>GET GUARDIAN</button>
+                        </div>
+
+           
+       
+
               
 
-                  <div className="controls">
-                    <a href="#slide1" className="control-button">•</a>
-                    <a href="#slide2" className="control-button">•</a>
-
-                  </div>
-                </div>
+                 
+  
 
           
 
