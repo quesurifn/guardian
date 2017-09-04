@@ -19,6 +19,8 @@ import cardtwo from './images/purchaseTwo.png'
 import poster from './images/video-slate.jpg'
 import pipe from './images/leaking-pipe.jpg'
 
+import recut from './images/home-valve-recut.png'
+
 import ScrollAnimation from 'react-animate-on-scroll'
 
 
@@ -72,30 +74,21 @@ export class Purchase extends Component {
       <div>
         <Row>
           
-            <Col s={12} className='purchaseTwo'>
-       
-            
-
-
-                  
-
-               
-                        <div className='homeOne'>
-                          <h2>#WATERDAMAGESUCKS</h2>
-                          <h1>NEVER AGAIN</h1>
-                          <button>GET GUARDIAN</button>
-                        </div>
-
-           
-       
-
-              
-
-                 
-  
-
-          
-
+            <Col s={12} className='purchaseTwo'>          
+                <div className='homeOne'>
+                    <h2>#WATERDAMAGESUCKS</h2>
+                    <h1>NEVER AGAIN</h1>
+                    <button>GET GUARDIAN</button>
+                </div>
+            </Col>
+        </Row>
+        <Row> 
+            <Col s={12} className='homeTwo'>
+                <img src={recut} alt='valve on pipe' />
+                <h1>&ldquo;MORE PEOPLE SUFFER FROM WATER DAMAGE THAN FIRE&rdquo;</h1>
+                <Link to='buy'><img src={red} alt='red button' /></Link>
+                <h2>NOW SHIPPING</h2>
+                <p>Going through water damage costs money, time and ruins family heirlooms</p>
             </Col>
         </Row>
 
