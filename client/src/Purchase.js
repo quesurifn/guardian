@@ -91,8 +91,16 @@ export class Purchase extends Component {
                 <p>Going through water damage costs money, time and ruins family heirlooms</p>
             </Col>
         </Row>
+        <Row>
+            <Col s={12} className='homeThree'>
+                <h1>&ldquo;This didn't have to happen...&rdquo;</h1>
+                <img src={splash} alt='splash'/>
 
 
+
+
+            </Col>
+        </Row>
         <Row>
             <Col s={12}>
                 <video className='purchase' ref='video' poster='http://www.cityrider.com/fixed/43aspect.png' onClick={this.playvideo}>

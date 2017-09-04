@@ -990,6 +990,10 @@ video.purchase {
     flex-wrap: wrap;
     margin-top: 40px;
   }
+  .moreFeaturesContainer {
+    position: relative;
+  }
+ 
 
   .moreFeaturesCard p {
     margin: 0 0 0 10px;
@@ -1323,6 +1327,28 @@ margin: 80px auto;
   transform: translateX(-50%);
   width:100%;
   font-weight: 300;
+}
+.homeThree {
+  background: url('./images/toilet.jpg');
+  background-size:cover;
+  background-position: center;
+  height:130vh;
+  position: relative;
+
+}
+.homeThree h1 {
+  color:white;
+  font-size:25px;
+  text-transform: uppercase;
+  font-family: 'evogria', sans-serif;
+  left: 40px;
+  position: absolute;
+  bottom: 90px;
+}
+.homeThree img {
+  position: absolute;
+  right: -400px;
+  bottom: -400px;
 }
 
 
