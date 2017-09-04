@@ -239,11 +239,11 @@ export class Buy extends Component {
             </Row>
 
             <div className='moreFeaturesContainer'>
-
-                <Row className='moreFeatures'>
+                <h1>Additional Features</h1>
+                <div className='moreFeatures'>
             
-                    <h1>Additional Features</h1>
-                    <Col s={12} m={12} l={4}>
+                    
+                    <div className='featureContainer'>
                             <div className='featuresCard'>
                
                                 <img src='http://placehold.it/120x120' alt='Logo' /> 
@@ -255,10 +255,10 @@ export class Buy extends Component {
                                     
                             </div>
 
-                    </Col>
+                    </div>
 
 
-                    <Col s={12} m={12} l={4}>
+                    <div className='featureContainer'>
                         <div className='featuresCard'>
                
                                 <img src='http://placehold.it/120x120' alt='Logo' /> 
@@ -266,14 +266,14 @@ export class Buy extends Component {
                                 <div className='featuresInline'>
                                 <h2>Offline Functionality</h2>
                                 <p>The internet is only required for off-site control and notifications, so Guardian will protect your home without internet connectivity.</p>
-                         </div>
+                        </div>
 
+                        </div>
                     </div>
-                    </Col>
 
 
 
-                    <Col s={12} m={12} l={4}>
+                    <div className='featureContainer'>
                       <div className='featuresCard'>
                
                                 <img src='http://placehold.it/120x120' alt='Logo' /> 
@@ -283,16 +283,16 @@ export class Buy extends Component {
                                 <p>An optional battery backup powers the Valve Controller for an extra twelve hours to protect your home during power outages.</p>
                         </div>
                     </div>
-                    </Col>
+                    </div>
                     
             
-                </Row>
+   
 
 
 
-                <Row className='moreFeatures two'>
+     
                     
-                    <Col s={12} m={12} l={4}>
+                    <div className='featureContainer'>
                         <div className='featuresCard'>
                
                                 <img src='http://placehold.it/120x120' alt='Logo' /> 
@@ -302,9 +302,9 @@ export class Buy extends Component {
                                 <p>Guardian install without any tools or professional help - configuration usually takes under ten minutes.</p>
                           </div>
                         </div>
-                    </Col>
+                    </div>
 
-                     <Col s={12} m={12} l={4}>
+                     <div className='featureContainer'>
                        <div className='featuresCard'>
                
                                 <img src='http://placehold.it/120x120' alt='Logo' /> 
@@ -314,9 +314,9 @@ export class Buy extends Component {
                                 <p>The Water Detectors communicate with directly with the Valve Controller, avoiding the need for hubs or other useless hardware.</p>
                        </div>
                     </div>
-                    </Col>
+                    </div>
 
-                    <Col s={12} m={12} l={4}>
+                    <div className='featureContainer'>
                      <div className='featuresCard'>
                
                                 <img src='http://placehold.it/120x120' alt='Logo' /> 
@@ -326,9 +326,9 @@ export class Buy extends Component {
                                 <p>The Valve Controller will regularly check your valve to make sure it's not stuck during an emergency.</p>
                            </div>
                         </div>
-                    </Col>
+                    </div>
 
-                </Row>
+                </div>
 
             </div>
             <Row className='buyBanner2'>

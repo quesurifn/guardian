@@ -985,11 +985,19 @@ video.purchase {
   }
   .moreFeatures {
     padding: 0 20px;
-    padding-top: 40px;
+    padding-top: 100px;
+    display: flex !important;
+    flex-wrap: wrap;
+    margin-top: 40px;
   }
 
   .moreFeaturesCard p {
     margin: 0 0 0 10px;
+
+  }
+  .featureContainer {
+    flex-basis: 29.333333333333%;
+    margin:20px;
 
   }
   .moreFeatures h1 {
@@ -998,6 +1006,14 @@ video.purchase {
     margin: 30px 0 60px 0;
 
   }
+   .moreFeaturesContainer h1 {
+     transform: translateX(-50%);
+     left:50%;
+     position: absolute;
+     font-size: 22px;
+     text-align: center;
+     top:20px;
+   }
   .moreFeatures h2 {
     margin: 0 0 0 10px;
   }
@@ -1275,6 +1291,11 @@ margin: 80px auto;
     font-size: 30px !important;
   }
 }
+@media screen and (max-width: 1160px) {
+  .moreFeatures {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 1460px) {
   .width70 {
     max-width: 100%;
@@ -1342,6 +1363,12 @@ font-size: 14px;
 @media screen and (max-width: 500px) {
   .find * {
     text-align: center;
+  }
+  .featureContainer {
+    margin: 0;
+  }
+  .moreFeatures {
+    padding-top: 120px;
   }
   .find {
     top: 0; 
