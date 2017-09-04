@@ -1315,14 +1315,14 @@ margin: 80px auto;
   font-weight: 200;
   font-size: 35px;
   text-align: center;
-  margin-top:80px;
+  margin-top:90px;
 }
 .homeTwo p {
   color:white;
   font-size: 32px;
   text-align: center;
   position: absolute;
-  bottom: 40px;
+  bottom: 25px;
   left:50%; 
   transform: translateX(-50%);
   width:100%;
@@ -1338,17 +1338,68 @@ margin: 80px auto;
 }
 .homeThree h1 {
   color:white;
-  font-size:25px;
+  font-size:32px;
   text-transform: uppercase;
   font-family: 'evogria', sans-serif;
-  left: 40px;
+  left: 60px;
   position: absolute;
   bottom: 90px;
+}
+.homeFour h2 {
+  color:white;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 .homeThree img {
   position: absolute;
   right: -400px;
-  bottom: -400px;
+  bottom: -200px;
+}
+.homeFour {
+  height: 120vh;
+  background: #B1A4A0;
+  position: relative;
+}
+.homeFour img {
+  display: block;
+  margin: 40px auto;
+}
+.homeFour h1 {
+  color:white;
+  font-size: 40px; 
+  font-family: 'evogria', sans-serif;
+  max-width: 60%;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.homeFour button {
+  color:white;
+  background:#6F5A53;
+  font-family: 'evogria', sans-serif;
+  height: 80px;
+  padding: 0 20px;
+  border:none;
+  font-size: 32px;
+  display: block;
+  margin: 60px auto 30px auto;
+}
+.homeFour h2 {
+   color:white; 
+  font-weight: 200;
+  font-size: 35px;
+  text-align: center;
+  margin-top:80px;
+  margin: auto;
+}
+.homeFour p {
+  bottom: 40px; 
+  transform: translateX(-50%);
+  left:50%;
+  font-size: 32px;
+  color:white;
+  font-weight: 300;
+  position: absolute;
 }
 
 

@@ -20,6 +20,7 @@ import poster from './images/video-slate.jpg'
 import pipe from './images/leaking-pipe.jpg'
 
 import recut from './images/home-valve-recut.png'
+import leak from './images/leaksensor.png'
 
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -95,10 +96,15 @@ export class Purchase extends Component {
             <Col s={12} className='homeThree'>
                 <h1>&ldquo;This didn't have to happen...&rdquo;</h1>
                 <img src={splash} alt='splash'/>
-
-
-
-
+            </Col>
+        </Row>
+        <Row>
+            <Col s={12} className='homeFour'>
+                <img src={leak} alt='leak detector'/>
+                <h1>&ldquo;The first solution that detects the first drop and actually does something about it.&ldquo;</h1>
+                <button>Get Guardian</button>
+                <h2>NOW SHIPPING</h2>
+                <p>Watch and see how easy Guardian is to install</p>
             </Col>
         </Row>
         <Row>
@@ -110,13 +116,7 @@ export class Purchase extends Component {
             </Col>
         </Row>
        
-        <Row style={{position: 'relative', bottom: '6px'}}>
-            <Col s={12} className='purchaseThree'>
-                <ScrollAnimation animateIn="fadeIn">
-                    <p>Americans are more likely to experience water damage than fire.</p>
-                </ScrollAnimation>
-            </Col>
-        </Row>
+
         {/*}
         <Row>
          
