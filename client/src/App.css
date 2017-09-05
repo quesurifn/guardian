@@ -1,8 +1,16 @@
+@font-face {
+font-family: 'Evogria';
+font-style: normal;
+font-weight: normal;
+src: local('Evogria'), url('./css/fonts/Evogria.woff') format('woff');
+}
+
+
 body {
   text-align: center;
   background: white;
 	height: 100vh;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 html {
 	overflow: hidden;
@@ -117,6 +125,36 @@ h2 {
 	position: absolute;
 	top: 70px;
 	right: 70px;
+}
+.gApp {
+  background: #2050c2;
+  height: 100vh;
+}
+.gApp h1 {
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: 'evogria', sans-serif;
+  margin-top: 0;
+}
+.appFlex {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+.appFlex img {
+  width: 400px;
+  max-width: 100%;
+}
+@media screen and (max-width: 788px) {
+  .appFlex {
+   flex-direction: column;
+  }
+  .gApp {
+    height: auto;
+  }
+  .appFlex img {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 500px) {
