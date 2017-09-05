@@ -21,6 +21,7 @@ import {About} from './About'
 import {Howto} from './Howto'
 import {Buy} from './Buy'
 
+import {App} from './AppComponent'
 
 export const App = () => (
   <div>
@@ -42,6 +43,7 @@ export const App = () => (
         <Route exact path='/purchase' component={Purchase} />
         <Route exact path='/howto' component={Howto} />
         <Route exact path='/buy' component={Buy} />
+        <Route exact path='/app' component={App} />
         <Route path='*' component={NotFound} />
       </Switch>
 
