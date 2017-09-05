@@ -88,10 +88,13 @@ export class Purchase extends Component {
         <Row> 
             <Col s={12} className='homeTwo'>
                 <img src={recut} alt='valve on pipe' className='one' />
-                <h1>&ldquo;MORE PEOPLE SUFFER FROM WATER DAMAGE THAN FIRE&rdquo;</h1>
-                <Link to='buy'><img src={red} alt='red button' style={{display: 'block', margin: 'auto'}} /></Link>
-                <h2>SHIPPING SOON</h2>
-                <p>Going through water damage costs money, time and ruins family heirlooms</p>
+                <div className='boxed'>
+                    <h1>&ldquo;MORE PEOPLE SUFFER FROM WATER DAMAGE THAN FIRE&rdquo;</h1>
+                    <Link to='buy'><img src={red} alt='red button' style={{display: 'block', margin: 'auto'}} /></Link>
+                    <h2>SHIPPING SOON</h2>
+                    <p>Going through water damage costs money, time and ruins family heirlooms</p>
+                </div>
+                
             </Col>
         </Row>
         {/*}
@@ -104,8 +107,8 @@ export class Purchase extends Component {
         */}
         <Row>
             <Col s={12} className='homeFour'>
-                <img src={leak} alt='leak detector'/>
                 <h1>&ldquo;The first solution that detects the first drop and actually does something about it.&rdquo;</h1>
+                <img src={leak} alt='leak detector'/>
                 <button>Get Guardian</button>
                 <h2>SHIPPING SOON</h2>
                 <p>Watch and see how easy Guardian is to install</p>
@@ -132,13 +135,16 @@ export class Purchase extends Component {
         </Row>
         <Row>
             <Col s={12}  className='homeSix'>
-                <img src={last} alt='last' />
-                <div className='left'>
-                    <h3>Order Guardian ahead and save</h3>
-                    <h2>Guardian Leak Prevention Kit</h2>
-                    <p>The Guardian Leak Prevention Kit includes everything you need to protect your home from leaks.</p>
-                    <button>LEARN MORE</button>
-                </div>
+
+                    <img src={last} alt='last' />
+                   
+                        <h3>Order Guardian ahead and save</h3>
+                        <h2>Guardian Leak Prevention Kit</h2>
+                        <p>The Guardian Leak Prevention Kit includes everything you need to protect your home from leaks.</p>
+                        <button>LEARN MORE</button>
+                 
+           
+
             </Col>
             <Col s={12} className='hideCol'>
                 <img src={last} alt='last two' />
