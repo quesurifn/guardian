@@ -1207,14 +1207,11 @@ video.purchase {
 }
 .controllerFeatures {
   max-width: 70%;
-
   margin: 80px auto 200px auto;
-
-
 }
 .controllerFeatures h2 {
   text-align: center;
-  padding: 40px 0 0 0;
+  padding: 80px 0 80px 0;
   font-size: 25px;
   font-weight: 300;
 }

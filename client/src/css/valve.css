@@ -23,3 +23,6 @@
     border-left: solid 1px #363636;
     border-right: solid 1px #363636;
 }
+hr {
+    margin: 80px auto;
+}
