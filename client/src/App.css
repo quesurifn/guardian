@@ -1399,7 +1399,6 @@ video.purchase {
   margin: 40px auto;
   height: 100px;
   width: 360px;
-
 }
 .homeFour h2 {
    color:white; 
@@ -1489,6 +1488,17 @@ video.purchase {
 }
 .homeSix {
   margin-top:40px;
+}
+.homeSix button {
+  display: block;
+  background:#2050c2;
+  border:none;
+  color: white;
+  font-family: 'evogria', sans-serif;
+  letter-spacing: 2px;
+  font-size: 38px;
+  height: 100px;
+  width: 360px;
 }
 @media screen and (max-width: 1072px) {
   .specs {

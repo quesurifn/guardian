@@ -107,7 +107,7 @@ export class Purchase extends Component {
                 <img src={leak} alt='leak detector'/>
                 <h1>&ldquo;The first solution that detects the first drop and actually does something about it.&rdquo;</h1>
                 <button>Get Guardian</button>
-                <h2>SHIPPING Soon</h2>
+                <h2>SHIPPING SOON</h2>
                 <p>Watch and see how easy Guardian is to install</p>
             </Col>
         </Row>
@@ -137,6 +137,7 @@ export class Purchase extends Component {
                     <h3>Order Guardian ahead and save</h3>
                     <h2>Guardian Leak Prevention Kit</h2>
                     <p>The Guardian Leak Prevention Kit includes everything you need to protect your home from leaks.</p>
+                    <button>LEARN MORE</button>
                 </div>
             </Col>
             <Col s={12} className='hideCol'>
