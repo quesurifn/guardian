@@ -1271,6 +1271,7 @@ margin: 80px auto;
   font-size: 50px;
   font-weight: 300;
   color:#2050c2;
+  margin-top: 80px;
 }
 .homeOne h1 {
   font-family: 'evogria', sans-serif;
@@ -1457,6 +1458,11 @@ margin: 80px auto;
   color:#363636;
   width: 34%;
 }
+.hideCol img{
+  max-width: 100%;
+  display: block;
+  margin: 80px auto;
+}
 
 
 
@@ -1465,6 +1471,28 @@ margin: 80px auto;
   .featuresOneContainer {
     height: auto;
     padding-bottom: 40px !important;
+  }
+  .left {
+    left: 0px;
+    top: 40px !important;
+  }
+  .left h3 {
+    text-align: center;
+  }
+  .left h2 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 95% !important;
+  }
+  .homeSix h1 {
+    margin-top: 80px;
+  }
+  .left p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 70%;
   }
   .featuresOneContainer img {
     margin-top: 40px;
@@ -1554,7 +1582,7 @@ margin: 80px auto;
 
   }
   .left h2 {
-      width: 50% !important;
+      width: 50%;
   }
   .homeSix img {
     max-width: 100%;
@@ -1614,13 +1642,46 @@ font-size: 14px;
   }
   .homeFour h1 {
     max-width: 100%;
-    font-size: 28px;
+    font-size: 30px;
   }
   .homeFour p {
     position: relative;
     left: initial;
     transform: initial;
     margin-top:40px;
+  }
+  .leakingPipe p {
+    max-width: 100%;
+  }
+  .homeThree h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .homeSix h2 {
+    font-size: 40px;
+  }
+  .homeSix p {
+    font-size: 20px;
+    width:95% !important;
+  }
+  .left h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hideCol {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .homeSix img {
+    display: none;
+  }
+  .hideCol {
+    display: block;
+  }
+  .homeFour p {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 716px) {
@@ -1639,7 +1700,7 @@ font-size: 14px;
 }
 @media screen and (max-width:578px) {
   .homeOne h1 {
-    font-size:50px;
+    font-size:40px;
   }
   .homeOne h2 {
     font-size: 30px;
@@ -1665,6 +1726,10 @@ font-size: 14px;
   }
   .homeFour p {
     margin-top: 120px;
+  }
+  .homeSix h1 {
+    padding: 0 10px;
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 500px) {

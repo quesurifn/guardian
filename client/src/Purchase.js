@@ -102,7 +102,7 @@ export class Purchase extends Component {
         <Row>
             <Col s={12} className='homeFour'>
                 <img src={leak} alt='leak detector'/>
-                <h1>&ldquo;The first solution that detects the first drop and actually does something about it.&ldquo;</h1>
+                <h1>&ldquo;The first solution that detects the first drop and actually does something about it.&rdquo;</h1>
                 <button>Get Guardian</button>
                 <h2>NOW SHIPPING</h2>
                 <p>Watch and see how easy Guardian is to install</p>
@@ -136,6 +136,9 @@ export class Purchase extends Component {
                     <h2>Guardian Leak Prevention Kit</h2>
                     <p>The Guardian Leak Prevention Kit includes everything you need to protect your home from leaks.</p>
                 </div>
+            </Col>
+            <Col s={12} className='hideCol'>
+                <img src={last} alt='last two' />
             </Col>
         </Row>
       </div>
