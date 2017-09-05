@@ -1,0 +1,25 @@
+.sliderBox {
+   display: flex;
+   align-items: center;
+   width: 100%;
+}
+
+.sliderBox div {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    border-top: solid 1px #363636;
+    border-bottom: solid 1px #363636;
+    margin-top: 80px;
+}
+.sliderBox div:hover {
+    color:white;
+    background: #2050C2;
+}
+
+.sliderBox div:first-child, .sliderBox div:last-child {
+    border-left: solid 1px #363636;
+    border-right: solid 1px #363636;
+}

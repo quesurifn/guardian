@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 import './css/gallery.css'
+import './css/valve.css'
 import {Row, Col} from 'react-materialize'
 import halfg from './images/half-g.png'
 import schematic from './images/guardian-wire-1.jpg'
@@ -48,6 +49,18 @@ export class Controller extends Component {
                 <h2>ROBUST &amp; RELIABLE</h2>
                 <p>Battery Backup, offline functionality, and more.</p>
                 <button>Learn More</button>
+                <div className='sliderBox'>
+
+                    <div>Easy</div>
+
+        
+                    <div>Standalone</div>
+
+
+                    <div>Robust</div>
+
+
+                </div>
               </Col>
             </Row>
           </figure> 
@@ -59,12 +72,6 @@ export class Controller extends Component {
           <figure className="item gradient hundredHeight">
             <h1>3</h1>
           </figure>
-
-          <div className="controls">
-            <a href="#item-1" className="control-button" style={{color:'#363636'}}>•</a>
-            <a href="#item-2" className="control-button"style={{color:'#363636'}}>•</a>
-            <a href="#item-3" className="control-button"style={{color:'#363636'}}>•</a>
-          </div>
         </div>
 
 
@@ -72,6 +79,56 @@ export class Controller extends Component {
           <div className='controllerFeatures'>
            <Row>
              <h2>Features</h2>
+            <Col l={6} m={12}>
+              <img src={schematic} alt='valve schematic' />
+
+            </Col>
+            <Col l={6} m={12} className='schemaFlex'>
+              <p>
+                <span>No Tools Needed</span>     The Valve Controller is ready to install out of the box, without any tools - the hand-tightened clamps grip the unit securely to your valve. 
+              </p>
+
+
+               <p>
+                <span>Use Your Existing Valve</span>    You don't need a special valve to use Guardian - only a standard quarter-turn ball valve. Click here to see what valves Guardian is compatible with. 
+              </p>
+
+               <p>
+                <span>Valve Calibration</span>   You don't need a special valve to use Guardian - only a standard quarter-turn ball valve. Click here to see what valves Guardian is compatible with. 
+              </p>
+
+            </Col>
+          </Row>
+
+            <hr />
+            <Row>
+             
+            <Col l={6} m={12} className='schemaFlex'>
+              <p>
+                <span>No Tools Needed</span>     The Valve Controller is ready to install out of the box, without any tools - the hand-tightened clamps grip the unit securely to your valve. 
+              </p>
+
+
+               <p>
+                <span>Use Your Existing Valve</span>    You don't need a special valve to use Guardian - only a standard quarter-turn ball valve. Click here to see what valves Guardian is compatible with. 
+              </p>
+
+               <p>
+                <span>Valve Calibration</span>   You don't need a special valve to use Guardian - only a standard quarter-turn ball valve. Click here to see what valves Guardian is compatible with. 
+              </p>
+
+            </Col>
+
+            <Col l={6} m={12}>
+              <img src={schematic} alt='valve schematic' />
+
+            </Col>
+          </Row>
+
+          <hr />
+
+
+          <Row>
             <Col l={6} m={12}>
               <img src={schematic} alt='valve schematic' />
 
@@ -143,6 +200,7 @@ export class Controller extends Component {
                         </div>
                     </div>
                     </Col>
+                    
                     
             
                 </Row>

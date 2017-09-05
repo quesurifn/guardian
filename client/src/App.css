@@ -1207,11 +1207,8 @@ video.purchase {
 }
 .controllerFeatures {
   max-width: 70%;
-  background: white;
--webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
-margin: 80px auto;
+
+  margin: 80px auto 200px auto;
 
 
 }

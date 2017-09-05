@@ -21,7 +21,7 @@ import {About} from './About'
 import {Howto} from './Howto'
 import {Buy} from './Buy'
 
-import {App} from './AppComponent'
+
 
 export const App = () => (
   <div>
