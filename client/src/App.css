@@ -1547,11 +1547,7 @@ video.purchase {
     font-size: 30px !important;
   }
 }
-@media screen and (max-width: 1160px) {
-  .moreFeatures {
-    flex-direction: column;
-  }
-}
+
 @media screen and (max-width: 1460px) {
   .width70 {
     max-width: 100%;
@@ -1559,7 +1555,10 @@ video.purchase {
   .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span, .featureFourContainer span, .featureFiveContainer span  {
     top: 100px; 
     right: 20px;
-  } 
+  }
+  .moreFeatures { 
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 1400px) {
   .firstBuyTwo .inline-form button {

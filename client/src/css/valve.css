@@ -26,3 +26,39 @@
 hr {
     margin: 80px auto;
 }
+@media screen and (max-width: 1160px) {
+    .moreFeatues {
+        max-width: 100%;
+    }
+    .moreFeatues .row .col.l4 {
+        width: 100% !important;
+    }
+    .moreFeatues.two {
+        padding-top: 0px !important;
+    }
+}
+@media screen and (max-width: 951px) {
+    .sliderBox div {
+        padding: 0 20px; 
+        height: 80px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .sliderBox {
+        justify-content: center;
+    }
+    .controllerFeatures h2{
+        padding: 40px 0;
+    }
+    .controllerFeatures {
+        margin: 80px 0 100px 0;
+    }
+    .controllerFeatures img {
+        display: block;
+        margin: auto;
+    }
+    .controllerFeatures .col {
+        width: 100vw;
+    }
+}
