@@ -86,9 +86,9 @@ export class Purchase extends Component {
         </Row>
         <Row> 
             <Col s={12} className='homeTwo'>
-                <img src={recut} alt='valve on pipe' />
+                <img src={recut} alt='valve on pipe' className='one' />
                 <h1>&ldquo;MORE PEOPLE SUFFER FROM WATER DAMAGE THAN FIRE&rdquo;</h1>
-                <Link to='buy'><img src={red} alt='red button' /></Link>
+                <Link to='buy'><img src={red} alt='red button' style={{display: 'block', margin: 'auto'}} /></Link>
                 <h2>NOW SHIPPING</h2>
                 <p>Going through water damage costs money, time and ruins family heirlooms</p>
             </Col>
@@ -135,8 +135,6 @@ export class Purchase extends Component {
                     <h3>Order Guardian ahead and save</h3>
                     <h2>Guardian Leak Prevention Kit</h2>
                     <p>The Guardian Leak Prevention Kit includes everything you need to protect your home from leaks.</p>
-
-
                 </div>
             </Col>
         </Row>
