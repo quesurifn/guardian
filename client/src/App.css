@@ -1457,6 +1457,25 @@ video.purchase {
   display: block;
   margin: 80px auto;
 }
+.specs {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+
+}
+.specs div  {
+  margin: 80px 20px;
+}
+.specs div * {
+  text-align: left !important;
+}
+@media screen and (max-width: 1072px) {
+  .specs {
+    flex-direction: column;
+    height: auto;
+  }
+
+}
 
 
 
