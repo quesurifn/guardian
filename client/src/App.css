@@ -1529,6 +1529,14 @@ video.purchase {
 .width85 {
   width:85%;
 }
+.homeSix {
+  background: url('./images/home-box-kit.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin: 0 !important;
+
+}
 @media screen and (max-width: 1072px) {
   .specs {
     flex-direction: column;

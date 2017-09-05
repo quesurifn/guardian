@@ -135,16 +135,12 @@ export class Purchase extends Component {
         </Row>
         <Row>
             <Col s={12}  className='homeSix'>
-
-                    <img src={last} alt='last' />
-                   
-                        <h3>Order Guardian ahead and save</h3>
-                        <h2>Guardian Leak Prevention Kit</h2>
-                        <p>The Guardian Leak Prevention Kit includes everything you need to protect your home from leaks.</p>
-                        <button>LEARN MORE</button>
-                 
-           
-
+                <div className='left'>
+                    <h3>Order Guardian ahead and save</h3>
+                    <h2>Guardian Leak Prevention Kit</h2>
+                    <p>The Guardian Leak Prevention Kit includes everything you need to protect your home from leaks.</p>
+                    <button>LEARN MORE</button>
+                </div>
             </Col>
             <Col s={12} className='hideCol'>
                 <img src={last} alt='last two' />
