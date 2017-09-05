@@ -50,6 +50,7 @@ export class Purchase extends Component {
                 document.querySelector('.nav-wrapper').style.backgroundColor = 'transparent'
                 document.querySelector('.navbar-fixed').style.position = 'absolute'
                 document.querySelector('.navbar-fixed').style.width = '100%'
+                document.querySelector('.navbar-fixed').style.top = '15px'
                 document.querySelector('.headerLogo').style.color = '#1C56C0'
                 var nodes = document.querySelector('nav').getElementsByTagName('a');
                 for(var i=0; i<nodes.length; i++) {
@@ -79,7 +80,7 @@ export class Purchase extends Component {
             <Col s={12} className='purchaseTwo'>          
                 <div className='homeOne'>
                     <h2>#WATERDAMAGESUCKS</h2>
-                    <h1>NEVER AGAIN</h1>
+                    <h1>PREVENT WATER DAMAGE</h1>
                     <button>GET GUARDIAN</button>
                 </div>
             </Col>
@@ -89,22 +90,24 @@ export class Purchase extends Component {
                 <img src={recut} alt='valve on pipe' className='one' />
                 <h1>&ldquo;MORE PEOPLE SUFFER FROM WATER DAMAGE THAN FIRE&rdquo;</h1>
                 <Link to='buy'><img src={red} alt='red button' style={{display: 'block', margin: 'auto'}} /></Link>
-                <h2>NOW SHIPPING</h2>
+                <h2>SHIPPING SOON</h2>
                 <p>Going through water damage costs money, time and ruins family heirlooms</p>
             </Col>
         </Row>
+        {/*}
         <Row>
             <Col s={12} className='homeThree'>
                 <h1>&ldquo;This didn't have to happen...&rdquo;</h1>
                 <img src={splash} alt='splash'/>
             </Col>
         </Row>
+        */}
         <Row>
             <Col s={12} className='homeFour'>
                 <img src={leak} alt='leak detector'/>
                 <h1>&ldquo;The first solution that detects the first drop and actually does something about it.&rdquo;</h1>
                 <button>Get Guardian</button>
-                <h2>NOW SHIPPING</h2>
+                <h2>SHIPPING Soon</h2>
                 <p>Watch and see how easy Guardian is to install</p>
             </Col>
         </Row>
@@ -129,7 +132,6 @@ export class Purchase extends Component {
         </Row>
         <Row>
             <Col s={12}  className='homeSix'>
-                <h1>ORDER NOW AND SAVE $100</h1>
                 <img src={last} alt='last' />
                 <div className='left'>
                     <h3>Order Guardian ahead and save</h3>
