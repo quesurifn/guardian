@@ -21,6 +21,7 @@ import pipe from './images/leaking-pipe.jpg'
 
 import recut from './images/home-valve-recut.png'
 import leak from './images/leaksensor.png'
+import last from './images/home-box-kit.jpg'
 
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -115,32 +116,27 @@ export class Purchase extends Component {
                 </video>
             </Col>
         </Row>
-       
-
-        {/*}
         <Row>
-         
-            
-            <Col s={12} className='purchaseFour'>
-            
-                <div className='first'>
-                    <img src={splash} alt='splash' />
-                    <div className='find'>
-                        <h2 ref='wpHide'>Guardian</h2>
-                        <p>There are more than 14,000 water damage claims each day causing US insurance companies and homeowners billions of dollars.</p>
-                        <img src={reserve} alt='logo'  className='lolo'/>
-                    </div>
+            <Col s={12}  className='leakingPipe homeFive'>
+                <div>
+                    <h2>There are more than 14,000 water damage claims a day.</h2>
+                    <img className='one' src={pipe} alt='leaking pipe' />
+                    <p>Americans file more water damage claims than fire. So wheres the water alarm system.</p>
+
+                    <img className='two' src={red} alt='red button' />
                 </div>
             </Col>
         </Row>
-        */}
-      
         <Row>
-            <Col s={12}  className='leakingPipe'>
-                <div>
-                    <h2>There are more than 14,000 water damage claims a day.</h2>
-                    <img src={pipe} alt='leaking pipe' />
-                    <p>Americans file more water damage claims than fire. So wheres the water alarm system.</p>
+            <Col s={12}  className='homeSix'>
+                <h1>ORDER NOW AND SAVE $100</h1>
+                <img src={last} alt='last' />
+                <div className='left'>
+                    <h3>Order Guardian ahead and save</h3>
+                    <h2>Guardian Leak Prevention Kit</h2>
+                    <p>The Guardian Leak Prevention Kit includes everything you need to protect your home from leaks.</p>
+
+
                 </div>
             </Col>
         </Row>
