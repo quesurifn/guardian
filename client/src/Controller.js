@@ -14,6 +14,24 @@ import two from './images/photo2.png'
 import appstore from './images/appstores.png'
 
 export class Controller extends Component {
+    constructor() {
+        super()
+           
+
+        this.playvideo = this.playvideo.bind(this)
+
+ 
+    }
+    playvideo() {
+        const video = this.refs.video;
+
+        if (video.paused) {
+            video.play()
+        } else {
+            video.pause()
+        }
+    }
+
    componentDidMount() {
         document.querySelector('nav').style.backgroundColor = 'transparent'
         document.querySelector('nav').style.position = 'absolute'
@@ -40,15 +58,12 @@ export class Controller extends Component {
   render() {
     return (
       <div className="valvePage">
-        <div className="gallery items-3 hundredHeight">
-          <div id="item-1" className="control-operator"></div>
-          <div id="item-2" className="control-operator"></div>
-          <div id="item-3" className="control-operator"></div>
+       
 
-          <figure className="item bgValve hundredHeight controllerSlideOne">
+          <div className="item bgValve controllerSlideOne">
             <Row>
               <Col s={12}>
-                <h1>Introducing the Valve Controller</h1>
+               <h1 style={{textAlign:'center'}}>Introducing the Valve Controller</h1>
               </Col>
               <Col s={12} m={7} className='relative'>
                 <img src={halfg} alt='half guardian' />
@@ -60,16 +75,9 @@ export class Controller extends Component {
               
               </Col>
             </Row>
-          </figure> 
+          </div> 
 
-          <figure className="item gradient hundredHeight">
-            <h1>2</h1>
-          </figure>
-
-          <figure className="item gradient hundredHeight">
-            <h1>3</h1>
-          </figure>
-        </div>
+    
 
 
         <Row >
@@ -148,7 +156,7 @@ export class Controller extends Component {
         <Row>
             <Col s={12}>
                 <video className='purchase' ref='video' poster='http://www.cityrider.com/fixed/43aspect.png' onClick={this.playvideo}>
-                    <source src='https://s3.us-east-2.amazonaws.com/dome-web-assets/purple-passion.mp4' type='video/mp4' />
+                    <source src='https://s3-us-west-2.amazonaws.com/getguardian/guardian-background.mp4' type='video/mp4' />
                     Your browser does not support HTML5
                 </video>
             </Col>
