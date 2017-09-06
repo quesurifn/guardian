@@ -51,7 +51,7 @@ export class Purchase extends Component {
                 document.querySelector('.nav-wrapper').style.backgroundColor = 'transparent'
                 document.querySelector('.navbar-fixed').style.position = 'absolute'
                 document.querySelector('.navbar-fixed').style.width = '100%'
-                document.querySelector('.navbar-fixed').style.top = '15px'
+                document.querySelector('.navbar-fixed').style.top = '20px'
                 document.querySelector('.headerLogo').style.color = '#1C56C0'
                 var nodes = document.querySelector('nav').getElementsByTagName('a');
                 for(var i=0; i<nodes.length; i++) {
