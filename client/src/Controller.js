@@ -83,7 +83,7 @@ export class Controller extends Component {
         <Row >
           <div className='controllerFeatures'>
            <Row>
-             <h2>MORE THAN JUST AN AUTOMATIC VALVE</h2>
+             <h2 style={{paddingTop: '180px'}}>MORE THAN JUST AN AUTOMATIC VALVE</h2>
             <Col l={6} m={12}>
               <img src={one} alt='valve schematic' className='width90' />
 
