@@ -97,7 +97,7 @@ export class Purchase extends Component {
                     <h1>&ldquo;MORE PEOPLE SUFFER FROM WATER DAMAGE THAN FIRE&rdquo;</h1>
                     <Link to='buy'><img src={red} alt='red button' style={{display: 'block', margin: 'auto'}} /></Link>
                     <h2>SHIPPING SOON</h2>
-                    <p>Going through water damage costs money, time and ruins family heirlooms</p>
+                    <p>Water damage costs time, money, aggravation and ruins family heirlooms.</p>
                 </div>
                 
             </Col>
@@ -131,7 +131,7 @@ export class Purchase extends Component {
                 <div>
                     <h2>There are more than 14,000 water damage claims a day.</h2>
                     <img className='one' src={pipe} alt='leaking pipe' />
-                    <p>Water Detectors placed throughout your home will notify you and take action the moment a leak is detected.</p>
+                    <p>Guardian communicates with <Link to='/water-detectors'>Water Detectors</Link> throughout your home to know when there is a leak, and shuts off your water to prevent further damage while notifying you of the leak.  Guardian installs with no tools, no plumber, and no pipe cutting - simply Install, Connect, and Protect.</p>
 
                     <Link to='/buy'><img className='two' src={red} alt='red button' /></Link>
                 </div>
