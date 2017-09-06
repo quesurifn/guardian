@@ -993,7 +993,7 @@ video.purchase {
    }
    .featureTwoContainer h2, .featureThreeContainer h2,  .featureFourContainer h2, .featureFiveContainer h2 {
      position: absolute;
-     top:80px;
+     top:40px;
    }
   .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span,  .featureFourContainer span , .featureFiveContainer span{ 
     position: absolute; 
@@ -1722,9 +1722,25 @@ video.purchase {
   }
 }
 @media screen and (max-width: 749px) {
+  .featureFourContainer img {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+ .featureFiveContainer img {
+   max-width: 100% !important;
+   width: 100% !important;
+ }
+  .featureThreeContainer img {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
   .purchaseThree p {
     text-align: center;
     font-size: 18px;
+  }
+  .featureTwoContainer img {
+    max-width: 73% !important;
+    width: 100% !important;
   }
   .purchaseThree {
     padding: 0 15px;
@@ -1925,6 +1941,12 @@ font-size: 14px;
   .featuresOneContainer span, .featureTwoContainer span, .featureThreeContainer span, .featureFourContainer span, .featureFiveContainer span {
         top: 50%;
     transform: translateY(-50%);
+  }
+  .image-gallery {
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+    width:100vw;
   }
 
 }

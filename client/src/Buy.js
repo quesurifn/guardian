@@ -169,7 +169,7 @@ export class Buy extends Component {
                     <figure className="item" style={{height:'calc(100vh - 65px)', background: '#2050C2'}}>
                        <Row>
                            <Col s={12} className='featureThreeContainer'>
-                                <h1>How it Works</h1>
+                            
                                 <h2>INSTALL</h2>
                                 <img src={sldier3Valve} alt='Guardian' />
                                 <p>Align the valve controller over the existing valve and mount in seconds and place water detectors near appliances, sinks, and other plumbing 
@@ -184,7 +184,7 @@ export class Buy extends Component {
                     <figure className="item" style={{height:'calc(100vh - 65px)', background: '#2050C2'}}>
                        <Row>
                            <Col s={12} className='featureFourContainer'>
-                                <h1>How it Works</h1>
+            
                                 <h2>CONNECT</h2>
                                 <img src={slider4Valve} alt='Guardian' />
                                 <p>
@@ -201,7 +201,7 @@ export class Buy extends Component {
                     <figure className="item" style={{height:'calc(100vh - 65px)', background: '#1C56C0'}}>
                        <Row>
                            <Col s={12} className='featureFiveContainer'>
-                                <h1>How it Works</h1>
+             
                                 <h2>PROTECT</h2>
                                 <img src={slider5Valve} alt='Guardian' />
                                 <p>
