@@ -146,32 +146,15 @@ export class Buy extends Component {
             </div>
             </Row>
             <Row>
-                <div className="gallery items-5" style={{height: '140vh'}}>
-                    <div id="item-1" className="control-operator"></div>
+                <div className="gallery items-4" style={{height: 'calc(100vh - 65px)'}}>
                     <div id="item-2" className="control-operator"></div>
                     <div id="item-3" className="control-operator"></div>
                     <div id="item-4" className="control-operator"></div>
                     <div id="item-5" className="control-operator"></div>
 
-                    <figure className="item" style={{height: '140vh'}}>
-                        <Row>
-                           <Col s={12} className='featuresOneContainer'>
-                                <h2>How It Works</h2>
-                                <img src={guardian} alt='Guardian' /> 
+                 
 
-                                <p>
-                                    Guardian communicates with Water Detectors throughout your home to know when there is a leak, and shuts off
-                                    your water to prevent further damage while notifying you of the leak. Guardian installs with no tools, no plumber, and
-                                    no pipe cutting - simply Install, Connect and Protect!
-                                </p>
-
-                                <a href='#item-2'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
-                            </Col>
-                        </Row>
-
-                    </figure>
-
-                    <figure className="item" style={{height:'140vh', background: '#2050C2'}}>
+                    <figure className="item" style={{height:'calc(100vh - 65px)', background: '#2050C2'}}>
                         <Row>
                             <Col s={12} className='featureTwoContainer'>
                                 <h1>How it Works</h1> 
@@ -183,7 +166,7 @@ export class Buy extends Component {
                         </Row>
                     </figure>
 
-                    <figure className="item" style={{height:'140vh', background: '#2050C2'}}>
+                    <figure className="item" style={{height:'calc(100vh - 65px)', background: '#2050C2'}}>
                        <Row>
                            <Col s={12} className='featureThreeContainer'>
                                 <h1>How it Works</h1>
@@ -198,7 +181,7 @@ export class Buy extends Component {
                         </Row>
                     </figure>
 
-                    <figure className="item" style={{height:'140vh', background: '#2050C2'}}>
+                    <figure className="item" style={{height:'calc(100vh - 65px)', background: '#2050C2'}}>
                        <Row>
                            <Col s={12} className='featureFourContainer'>
                                 <h1>How it Works</h1>
@@ -215,7 +198,7 @@ export class Buy extends Component {
                         </Row>
                     </figure>
 
-                    <figure className="item" style={{height:'140vh', background: '#1C56C0'}}>
+                    <figure className="item" style={{height:'calc(100vh - 65px)', background: '#1C56C0'}}>
                        <Row>
                            <Col s={12} className='featureFiveContainer'>
                                 <h1>How it Works</h1>
@@ -225,7 +208,7 @@ export class Buy extends Component {
                                     The Valve Controller automatically shuts off the water when the Leak Detectors detect leaks, floods, earthquakes, or other events to limit the damage done to your home. Manage your 
                                     system remotely and get notifications when things go wrong from anywhere in then world.
                                 </p>
-                                <a href='#item-1'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+                                <a href='#item-2'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
 
 
                            </Col>
