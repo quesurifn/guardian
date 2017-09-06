@@ -25,7 +25,7 @@ export class Research extends Component {
             <Row>
                 <Col s={12} className='firstResearch'>
                     <p>
-                        We are an international team brought together by our love for home automation and product development.  We stumbled upon an idea that can change the world, and spent the last two years working literally around the clock to bring it to life.
+                        We are an international team brought together by our love for home automation and product development.  We stumbled upon an idea that can change the world, and spent the last two years working around the clock to bring it to life.
 
                     </p>
                     
@@ -48,7 +48,7 @@ export class Research extends Component {
                     <div />
                 </Col>
                  <Col s={12} m={12} l={6} className='fourthResearchTwo'>
-                    <p>The Guardian Team has spent the past three years researching and developing solutions to help prevent water damage. The challenge for Guardian has been to create a reliable, always available solution that anyone can install, that requires no plumbing or cutting into pipes and can work automatically, while away from home.</p>
+                    <p>The challenge for Guardian has been to create a reliable, always available solution that anyone can install, that requires no plumbing or cutting into pipes and can work automatically, while away from home.</p>
                 </Col>
             </Row>
             <Row>
@@ -66,8 +66,9 @@ export class Research extends Component {
                 </Col>
             </Row>
             <Row>
-                <Col s={12} className='seventhResearch'>
-                  <p>We conceive the overarching vision of Guardian in Chicago, and work with our mechanical, software, and electrical engineering teams to make it come to life.  Meanwhile, our sales and marketing teams work tirelessly to build relationships and put strategies into place to have a successful product launch.
+                <Col s={12} className='thirdResearch'>
+                <p>&nbsp;</p>
+                  <p>We conceived the overarching vision of Guardian in Chicago, and work with our mechanical, software, and electrical engineering teams to make it come to life.  Meanwhile, our sales and marketing teams work tirelessly to build relationships and put strategies into place to have a successful product launch.
 </p>
                 </Col>
             </Row>
