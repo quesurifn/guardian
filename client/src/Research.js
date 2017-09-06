@@ -25,7 +25,8 @@ export class Research extends Component {
             <Row>
                 <Col s={12} className='firstResearch'>
                     <p>
-                        Research and development that was put into Guardian has been going on for several years. Many new innovations occurred.
+                        We are an international team brought together by our love for home automation and product development.  We stumbled upon an idea that can change the world, and spent the last two years working literally around the clock to bring it to life.
+
                     </p>
                     
                 </Col>
@@ -37,8 +38,8 @@ export class Research extends Component {
             </Row>
             <Row>
                 <Col s={12} className='thirdResearch'>
-                    <p>A drone flies around the night just over Garfield Park Chicago. On its camera, a big unusual home stands out. The tip of the home is illuminated by a glowing roof, as if the tip of an obelisk or an crystal (some say
-                        Egyptians used these to ebam electricity in the air.) As the drone gets close to the home, the camera steps into the home and creeps behind Gou's desk. The camera could be anything. The house is littered with internet.
+                    <p>Water damage affects more households than fire in the US each year, yet the vast majority of homes are not equipped to mitigate or prevent the damage can occur. The average claim can be anywhere from $8,000-$15,000 dollar, and is often the result of faulty appliances, burst pipes, human error and natural causes. Water damage not only costs homeowners and insurance companies money, they can be extremely frustrating, time consuming to repair and personal possessions are often lost. 
+
                     </p>
                 </Col>
             </Row>
@@ -47,14 +48,14 @@ export class Research extends Component {
                     <div />
                 </Col>
                  <Col s={12} m={12} l={6} className='fourthResearchTwo'>
-                    <p>Research and development that has been put into development has been.</p>
+                    <p>The Guardian Team has spent the past three years researching and developing solutions to help prevent water damage. The challenge for Guardian has been to create a reliable, always available solution that anyone can install, that requires no plumbing or cutting into pipes and can work automatically, while away from home.</p>
                 </Col>
             </Row>
             <Row>
                 <Col s={12} className='fifthResearch'>
-                    <p>  Research and development that was put into Guardian has been going on for several years. Many new innovations occurred.</p>
-                    <p>A drone flies around the night just over Garfield Park Chicago. On its camera, a big unusual home stands out. The tip of the home is illuminated by a glowing roof, as if the tip of an obelisk or an crystal (some say
-                        Egyptians used these to ebam electricity in the air.) As the drone gets close to the home, the camera steps into the home and creeps behind Gou's desk. The camera could be anything. The house is littered with internet.
+                    <p>  We want to protect every home in the world from water damage.</p>
+                    <p>To create Guardian, we spent weeks researching before drawing anything.  We studied dozens of valves and existing water detectors, consulted with plumbing, restoration, and insurance professionals, and combined our years of experience in the home automation world to create a unique product that all homeowners can use.  Creating a one-size-fits-all solution is easier said than done, and we learned that the hard way, by going through months and months worth of revisions before arriving at the final design for both the Valve Controller and the Water Detector.  
+
                     </p>
                 </Col>
                 
@@ -66,9 +67,8 @@ export class Research extends Component {
             </Row>
             <Row>
                 <Col s={12} className='seventhResearch'>
-                  <p>Research and development that was put into it.</p>
-                  <p>A drone flies around the night just over Garfield Park Chicago. On its camera, a big unusual home stands out. The tip of the home is illuminated by a glowing roof, as if the tip of an obelisk or an crystal (some say
-                        Egyptians</p>
+                  <p>We conceive the overarching vision of Guardian in Chicago, and work with our mechanical, software, and electrical engineering teams to make it come to life.  Meanwhile, our sales and marketing teams work tirelessly to build relationships and put strategies into place to have a successful product launch.
+</p>
                 </Col>
             </Row>
             <Row>
