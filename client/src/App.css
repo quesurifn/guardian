@@ -1494,6 +1494,7 @@ video.purchase {
   height: 100vh;
   justify-content: center;
   display: flex;
+  background: white;
 
 }
 .specs div  {
