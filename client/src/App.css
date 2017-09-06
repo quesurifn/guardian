@@ -884,9 +884,7 @@ video.purchase {
     position: relative;
     background:white;
     width:341px;
-    -webkit-box-shadow: 10px 10px 8px -4px rgba(0,0,0,0.62);
-    -moz-box-shadow: 10px 10px 8px -4px rgba(0,0,0,0.62);
-    box-shadow: 10px 10px 8px -4px rgba(0,0,0,0.62);
+   
   }
   
   .buyAbout div {
@@ -985,10 +983,13 @@ video.purchase {
     position: absolute !important;
     top: 20px;
   }
- .featureThreeContainer img,  .featureFourContainer img, .featureFiveContainer img, .featuresOneContainer img{
+ .featureThreeContainer img,   .featureFiveContainer img, .featuresOneContainer img{
     margin-top: 200px;
 
  }
+  .featureFourContainer img {
+    margin-top:100px !important;
+  }
   .featureFiveContainer img{
     width: 100%;
   }
@@ -1545,9 +1546,12 @@ a img.two {
   text-align: left;
   color: rgb(28, 86, 192) !important;
 }
-.featureTwoContainer img, .featureFourContainer img {
+.featureTwoContainer img {
   width: 30% !important;
 }
+ .featureFourContainer img {
+   width: 50% !important;
+ }
 .homeFlex { 
   display: flex; 
   justify-content: center;
@@ -1561,6 +1565,9 @@ a img.two {
 }
 .homeFlex button a {
   color: white !important;
+}
+.firstBuyTwo p {
+  max-width: 70%;
 }
 
 @media screen and (max-width: 1072px) {
