@@ -77,7 +77,7 @@ export class Controller extends Component {
            <Row>
              <h2>MORE THAN JUST AN AUTOMATIC VALVE</h2>
             <Col l={6} m={12}>
-              <img src={one} alt='valve schematic' />
+              <img src={one} alt='valve schematic' className='width90' />
 
             </Col>
             <Col l={6} m={12} className='schemaFlex'>
