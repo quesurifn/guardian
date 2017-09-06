@@ -1545,7 +1545,7 @@ video.purchase {
     font-family: 'evogria', sans-serif;
     letter-spacing: 2px;
     text-align: left;
-    color: rgb(28, 86, 192);
+    color: rgb(28, 86, 192) !important;
 }
 .featureTwoContainer img, .featureFourContainer img {
   width: 30% !important;
