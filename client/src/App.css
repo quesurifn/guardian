@@ -882,6 +882,9 @@ video.purchase {
     position: relative;
     background:white;
     width:341px;
+    -webkit-box-shadow: 10px 10px 8px -4px rgba(0,0,0,0.62);
+    -moz-box-shadow: 10px 10px 8px -4px rgba(0,0,0,0.62);
+    box-shadow: 10px 10px 8px -4px rgba(0,0,0,0.62);
   }
   
   .buyAbout div {
@@ -1828,11 +1831,21 @@ font-size: 14px;
   .homeOne h1 {
     font-size:40px;
   }
+  .homeTwo h1 {
+    margin-top: 70px;
+  }
+  .homeTwo p {
+    font-size: 16px !important;
+    max-width: 95%;
+  }
   .homeOne h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
   .homeOne button {
     margin: 0;
+  }
+  .homeFour img {
+    max-width: 70% !important;
   }
   .homeOne h2 {
     margin: 0;
