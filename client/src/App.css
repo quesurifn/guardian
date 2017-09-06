@@ -145,7 +145,7 @@ nav ul a.blueButton:hover {
 
 }
 .width90 {
-  width: 90% !important;
+  width: 80% !important;
 }
 .sectionTwo {
   background: #363636;
@@ -1626,6 +1626,10 @@ a img.two {
 .col.m5.padding20 * {
   padding-left: 120px;
 }
+.blockAuto {
+  margin: auto;
+  display: block;
+}
 @media screen and (max-width: 1072px) {
   .specs {
     flex-direction: column;
@@ -2035,6 +2039,9 @@ a img.two {
   }
   .homeFour h2 {
     margin: 50px auto;
+  }
+  .controllerFeatures h2:first-child {
+    padding-top: 0 !important;
   }
 }
 @media screen and (max-width: 500px) {
