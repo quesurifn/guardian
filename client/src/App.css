@@ -1856,6 +1856,15 @@ font-size: 14px;
   .homeTwo a img {
     width: 90%;
   }
+  .leakingPipe h2, .leakingPipe p {
+    margin: 40px 0;
+  }
+  .left h2 {
+    width: 100%;
+  }
+  .leakingPipe {
+    height: 100vh;
+  }
   img.two {
     width: 90%;
   }
