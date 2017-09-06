@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ScrollTrigger from 'react-scroll-trigger';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {Row, Col} from 'react-materialize'
+import {Row, Col, Container} from 'react-materialize'
 import {Link} from 'react-router-dom'
 import {Card, CardActions, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
@@ -79,7 +79,7 @@ export class Purchase extends Component {
           
             <Col s={12} className='purchaseTwo'>          
                 <div className='homeOne'>
-                    <h2>#WATERDAMAGESUCKS</h2>
+                    <h2>#YOUCOULDEASILY</h2>
                     <h1>PREVENT WATER DAMAGE</h1>
                     <button>GET GUARDIAN</button>
                 </div>
@@ -134,12 +134,27 @@ export class Purchase extends Component {
         </Row>
         <Row>
             <Col s={12}  className='homeSix'>
-                <div className='left'>
-                    <h3>Order Guardian ahead and save</h3>
-                    <h2>Guardian Leak Prevention Kit</h2>
-                    <p>The Guardian Leak Prevention Kit includes everything you need to protect your home from leaks.</p>
-                    <button>LEARN MORE</button>
-                </div>
+                <Container>
+
+                    <Row>
+        
+                        <div className='homeFlex'>
+                            <div className='left'>
+                                <h3>Order Guardian ahead and save</h3>
+                                <h2>Guardian Leak Prevention Kit</h2>
+                                <p>The Guardian Leak Prevention Kit includes everything you need to protect your home from leaks.</p>
+                                <button>LEARN MORE</button>
+                            </div>
+           
+
+                            <img src={last} alt='last two' />
+                        </div>
+         
+                    
+                    </Row>
+                </Container>
+
+
             </Col>
             <Col s={12} className='hideCol'>
                 <img src={last} alt='last two' />
