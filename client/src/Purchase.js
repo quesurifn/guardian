@@ -21,7 +21,7 @@ import pipe from './images/leaking-pipe.jpg'
 
 import recut from './images/home-valve-recut.png'
 import leak from './images/leaksensor.png'
-import last from './images/home-box-kit.jpg'
+import last from './images/guardian-set.jpg'
 
 import ScrollAnimation from 'react-animate-on-scroll'
 
@@ -130,7 +130,7 @@ export class Purchase extends Component {
                 <div>
                     <h2>There are more than 14,000 water damage claims a day.</h2>
                     <img className='one' src={pipe} alt='leaking pipe' />
-                    <p>Americans file more water damage claims than fire. So wheres the water alarm system.</p>
+                    <p>Water Detectors placed throughout your home will notify you and take action the moment a leak is detected.</p>
 
                     <Link to='/buy'><img className='two' src={red} alt='red button' /></Link>
                 </div>
