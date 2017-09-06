@@ -36,6 +36,11 @@ nav ul a {
   margin-left: 60px;
   padding: 0 !important;
 }
+nav ul .l3 img {
+    margin-right: 60px;
+    max-width: 70%;
+    float: right;
+}
 /* NAV */
 
 .row {

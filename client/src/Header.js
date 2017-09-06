@@ -6,6 +6,8 @@ import logoBlue from './images/guradian.png'
 import logoWhite from './images/guardian1.png'
 import reserve from './images/reserveOne.png'
 
+import appstore from './images/appstores.png'
+
 export class Header extends Component {
 
   
@@ -46,7 +48,7 @@ export class Header extends Component {
                         </Col>
 
                         <Col s={12} m={12} l={3} className="col-3 textCenter">
-                           {button}
+                           <img src={appstore} alt='app store' />
                         </Col>
                 </Row>
             </Navbar>
