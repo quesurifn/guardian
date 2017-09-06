@@ -6,6 +6,11 @@ import {Row, Col} from 'react-materialize'
 import halfg from './images/half-g.png'
 import schematic from './images/guardian-wire-1.jpg'
 
+
+import one from './images/vc-section-1.jpg'
+import two from './images/photo2.png'
+import appstore from './images/appstores.png'
+
 export class Controller extends Component {
    componentDidMount() {
         document.querySelector('nav').style.backgroundColor = 'transparent'
@@ -15,6 +20,7 @@ export class Controller extends Component {
         document.querySelector('.navbar-fixed').style.position = 'absolute'
         document.querySelector('.navbar-fixed').style.width = '100%'
         document.querySelector('.headerLogo').style.color = '#2050c2'
+        document.querySelector('.navbar-fixed').style.top = '20px'
         
         window.scrollTo(0, 0)
         
@@ -37,7 +43,7 @@ export class Controller extends Component {
           <div id="item-2" className="control-operator"></div>
           <div id="item-3" className="control-operator"></div>
 
-          <figure className="item gradient hundredHeight controllerSlideOne">
+          <figure className="item bgValve hundredHeight controllerSlideOne">
             <Row>
               <Col s={12}>
                 <h1>Introducing the Valve Controller</h1>
@@ -48,19 +54,8 @@ export class Controller extends Component {
               <Col s={12} m={5} className='padding20'>
                 <h2>ROBUST &amp; RELIABLE</h2>
                 <p>Battery Backup, offline functionality, and more.</p>
-                <button>Learn More</button>
-                <div className='sliderBox'>
-
-                    <div>Easy</div>
-
-        
-                    <div>Standalone</div>
-
-
-                    <div>Robust</div>
-
-
-                </div>
+                <button>GET GUARDIAN</button>
+              
               </Col>
             </Row>
           </figure> 
@@ -78,9 +73,9 @@ export class Controller extends Component {
         <Row >
           <div className='controllerFeatures'>
            <Row>
-             <h2>Features</h2>
+             <h2>MORE THAN JUST AN AUTOMATIC VALVE</h2>
             <Col l={6} m={12}>
-              <img src={schematic} alt='valve schematic' />
+              <img src={one} alt='valve schematic' />
 
             </Col>
             <Col l={6} m={12} className='schemaFlex'>
@@ -96,61 +91,36 @@ export class Controller extends Component {
                <p>
                 <span>Valve Calibration</span>   You don't need a special valve to use Guardian - only a standard quarter-turn ball valve. Click here to see what valves Guardian is compatible with. 
               </p>
-
-            </Col>
-          </Row>
-
-            <hr />
-            <Row>
-             
-            <Col l={6} m={12} className='schemaFlex'>
-              <p>
-                <span>No Tools Needed</span>     The Valve Controller is ready to install out of the box, without any tools - the hand-tightened clamps grip the unit securely to your valve. 
-              </p>
-
-
-               <p>
-                <span>Use Your Existing Valve</span>    You don't need a special valve to use Guardian - only a standard quarter-turn ball valve. Click here to see what valves Guardian is compatible with. 
-              </p>
-
-               <p>
-                <span>Valve Calibration</span>   You don't need a special valve to use Guardian - only a standard quarter-turn ball valve. Click here to see what valves Guardian is compatible with. 
-              </p>
-
-            </Col>
-
-            <Col l={6} m={12}>
-              <img src={schematic} alt='valve schematic' />
 
             </Col>
           </Row>
 
           <hr />
-
-
-          <Row>
-            <Col l={6} m={12}>
-              <img src={schematic} alt='valve schematic' />
-
-            </Col>
+            <Row>
+             
             <Col l={6} m={12} className='schemaFlex'>
               <p>
-                <span>No Tools Needed</span>     The Valve Controller is ready to install out of the box, without any tools - the hand-tightened clamps grip the unit securely to your valve. 
+                <span>3RD PARTY INTEROPERABILITY</span>    The Water Detectors communicate directly with the Valve Controller using a proprietary wireless protocol without hubs and other unnecessary hardware.
               </p>
 
 
                <p>
-                <span>Use Your Existing Valve</span>    You don't need a special valve to use Guardian - only a standard quarter-turn ball valve. Click here to see what valves Guardian is compatible with. 
+                <span>IOS &amp; ANDROID APP</span>  Our well-documented and open API lets you control and monitor Guardian with 3rd party systems using the same app as your other smart home devices.
               </p>
 
                <p>
-                <span>Valve Calibration</span>   You don't need a special valve to use Guardian - only a standard quarter-turn ball valve. Click here to see what valves Guardian is compatible with. 
+                <span>Valve Calibration</span>   The simple and intuitive iOS and Android apps let your system and interact with it easily, from anywhere in the world. 
               </p>
 
+              <img className='app' src={appstore} alt='app store' />
             </Col>
 
+            <Col l={6} m={12}>
+              <img className='specialCase' src={two} alt='valve schematic' />
 
+            </Col>
           </Row>
+
           </div>
         </Row>
 

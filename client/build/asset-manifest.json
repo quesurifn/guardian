@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.007264b7.css",
-  "main.css.map": "static/css/main.007264b7.css.map",
-  "main.js": "static/js/main.0e619494.js",
-  "main.js.map": "static/js/main.0e619494.js.map",
+  "main.css": "static/css/main.c6e6c307.css",
+  "main.css.map": "static/css/main.c6e6c307.css.map",
+  "main.js": "static/js/main.4780c873.js",
+  "main.js.map": "static/js/main.4780c873.js.map",
   "static/media/077.jpg": "static/media/077.5d1a02ea.jpg",
   "static/media/098.jpg": "static/media/098.ace574fc.jpg",
   "static/media/Evogria Italic.woff": "static/media/Evogria Italic.811e4ccd.woff",
@@ -33,6 +33,8 @@
   "static/media/leak.png": "static/media/leak.4fa3cc8b.png",
   "static/media/leaking-pipe.jpg": "static/media/leaking-pipe.b4b573c0.jpg",
   "static/media/leaksensor.png": "static/media/leaksensor.709c5366.png",
+  "static/media/photo.png": "static/media/photo.d4bc5643.png",
+  "static/media/photo2.png": "static/media/photo2.5084515e.png",
   "static/media/programming.png": "static/media/programming.5107beb5.png",
   "static/media/purchaseOne.png": "static/media/purchaseOne.edf5367d.png",
   "static/media/purchaseTwo.png": "static/media/purchaseTwo.c63462c8.png",
@@ -40,5 +42,6 @@
   "static/media/splash2.png": "static/media/splash2.877eeddd.png",
   "static/media/toilet.jpg": "static/media/toilet.d3234977.jpg",
   "static/media/valve.png": "static/media/valve.2fc1078d.png",
+  "static/media/vc-section-1.jpg": "static/media/vc-section-1.4b6814b5.jpg",
   "static/media/video-slate.jpg": "static/media/video-slate.4ae39d27.jpg"
 }

@@ -1162,12 +1162,19 @@ video.purchase {
   .featureFourContainer img { 
     max-width: 100%;
   }
+  .bgValve {
+    background: url('./images/photo.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 100vh;
+    background-repeat: no-repeat !important;
+  }
  
   .featureFiveContainer img {
     max-width: 100%;
   }
   .hundredHeight {
-    height: 120vh !important;
+    height: auto !important;
   }
   .controllerSlideOne img{ 
     position: absolute;
@@ -1179,15 +1186,6 @@ video.purchase {
   .padding20 {
     padding: 20px;
   }
-
-  .valvePage, .gradient {
-  background: -moz-linear-gradient(0deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%) !important; /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(192,192,192,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(128,128,128,1))) !important; /* safari4+,chrome */
-  background: -webkit-linear-gradient(0deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%) !important; /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(0deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%) !important; /* opera 11.10+ */
-  background: -ms-linear-gradient(0deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%) !important; /* ie10+ */
-  background: linear-gradient(90deg, rgba(192,192,192,1) 0%, rgba(255,255,255,1) 50%, rgba(128,128,128,1) 100%) !important; /* w3c */
-  }
 .controllerSlideOne h1{
   font-weight: 300;
   font-size: 50px;
@@ -1198,17 +1196,21 @@ video.purchase {
   font-size: 30px;
   text-align: left;
   margin: 0;
-  letter-spacing: 2px;
+  letter-spacing: 2px; 
+  font-family: 'evogria', sans-serif;
 }
 .controllerSlideOne button {
   color:white;
-  background: #2050c2;
+  background: #449ddf;
   border:none;
   height: 50px;
   width:250px;
   padding: 5px 10px;
   float: left;
   margin-top: 20px;
+  font-family: 'evogria', sans-serif;
+  letter-spacing: 1px;
+  font-size: 22px;
 }
 .controllerSlideOne p {
   text-align: left;
@@ -1249,13 +1251,14 @@ video.purchase {
 }
 .controllerFeatures {
   max-width: 70%;
-  margin: 80px auto 200px auto;
+  margin: 0 auto 200px auto;
 }
 .controllerFeatures h2 {
   text-align: center;
-  padding: 80px 0 80px 0;
-  font-size: 25px;
+  padding: 20px 0 80px 0;
+  font-size: 34px;
   font-weight: 300;
+  font-family: 'evogria', sans-serif;
 }
 .controllerFeatures img {
   max-width: 100%;
@@ -1269,7 +1272,7 @@ video.purchase {
 .controllerFeatures span {
   margin-right: 5px;
   font-weight: bold;
-  color:#2c60bf;
+  color:#449ddf;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -1575,7 +1578,12 @@ a img.two {
 .firstBuyTwo p {
   max-width: 70%;
 }
-
+.app {
+  position: relative;
+  right:55px;
+  top: 40px;
+ 
+}
 @media screen and (max-width: 1072px) {
   .specs {
     flex-direction: column;
@@ -1595,6 +1603,16 @@ a img.two {
 
 
 @media screen and (max-width: 992px) {
+  .specialCase {
+    margin: 80px auto;
+  }
+  .app {
+    position: relative;
+    right: initial !important;
+    margin-right: initial; 
+    display: block;
+    margin: 40px auto !important;
+  }
   .featuresOneContainer {
     height: auto;
     padding-bottom: 40px !important;
@@ -2227,7 +2245,7 @@ a img.two {
     text-align: center;
   }
   .controllerSlideOne h1 {
-    margin-top:20px;
+    margin-top:60px;
   }
   .controllerSlideOne img {
     position: relative;
