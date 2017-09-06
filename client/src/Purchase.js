@@ -131,7 +131,7 @@ export class Purchase extends Component {
                 <div>
                     <h2>There are more than 14,000 water damage claims a day.</h2>
                     <img className='one' src={pipe} alt='leaking pipe' />
-                    <p>Guardian communicates with <Link to='/water-detectors'>Water Detectors</Link> throughout your home to know when there is a leak, and shuts off your water to prevent further damage while notifying you of the leak.  Guardian installs with no tools, no plumber, and no pipe cutting - simply Install, Connect, and Protect.</p>
+                    <p>Guardian communicates with <Link to='/water-detector'>Water Detectors</Link> throughout your home to know when there is a leak, and shuts off your water to prevent further damage while notifying you of the leak.  Guardian installs with no tools, no plumber, and no pipe cutting - simply Install, Connect, and Protect.</p>
 
                     <Link to='/buy'><img className='two' src={red} alt='red button' /></Link>
                 </div>
