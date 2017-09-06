@@ -890,8 +890,29 @@ video.purchase {
     position: relative;
     background:white;
     width:341px;
-   
   }
+  .thirdvalve h2 {
+    margin-right: 5px;
+    font-weight: bold;
+    color: #449ddf;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
+    margin: 40px auto;
+    
+}
+  .thirdvalve p {
+    max-width: 40%;
+    margin: 40px auto;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center; 
+    
+  
+
+  }
+  
   
   .buyAbout div {
     padding: 0 20px;
@@ -1174,7 +1195,7 @@ video.purchase {
     max-width: 100%;
   }
   .hundredHeight {
-    height: auto !important;
+    height: 115vh !important;
   }
   .controllerSlideOne img{ 
     position: absolute;
@@ -1251,7 +1272,7 @@ video.purchase {
 }
 .controllerFeatures {
   max-width: 70%;
-  margin: 0 auto 200px auto;
+  margin: 0 auto 80px auto;
 }
 .controllerFeatures h2 {
   text-align: center;

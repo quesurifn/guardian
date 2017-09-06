@@ -26,6 +26,15 @@
 hr {
     margin: 80px auto;
 }
+.valveTiles img {
+    width: 100%;
+}
+.thirdvalve p:last-child {
+    margin-bottom: 80px;
+}
+.video { 
+    margin-top: -6px;
+}
 @media screen and (max-width: 1160px) {
     .moreFeatues {
         max-width: 100%;
@@ -62,5 +71,18 @@ hr {
         top: 0px !important;
     
     }
+    .thirdvalve h2, .thirdvalve p {
+        font-size: 14px;
+        width: 95%;
+        max-width: 95%;
+        margin: 20px auto;
+    }
+    .thirdvalve h2:first-child {
+        margin-top: 40px;
+    }
+    hr {
+        margin: 40px auto;
+    }
+
     
 }
