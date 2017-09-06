@@ -20,6 +20,23 @@ import two from './images/photo2.png'
 import appstore from './images/appstores.png'
 
 export class AppComponent extends Component {
+       constructor() {
+        super()
+           
+
+        this.playvideo = this.playvideo.bind(this)
+
+ 
+    }
+    playvideo() {
+        const video = this.refs.video;
+
+        if (video.paused) {
+            video.play()
+        } else {
+            video.pause()
+        }
+    }
    componentDidMount() {
         document.querySelector('nav').style.backgroundColor = 'transparent'
         document.querySelector('nav').style.position = 'absolute'
