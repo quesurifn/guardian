@@ -1459,10 +1459,11 @@ video.purchase {
 .homeSix img {
   width: 700px;
   height: 600px;
-
 }
-
-
+a img.two {
+    display: block;
+    margin: auto;
+}
 .left h3 {
   color:red; 
   font-weight: 300;
@@ -1598,6 +1599,7 @@ video.purchase {
     float: left !important;
     width:220px;
   }
+
   .left button {
     margin: auto;
   }
