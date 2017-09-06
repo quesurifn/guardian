@@ -4,6 +4,8 @@ import './css/gallery.css'
 import axios from 'axios'
 import ImageGallery from 'react-image-gallery';
 
+import {Link} from 'react-router-dom'
+
 import {Row, Col, Container} from 'react-materialize'
 import 'react-image-gallery/styles/css/image-gallery-no-icon.css'
 import guardian from './images/herotransweb.png'
@@ -102,7 +104,7 @@ export class Buy extends Component {
                         <h4>MSRP</h4>
                         <h3>$399.97</h3>
                         
-                        <button className='yolo'>Reserve Today And Save $100</button>
+                        <button className='yolo'>Temporarily Sold Out</button>
 
                         <div className='inline-form' ref='BuyContainer'>
                             <div className='form-container'> 
@@ -111,7 +113,7 @@ export class Buy extends Component {
                             <button  onClick={this.submitEmail} >Notify Me</button>
 
                         </div>
-                        <span ref='thankyou'>Notify me when it begins shipping at full price</span>
+                        <span ref='thankyou'>Notify me when it's back in stock.</span>
                     </div>
                 </Col>
             </Row>
@@ -127,7 +129,7 @@ export class Buy extends Component {
                         <p>
                            Water Detectors placed throughout your home will notify you and take action when a leak is detected.
                         </p>
-                        <a>Read More</a>
+                        <Link to='/valve-controller'>Read More</Link>
 
                         </div>
 
@@ -143,7 +145,7 @@ export class Buy extends Component {
                                 <p>
                                 The Valve Controller will automatically shut off your water when leaks are detected to avoid damage.
                                 </p>
-                                <a>Read More</a>
+                                <Link to='/leak-detector'>Read More</Link>
                             </div>
 
                     </div>
@@ -158,7 +160,7 @@ export class Buy extends Component {
                             
 
 
-                            <a>Read More</a>
+                            <Link to='app'>LinRead More</Link>
                         </div>
 
                     </div>

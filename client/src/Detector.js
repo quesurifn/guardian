@@ -17,6 +17,24 @@ import three from './images/water-detector-section-3.jpg'
 import appstore from './images/appstores.png'
 
 export class Detector extends Component {
+    constructor() {
+        super()
+           
+
+        this.playvideo = this.playvideo.bind(this)
+
+ 
+    }
+    playvideo() {
+        const video = this.refs.video;
+
+        if (video.paused) {
+            video.play()
+        } else {
+            video.pause()
+        }
+    }
+
    componentDidMount() {
         document.querySelector('nav').style.backgroundColor = 'transparent'
         document.querySelector('nav').style.position = 'absolute'
@@ -41,15 +59,11 @@ export class Detector extends Component {
   render() {
     return (
       <div className="valvePage">
-        <div className="gallery items-3 hundredHeight">
-          <div id="item-1" className="control-operator"></div>
-          <div id="item-2" className="control-operator"></div>
-          <div id="item-3" className="control-operator"></div>
-
-          <figure className="item bgWater hundredHeight controllerSlideOne">
+        
+          <div className="item bgWater controllerSlideOne">
             <Row>
               <Col s={12}>
-                <h1>Introducing the Valve Controller</h1>
+                <h1 style={{textAlign:'center'}}>The Smartest Water Detector Yet</h1>
               </Col>
               
               <Col s={12} m={5} className='padding20'>
@@ -61,16 +75,8 @@ export class Detector extends Component {
                 <img src={leak} alt='half guardian' />
               </Col>
             </Row>
-          </figure> 
+          </div> 
 
-          <figure className="item gradient hundredHeight">
-            <h1>2</h1>
-          </figure>
-
-          <figure className="item gradient hundredHeight">
-            <h1>3</h1>
-          </figure>
-        </div>
 
 
         <Row >
