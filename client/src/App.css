@@ -510,7 +510,7 @@ nav ul a.blueButton:hover {
 
 }
 video {
- background:transparent url('./images/video-slate.jpg') no-repeat 0 0;
+ background:transparent url('./images/posterfinal.png') no-repeat 0 0;
    -webkit-background-size:cover;
    -moz-background-size:cover;
    -o-background-size:cover;
@@ -1614,6 +1614,14 @@ a img.two {
   background-position: center !important;
   height: 100vh; 
 
+}
+.relative.detector img {
+  position: absolute;
+  right:0;
+  left: initial !important;
+}
+.col.m5.padding20 * {
+  padding-left: 120px;
 }
 @media screen and (max-width: 1072px) {
   .specs {

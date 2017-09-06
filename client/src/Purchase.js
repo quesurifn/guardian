@@ -23,6 +23,7 @@ import recut from './images/home-valve-recut.png'
 import leak from './images/leaksensor.png'
 import last from './images/guardian-set.jpg'
 
+
 import ScrollAnimation from 'react-animate-on-scroll'
 
 
@@ -120,7 +121,7 @@ export class Purchase extends Component {
         <Row>
             <Col s={12}>
                 <video className='purchase' ref='video' poster='http://www.cityrider.com/fixed/43aspect.png' onClick={this.playvideo}>
-                    <source src='https://s3.us-east-2.amazonaws.com/dome-web-assets/purple-passion.mp4' type='video/mp4' />
+                    <source src='https://s3-us-west-2.amazonaws.com/getguardian/guardian-background.mp4' type='video/mp4' />
                     Your browser does not support HTML5
                 </video>
             </Col>

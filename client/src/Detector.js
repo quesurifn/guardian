@@ -8,12 +8,14 @@ import schematic from './images/guardian-wire-1.jpg'
 
 import tiles from './images/valve-tiles.jpg'
 
+import leak from './images/water-detector-big-cut.png'
+
 
 import one from './images/vc-section-1.jpg'
 import two from './images/photo2.png'
 import appstore from './images/appstores.png'
 
-export class Controller extends Component {
+export class Detector extends Component {
    componentDidMount() {
         document.querySelector('nav').style.backgroundColor = 'transparent'
         document.querySelector('nav').style.position = 'absolute'
@@ -35,8 +37,6 @@ export class Controller extends Component {
                 
     }
 
-
-
   render() {
     return (
       <div className="valvePage">
@@ -45,19 +45,19 @@ export class Controller extends Component {
           <div id="item-2" className="control-operator"></div>
           <div id="item-3" className="control-operator"></div>
 
-          <figure className="item bgValve hundredHeight controllerSlideOne">
+          <figure className="item bgWater hundredHeight controllerSlideOne">
             <Row>
               <Col s={12}>
                 <h1>Introducing the Valve Controller</h1>
               </Col>
-              <Col s={12} m={7} className='relative'>
-                <img src={halfg} alt='half guardian' />
-              </Col>
-              <Col s={12} m={5} className='padding20'>
-                <h2>ROBUST &amp; RELIABLE</h2>
-                <p>Battery Backup, offline functionality, and more.</p>
-                <button>GET GUARDIAN</button>
               
+              <Col s={12} m={5} className='padding20'>
+                <h2>3 SENSORS IN 1</h2>
+                <p style={{maxWidth:'90%'}}>Super flexible, use anywhere, anything you want to monitor.</p>
+                <button style={{paddingLeft: '0px', marginLeft: '120px', background: '#363636'}}>GET GUARDIAN</button>
+              </Col>
+              <Col s={12} m={7} className='relative detector'>
+                <img src={leak} alt='half guardian' />
               </Col>
             </Row>
           </figure> 
@@ -75,7 +75,7 @@ export class Controller extends Component {
         <Row >
           <div className='controllerFeatures'>
            <Row>
-             <h2>MORE THAN JUST AN AUTOMATIC VALVE</h2>
+             <h2>DETECT WATER USING THREE SEPARATE SETS OF SENSORS</h2>
             <Col l={6} m={12}>
               <img src={one} alt='valve schematic' />
 
@@ -148,7 +148,7 @@ export class Controller extends Component {
         <Row>
             <Col s={12}>
                 <video className='purchase' ref='video' poster='http://www.cityrider.com/fixed/43aspect.png' onClick={this.playvideo}>
-                    <source src='https://s3.us-east-2.amazonaws.com/dome-web-assets/purple-passion.mp4' type='video/mp4' />
+                    <source src='https://s3-us-west-2.amazonaws.com/getguardian/guardian-background.mp4' type='video/mp4' />
                     Your browser does not support HTML5
                 </video>
             </Col>

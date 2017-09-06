@@ -55,7 +55,7 @@ export class Controller extends Component {
               </Col>
               <Col s={12} m={5} className='padding20'>
                 <h2>ROBUST &amp; RELIABLE</h2>
-                <p>Battery Backup, offline functionality, and more.</p>
+                <p >Battery Backup, offline functionality, and more.</p>
                 <button>GET GUARDIAN</button>
               
               </Col>
