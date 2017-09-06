@@ -26,7 +26,7 @@ export class Header extends Component {
       <div className='row'>
           <div className='col s12'>
 
-            <Navbar fixed ref='navbar'>
+            <Navbar fixed ref='navbar' brand='GUARDIAN'>
 
                     <Row>
                         

@@ -1539,7 +1539,13 @@ video.purchase {
 }
 .featureThreeContainer img , .featureFiveContainer img{
   width: 60% !important;
-
+}
+.brand-logo {
+    font-size: 30px;
+    font-family: 'evogria', sans-serif;
+    letter-spacing: 2px;
+    text-align: left;
+    color: rgb(28, 86, 192);
 }
 .featureTwoContainer img, .featureFourContainer img {
   width: 30% !important;
@@ -1967,6 +1973,9 @@ font-size: 14px;
 }
 @media screen and (min-width: 992px) {
   #nav-mobile {
+    display: none !important;
+  }
+  .brand-logo {
     display: none !important;
   }
  
