@@ -114,7 +114,7 @@ export class Purchase extends Component {
             <Col s={12} className='homeFour'>
                 <h1>&ldquo;The first solution that detects the first drop and actually does something about it.&rdquo;</h1>
                 <img src={leak} alt='leak detector'/>
-                <button><Link to='/buy'>Get Guardian</Link></button>
+                <button><Link to='/leak-detector'>Get Guardian</Link></button>
                 <h2>SHIPPING SOON</h2>
             </Col>
         </Row>
