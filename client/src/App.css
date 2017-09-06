@@ -1584,6 +1584,20 @@ video.purchase {
     height: auto;
     padding-bottom: 40px !important;
   }
+  .blueButton.centerIt {
+    display: flex;
+  }
+  #nax-mobile * {
+    text-align: left;
+    margin-left: 20px !important;
+  }
+  #nav-mobile li a, #nav-mobile a, #nav-mobile button {
+    margin-left: 20px !important;
+  }
+  #nav-mobile a.centerIt {
+    float: left !important;
+    width:220px;
+  }
   .left button {
     margin: auto;
   }
