@@ -27,6 +27,14 @@ import cardOne from './images/buy-page-card-1.jpg'
 import cardTwo from './images/buy-page-card-2.jpg'
 import cardThree from './images/buy-page-card-3.jpg'
 
+import iconOne from './images/icon-1.png'
+import iconTwo from './images/icon-2.png'
+import iconThree from './images/icon-3.png'
+import iconFour from './images/icon-4.png'
+import iconFive from './images/icon-5.png'
+import iconSix from './images/icon-6.png'
+
+
 export class Buy extends Component {
     constructor() {
         super() 
@@ -129,7 +137,7 @@ export class Buy extends Component {
                         <p>
                            Water Detectors placed throughout your home will notify you and take action when a leak is detected.
                         </p>
-                        <Link to='/valve-controller'>Read More</Link>
+                        <Link to='/water-detector'>Explore</Link>
 
                         </div>
 
@@ -145,7 +153,7 @@ export class Buy extends Component {
                                 <p>
                                 The Valve Controller will automatically shut off your water when leaks are detected to avoid damage.
                                 </p>
-                                <Link to='/leak-detector'>Read More</Link>
+                                <Link to='valve-controller'>Explore</Link>
                             </div>
 
                     </div>
@@ -160,7 +168,7 @@ export class Buy extends Component {
                             
 
 
-                            <Link to='app'>LinRead More</Link>
+                            <Link to='app'>Explore</Link>
                         </div>
 
                     </div>
@@ -248,11 +256,25 @@ export class Buy extends Component {
                 <h1>Additional Features</h1>
                 <div className='moreFeatures'>
             
-                    
+
+
+                    <div className='featureContainer'>
+                        <div className='featuresCard'>
+               
+                                <img src={iconTwo} alt='Guardian' />  
+
+                                <div className='featuresInline'>
+                                <h2>Offline Functionality</h2>
+                                <p>The internet is only required for off-site control and notifications, so Guardian will protect your home without internet connectivity.</p>
+                        </div>
+
+                        </div>
+                    </div>
+
                     <div className='featureContainer'>
                             <div className='featuresCard'>
                
-                                <img src='http://placehold.it/120x120' alt='Logo' /> 
+                                <img src={iconOne} alt='Guardian' /> 
 
                                 <div className='featuresInline'>
                                     <h2>Extreme Long Range</h2>
@@ -264,25 +286,11 @@ export class Buy extends Component {
                     </div>
 
 
-                    <div className='featureContainer'>
-                        <div className='featuresCard'>
-               
-                                <img src='http://placehold.it/120x120' alt='Logo' /> 
-
-                                <div className='featuresInline'>
-                                <h2>Offline Functionality</h2>
-                                <p>The internet is only required for off-site control and notifications, so Guardian will protect your home without internet connectivity.</p>
-                        </div>
-
-                        </div>
-                    </div>
-
-
 
                     <div className='featureContainer'>
                       <div className='featuresCard'>
                
-                                <img src='http://placehold.it/120x120' alt='Logo' /> 
+                                <img src={iconThree} alt='Guardian' /> 
 
                                 <div className='featuresInline'>
                                 <h2>Battery Backup</h2>
@@ -295,13 +303,23 @@ export class Buy extends Component {
    
 
 
+                    <div className='featureContainer'>
+                       <div className='featuresCard'>
+               
+                                <img src={iconFive} alt='Guardian' /> 
 
+                                <div className='featuresInline'>
+                                <h2>Completely Standalone</h2>
+                                <p>The Water Detectors communicate with directly with the Valve Controller, avoiding the need for hubs or other useless hardware.</p>
+                       </div>
+                    </div>
+                    </div>
      
                     
                     <div className='featureContainer'>
                         <div className='featuresCard'>
                
-                                <img src='http://placehold.it/120x120' alt='Logo' /> 
+                                <img src={iconFour} alt='Guardian' /> 
 
                                 <div className='featuresInline'>
                                 <h2>No Tools Required</h2>
@@ -310,22 +328,12 @@ export class Buy extends Component {
                         </div>
                     </div>
 
-                     <div className='featureContainer'>
-                       <div className='featuresCard'>
-               
-                                <img src='http://placehold.it/120x120' alt='Logo' /> 
-
-                                <div className='featuresInline'>
-                                <h2>Completely Standalone</h2>
-                                <p>The Water Detectors communicate with directly with the Valve Controller, avoiding the need for hubs or other useless hardware.</p>
-                       </div>
-                    </div>
-                    </div>
+                     
 
                     <div className='featureContainer'>
                      <div className='featuresCard'>
                
-                                <img src='http://placehold.it/120x120' alt='Logo' /> 
+                                <img src={iconSix} alt='Guardian' /> 
 
                                 <div className='featuresInline'>
                                 <h2>Routine Self Tests </h2>
