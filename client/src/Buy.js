@@ -13,6 +13,14 @@ import slider4Valve from './images/how-slider-4.png'
 import slider5Valve from './images/how-slider-5.png'
 
 
+import sliderOne from './images/buy-1.jpg'
+import sliderOneThumb from './images/buy-1-thumb.jpg'
+import sliderTwo from './images/buy-2.jpg'
+import sliderTwoThumb from './images/buy-2-thumb.jpg'
+import sliderThree from './images/buy-3.jpg'
+import sliderThreeThumb from './images/buy-3-thumb.jpg'
+
+
 import cardOne from './images/buy-page-card-1.jpg'
 import cardTwo from './images/buy-page-card-2.jpg'
 import cardThree from './images/buy-page-card-3.jpg'
@@ -23,8 +31,6 @@ export class Buy extends Component {
             this.submitEmail= this.submitEmail.bind(this);
         
     }
-
-
     submitEmail() {
         let email = this.refs.emailBuy.value
         console.log(email)
@@ -46,17 +52,18 @@ export class Buy extends Component {
   
   render() {
          const images = [
+      
       {
-        original: 'http://placehold.it/1000x1000',
-        thumbnail: 'http://placehold.it/250x150',
+        original: sliderTwo,
+        thumbnail: sliderTwoThumb,
       },
       {
-         original: 'http://placehold.it/1000x1000',
-        thumbnail: 'http://placehold.it/250x150',
+        original: sliderOne,
+        thumbnail: sliderOneThumb,
       },
       {
-        original: 'http://placehold.it/1000x1000',
-        thumbnail: 'http://placehold.it/250x150',
+        original:   sliderThree,
+        thumbnail: sliderThreeThumb,
       }
     ]
     return (
