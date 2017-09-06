@@ -111,7 +111,6 @@ export class Purchase extends Component {
                 <img src={leak} alt='leak detector'/>
                 <button>Get Guardian</button>
                 <h2>SHIPPING SOON</h2>
-                <p>Watch and see how easy Guardian is to install</p>
             </Col>
         </Row>
         <Row>
