@@ -1859,8 +1859,18 @@ font-size: 14px;
   .leakingPipe h2, .leakingPipe p {
     margin: 40px 0;
   }
+  .leakingPipe p {
+    font-size: 16px !important;
+  }
+  .leakingPipe h2{ 
+    font-size: 25px !important;
+
+  }
+  .homeSix p {
+    font-size: 16px !important; 
+  }
   .left h2 {
-    width: 100%;
+    width: 100% !important;
   }
   .leakingPipe {
     height: 100vh;
