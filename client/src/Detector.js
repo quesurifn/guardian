@@ -129,10 +129,7 @@ export class Detector extends Component {
 
             </Col>
           </Row>
-
-          </div>
-        </Row>
-        <hr />
+            <hr />
         <Row>
             <Col l={6} m={12}>
               <img src={three} alt='valve schematic' />
@@ -154,6 +151,10 @@ export class Detector extends Component {
 
             </Col>
           </Row>
+
+          </div>
+        </Row>
+      
 
         
         <Row>
