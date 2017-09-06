@@ -48,7 +48,7 @@ export class Research extends Component {
                     <div />
                 </Col>
                  <Col s={12} m={12} l={6} className='fourthResearchTwo'>
-                    <p>The Guardian Team has spent the past three years researching and developing solutions to help prevent water damage. The challenge for Guardian has been to create a reliable, always available solution that anyone can install, that requires no plumbing or cutting into pipes and can work automatically, while away from home.</p>
+                    <p>The challenge for Guardian has been to create a reliable, always available solution that anyone can install, that requires no plumbing or cutting into pipes and can work automatically, while away from home.</p>
                 </Col>
             </Row>
             <Row>
