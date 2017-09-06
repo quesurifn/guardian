@@ -1929,6 +1929,17 @@ a img.two {
   }
 }
 @media screen and (max-width:578px) {
+  .firstBuyOne {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .firstBuyTwo p {
+    max-width: 100% !important;
+  }
+  h1.yup {
+    line-height: 38px !important;
+    margin-top: 40px;
+  }
   .homeOne h1 {
     font-size:40px;
   }

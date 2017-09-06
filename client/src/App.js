@@ -39,7 +39,7 @@ export const App = () => (
         <Route exact path='/technology' component={RF} />
         <Route exact path='/blog' component={Blog} />
         <Route exact path='/valve-controller' component={Controller} />
-        <Route exact path='/water-detector' component={Detector} />
+        <Route exact path='/leak-detector' component={Detector} />
         <Route exact path='/notify' component={GetNotified} />
         <Route exact path='/research' component={Research} />
         <Route exact path='/purchase' component={Purchase} />
