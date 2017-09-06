@@ -1371,7 +1371,7 @@ video.purchase {
   transform: translateX(-50%);
   width:100%;
   font-weight: 300;
-  margin-top: 80px;
+  margin-top: 180px;
 }
 .homeThree {
   background: url('./images/toilet.jpg');
@@ -1499,7 +1499,7 @@ a img.two {
 .hideCol img{
   max-width: 100%;
   display: block;
-  margin: 80px auto;
+  margin: 20px auto;
 }
 .specs {
   height: 100vh;
@@ -1615,7 +1615,7 @@ a img.two {
   }
 
   .left button {
-    margin: auto;
+    margin:40px auto 0 auto;
   }
   .firstBuyOne h1{
     display: block;
@@ -1871,6 +1871,9 @@ a img.two {
 @media screen and (max-width:578px) {
   .homeOne h1 {
     font-size:40px;
+  }
+  .hideCol img {
+    max-width: 85%;
   }
   .homeFlex {
     margin-top: 0px;
