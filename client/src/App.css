@@ -1872,6 +1872,9 @@ font-size: 14px;
   }
 }
 @media screen and (max-width: 500px) {
+  .firstBuyTwo  button {
+    font-size: 13px !important;
+  }
   h1.yup {
     width: 100%;
     font-size: 28px !important;
