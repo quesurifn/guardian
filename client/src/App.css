@@ -510,11 +510,12 @@ nav ul a.blueButton:hover {
 
 }
 video {
- background:transparent url('./images/posterfinal.png') no-repeat 0 0;
+ background:transparent url('./images/video-slate.jpg') no-repeat 0 0;
    -webkit-background-size:cover;
    -moz-background-size:cover;
    -o-background-size:cover;
    background-size:cover;
+   background-position: center;
 }
 .gBlue p {
   color: white;
