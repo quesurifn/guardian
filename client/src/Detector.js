@@ -11,8 +11,9 @@ import tiles from './images/valve-tiles.jpg'
 import leak from './images/water-detector-big-cut.png'
 
 
-import one from './images/vc-section-1.jpg'
-import two from './images/photo2.png'
+import one from './images/water-detector-section-1.png'
+import two from './images/water-detector-section-2.png'
+import three from './images/water-detector-section-3.jpg'
 import appstore from './images/appstores.png'
 
 export class Detector extends Component {
@@ -82,16 +83,16 @@ export class Detector extends Component {
             </Col>
             <Col l={6} m={12} className='schemaFlex'>
               <p>
-                <span>No Tools Needed</span>     The Valve Controller is ready to install out of the box, without any tools - the hand-tightened clamps grip the unit securely to your valve. 
+                <span>Main Sensors</span>     The Main Sensors can be placed near toilets, refrigerators, water heaters, and most other appliances and fixtures. 
               </p>
 
 
                <p>
-                <span>Use Your Existing Valve</span>    You don't need a special valve to use Guardian - only a standard quarter-turn ball valve. Click here to see what valves Guardian is compatible with. 
+                <span>Drip Sensor</span>    The Drip Sensor can detect as little as three drops of water, and should be placed underneath potential leaks, for example under toilet drains or sinks. 
               </p>
 
                <p>
-                <span>Valve Calibration</span>   You don't need a special valve to use Guardian - only a standard quarter-turn ball valve. Click here to see what valves Guardian is compatible with. 
+                <span>Remote Sensor Probe</span>   The Remote Probe can monitor tight spaces and can even notify you before a sump pump overflows. 
               </p>
 
             </Col>
@@ -127,24 +128,28 @@ export class Detector extends Component {
         </Row>
         <hr />
         <Row>
-          <Col s={12} className='thirdvalve'>
-            <h2>Battery Backup</h2>
-            <p>The Valve Controller's optional battery backup lets it monitor your system and close the valve for up to twelve hours without electricity</p>
+            <Col l={6} m={12}>
+              <img src={three} alt='valve schematic' />
 
-            <h2>OFFLINE FUNCTIONALITY</h2>
-            <p>Once configured, the internet is only required for off-site control and monitoring of the system, so the Valve Controller will still shut off your water even without the internet during a leak.</p>
+            </Col>
+            <Col l={6} m={12} className='schemaFlex'>
+              <p>
+                <span>15-year Battery Life</span>     The Water Detectors stay powered on for fifteen years with the included battery, and Guardian will notify you when the battery runs low. 
+              </p>
 
-            <h2>Extreme Longrange</h2>
-            <p>The Water Detectors can be placed up to 1000' away from the Valve Controller, which means Guardian will protect large homes and even apartment buildings</p> 
-          </Col>
-        </Row> 
-        <Row>
-          <Col s={12} className='valveTiles'>
-            <img src={tiles} alt='yes' />
 
-          </Col>
+               <p>
+                <span>Waterproof Housing</span>    Reuse your Water Detectors even after a leak - its waterproof housing protects it from water damage. 
+              </p>
 
-        </Row>
+               <p>
+                <span>Extreme Wireless Range</span>   The Water Detectors communicate directly with the Valve Controller using radio waves, and can be placed up to 1000’ away. 
+              </p>
+
+            </Col>
+          </Row>
+
+        
         <Row>
             <Col s={12}>
                 <video className='purchase' ref='video' poster='http://www.cityrider.com/fixed/43aspect.png' onClick={this.playvideo}>
