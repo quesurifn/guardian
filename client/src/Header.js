@@ -42,8 +42,8 @@ export class Header extends Component {
                         <Col s={12} m={12} l={6} className="col-6 centerHeader">
                              <li className='blackit'><Link to='/buy'>Get Guardian</Link></li>
                             <li className='blackit'><Link to='/valve-controller'>Explore</Link></li>
-                            <li className='blackit'><Link to='/research'>Research &amp; Development</Link></li>
                             <li className='blackit'><Link to='/research'>About</Link></li>
+                            <li className='blackit'><a href='https://support.getguardian.com' target='_blank'>Support</a></li>
 
                         </Col>
 
