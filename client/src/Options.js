@@ -7,6 +7,10 @@ import {Link} from 'react-router-dom'
 
 
 export class Options extends Component {
+    componentDidMount() {
+         window.scrollTo(0, 0)
+    }
+ 
 
   render() {
   

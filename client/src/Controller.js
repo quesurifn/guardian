@@ -16,7 +16,7 @@ export class Controller extends Component {
         document.querySelector('.navbar-fixed').style.width = '100%'
         document.querySelector('.headerLogo').style.color = '#2050c2'
         
-        
+         window.scrollTo(0, 0)
         
         //ALL White
         var nodes = document.querySelector('nav').getElementsByTagName('a')

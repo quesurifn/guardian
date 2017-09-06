@@ -3,6 +3,7 @@ import './App.css';
 
 export class NotFound extends Component {
     componentDidMount() {
+        window.scrollTo(0, 0)
         setTimeout(() => {
             this.props.history.push('/')
         }, 7000)

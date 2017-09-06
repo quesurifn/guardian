@@ -1551,6 +1551,15 @@ video.purchase {
   justify-content: center;
   margin-top: 40px;
 }
+.homeOne button a {
+  color:white !important;
+}
+.homeFour button a {
+  color:white !important;
+}
+.homeFlex button a {
+  color: white !important;
+}
 
 @media screen and (max-width: 1072px) {
   .specs {
@@ -1762,9 +1771,9 @@ video.purchase {
   .moreFeatures {
     max-width: 100%;
   }
-    .schemaFlex p {
-font-size: 14px;
-}
+  .schemaFlex p {
+    font-size: 14px;  
+  }
   .controllerFeatures {
     max-width: 95%;
   }
@@ -1842,6 +1851,7 @@ font-size: 14px;
   }
   .homeOne h2 {
     font-size: 20px;
+    margin-top: -55px;
   }
   .homeOne button {
     margin: 0;

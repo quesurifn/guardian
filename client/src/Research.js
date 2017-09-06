@@ -13,6 +13,10 @@ import program from './images/programming.png'
 
  
 export class Research extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+ 
 
   render() {
   

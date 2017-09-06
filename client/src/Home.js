@@ -7,7 +7,10 @@ import cardTwo from './images/faceb.png'
 import {Card, Row, Col,CardTitle} from 'react-materialize'
 
 export class Home extends Component {
-
+componentDidMount() {
+         window.scrollTo(0, 0)
+    }
+ 
   render() {
 
     return (

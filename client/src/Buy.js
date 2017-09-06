@@ -31,6 +31,9 @@ export class Buy extends Component {
             this.submitEmail= this.submitEmail.bind(this);
         
     }
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     submitEmail() {
         let email = this.refs.emailBuy.value
         console.log(email)

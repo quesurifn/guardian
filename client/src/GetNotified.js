@@ -9,6 +9,9 @@ export class GetNotified extends Component {
             this.submitEmail= this.submitEmail.bind(this);
         
     }
+    componentDidMount() {
+         window.scrollTo(0, 0)
+    }
  
 
     submitEmail() {

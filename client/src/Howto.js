@@ -5,6 +5,10 @@ import {Container} from 'react-materialize'
 import {Link} from 'react-router-dom'
 
 export class Howto extends Component {
+    componentDidMount() {
+         window.scrollTo(0, 0)
+    }
+ 
 
   render() {
     return (

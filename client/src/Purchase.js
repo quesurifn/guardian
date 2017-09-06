@@ -56,6 +56,10 @@ export class Purchase extends Component {
                 for(var i=0; i<nodes.length; i++) {
                     nodes[i].style.color = '#2C60BF';
                 }    
+ 
+         window.scrollTo(0, 0)
+
+ 
       }
 
 
@@ -81,7 +85,7 @@ export class Purchase extends Component {
                 <div className='homeOne'>
                     <h2>#YOUCOULDEASILY</h2>
                     <h1>PREVENT WATER DAMAGE</h1>
-                    <button>GET GUARDIAN</button>
+                    <button><Link to='/buy'>GET GUARDIAN</Link></button>
                 </div>
             </Col>
         </Row>
@@ -109,7 +113,7 @@ export class Purchase extends Component {
             <Col s={12} className='homeFour'>
                 <h1>&ldquo;The first solution that detects the first drop and actually does something about it.&rdquo;</h1>
                 <img src={leak} alt='leak detector'/>
-                <button>Get Guardian</button>
+                <button><Link to='/buy'>Get Guardian</Link></button>
                 <h2>SHIPPING SOON</h2>
             </Col>
         </Row>
@@ -128,7 +132,7 @@ export class Purchase extends Component {
                     <img className='one' src={pipe} alt='leaking pipe' />
                     <p>Americans file more water damage claims than fire. So wheres the water alarm system.</p>
 
-                    <img className='two' src={red} alt='red button' />
+                    <Link to='/buy'><img className='two' src={red} alt='red button' /></Link>
                 </div>
             </Col>
         </Row>
@@ -143,7 +147,7 @@ export class Purchase extends Component {
                                 <h3>Order Guardian ahead and save</h3>
                                 <h2>Guardian Leak Prevention Kit</h2>
                                 <p>The Guardian Leak Prevention Kit includes everything you need to protect your home from leaks.</p>
-                                <button>LEARN MORE</button>
+                                <button><Link to='/valve-controller'>LEARN MORE</Link></button>
                             </div>
            
 
