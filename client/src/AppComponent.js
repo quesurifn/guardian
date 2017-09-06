@@ -50,7 +50,7 @@ export class AppComponent extends Component {
           <figure className="item bgWater hundredHeight controllerSlideOne">
             <Row>
               <Col s={12}>
-                <h1>Introducing the Valve Controller</h1>
+                <h1>A Top Class Mobile Experience</h1>
               </Col>
               
               <Col s={12} m={5} className='padding20'>
