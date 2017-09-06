@@ -13,6 +13,7 @@ font-weight: normal;
 src: local('Evogria Italic'), url('./css/fonts/Evogria Italic.woff') format('woff');
 }
 
+
 html, body {
   height:100%;
 
@@ -516,6 +517,7 @@ video {
    -o-background-size:cover;
    background-size:cover;
    background-position: center;
+   margin-top: -6px;
 }
 .gBlue p {
   color: white;
@@ -1280,7 +1282,7 @@ video.purchase {
 }
 .controllerFeatures h2 {
   text-align: center;
-  padding: 180px 0 80px 0;
+  padding: 100px 0 80px 0;
   font-size: 34px;
   font-weight: 300;
   font-family: 'evogria', sans-serif;
@@ -1289,7 +1291,7 @@ video.purchase {
   max-width: 100%;
 }
 .controllerFeatures p {
-  max-width:  70%;
+  max-width:  80%;
   margin: 20px 0;
   font-size: 20px;
   font-weight: 300;
@@ -1613,7 +1615,7 @@ a img.two {
   background: url('./images/water-bg.jpg') !important;
   background-size: cover !important;
   background-position: center !important;
-  height: 100vh; 
+  height: 140vh; 
 
 }
 .relative.detector img {
@@ -2028,6 +2030,10 @@ a img.two {
   .firstBuyTwo  button {
     font-size: 13px !important;
   }
+  nav ul .l3 img {
+    padding-top:25px !important;
+  }
+  
   h1.yup {
     width: 100%;
     font-size: 28px !important;
