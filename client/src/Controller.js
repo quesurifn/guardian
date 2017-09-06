@@ -53,10 +53,10 @@ export class Controller extends Component {
               <Col s={12} m={7} className='relative'>
                 <img src={halfg} alt='half guardian' />
               </Col>
-              <Col s={12} m={5} className='padding20'>
-                <h2>ROBUST &amp; RELIABLE</h2>
-                <p >Battery Backup, offline functionality, and more.</p>
-                <button>GET GUARDIAN</button>
+              <Col s={12} m={5} className='padding20' style={{paddingLeft: '0px'}}>
+                <h2 style={{paddingLeft: '0px'}}>ROBUST &amp; RELIABLE</h2>
+                <p style={{paddingLeft: '0px'}}>Battery Backup, offline functionality, and more.</p>
+                <button style={{paddingLeft: '0px'}}>GET GUARDIAN</button>
               
               </Col>
             </Row>
