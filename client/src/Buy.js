@@ -190,7 +190,7 @@ export class Buy extends Component {
                             <Col s={12} className='featureTwoContainer'>
                                 <h1>How it Works</h1> 
                                 <img src={three} alt='install connect protect' />
-                                <p>Click continue and learn how to setup guardian.</p>
+                                <p>Click continue and learn how to setup Guardian.</p>
                                 <a href='#item-3'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
 
                             </Col>
@@ -236,7 +236,7 @@ export class Buy extends Component {
                                 <h2>PROTECT</h2>
                                 <img src={slider5Valve} alt='Guardian' />
                                 <p>
-                                    The Valve Controller automatically shuts off the water when the Leak Detectors detect leaks, floods, earthquakes, or other events to limit the damage done to your home. Manage your 
+                                    The Valve Controller automatically shuts off the water when the Water Detectors detect leaks, floods, earthquakes, or other events to limit the damage done to your home. Manage your 
                                     system remotely and get notifications when things go wrong from anywhere in then world.
                                 </p>
                                 <a href='#item-2'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
