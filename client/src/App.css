@@ -829,6 +829,7 @@ video.purchase {
   font-size: 50px;
   line-height: 60px;
 }
+
 .firstBuyTwo h1 {
   font-weight: bold;
   font-family: 'evogria', sans-serif;
@@ -1077,7 +1078,14 @@ video.purchase {
   .moreFeaturesContainer {
     position: relative;
   }
- 
+  .duck {
+    max-height: 400px;
+    max-width: 300px !important;
+    position: absolute;
+    right: 0;
+    left: auto !important;
+    bottom: -200px;
+  }
 
   .moreFeaturesCard p {
     margin: 0 0 0 10px;
@@ -1215,7 +1223,7 @@ video.purchase {
     height: 115vh !important;
   }
   .controllerSlideOne img{ 
-    position: absolute;
+
     left: 0;
     width:844px;
     max-width: 100%;
@@ -1252,11 +1260,11 @@ video.purchase {
 }
 .controllerSlideOne p {
   text-align: left;
-  font-size: 40px;
-  max-width: 60%;
+  font-size: 20px;
+  max-width: 43%;
   margin: 20px 0 0 0;
   font-weight: 300;
-  letter-spacing: 2px;
+  
 }
 .controllerSlideOne .col {
   padding-top:20px;
@@ -1302,7 +1310,7 @@ video.purchase {
 }
 .controllerFeatures h2 {
   text-align: center;
-  padding: 100px 0 80px 0;
+  padding: 50px 0 80px 0;
   font-size: 34px;
   font-weight: 300;
   font-family: 'evogria', sans-serif;
@@ -1430,6 +1438,13 @@ video.purchase {
   height:130vh;
   position: relative;
 
+}
+.left80 {
+  position: relative;
+  left: 80px;
+}
+.app {
+  max-width: 60% !important;
 }
 .homeThree h1 {
   color:white;
@@ -1681,6 +1696,15 @@ a img.two {
   .specialCase {
     margin: 80px auto;
   }
+  .left80 {
+    left: 40px !important;
+  }
+  .bgValve.special {
+    height: 100vh !important;
+  }
+  .duck {
+    display: none;
+  }
   .featuresCard {
     width:100% !important;
     flex-direction: column;
@@ -1706,6 +1730,7 @@ a img.two {
     margin-right: initial; 
     display: block;
     margin: 40px auto !important;
+    max-width: 60%;
   }
   .featuresOneContainer {
     height: auto;
@@ -1795,6 +1820,7 @@ a img.two {
   .left {
     top: 140px;
   }
+
 }
 @media screen and (max-width: 868px) {
   .homeOne h1 {
@@ -1852,6 +1878,11 @@ a img.two {
     left: 100px;
   }
 
+}
+@media screen and (max-width: 689px) {
+  .duck {
+    display: none;
+  }
 }
 @media screen and (max-width: 1200px) {
   .gBlue {
@@ -2102,11 +2133,24 @@ a img.two {
   .firstBuyTwo  button {
     font-size: 13px !important;
   }
+  .respHeight {
+  font-size: 18px !important;
+}
+.left80 {
+    left: 20px !important;
+  }
+.tileButton {
+  height: 50px; 
+  top:25px;
+}
   .padding20 * {
     margin-left: 0 !important;
     margin-right: 0 !important;
     padding-left: 0 !important;
     max-width: 100% !important;
+  }
+  .respvbutton {
+    height: 50px !important; 
   }
   .padding20 button {
      margin-left: 0 !important;
@@ -2114,7 +2158,9 @@ a img.two {
      left: 50%;
     transform: translateX(-50%);
     position: relative;
-
+  }
+  .duck {
+    display: none;
   }
   nav ul .l3 img {
     padding-top:25px !important;

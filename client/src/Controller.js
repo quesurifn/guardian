@@ -8,7 +8,7 @@ import schematic from './images/guardian-wire-1.jpg'
 import {Link} from 'react-router-dom'
 
 import tiles from './images/valve-tiles.jpg'
-
+import duck from './images/half-duck.png'
 
 import one from './images/vc-section-1.jpg'
 import two from './images/photo2.png'
@@ -63,7 +63,7 @@ export class Controller extends Component {
       <div className="valvePage">
        
 
-          <div className="item bgValve controllerSlideOne">
+          <div className="item bgValve special  controllerSlideOne" style={{height: '125vh'}}>
             <Row>
               <Col s={12}>
                <h1 style={{textAlign:'center'}}>Introducing the Valve Controller</h1>
@@ -73,9 +73,9 @@ export class Controller extends Component {
               </Col>
               <Col s={12} m={5} className='padding20' style={{paddingLeft: '0px'}}>
                 <h2 style={{paddingLeft: '0px'}}>ROBUST &amp; RELIABLE</h2>
-                <p style={{paddingLeft: '0px'}}>Battery Backup, offline functionality, and more.</p>
-                <button onClick={() => this.props.history.push('/buy')} style={{paddingLeft: '0px', background: '#007cea', height: '70px'}}>GET GUARDIAN</button>
-              
+                <p style={{paddingLeft: '0px'}} className='respHeight'>Battery Backup, offline functionality, and more.</p>
+                <button className='respvbutton' onClick={() => this.props.history.push('/buy')} style={{paddingLeft: '0px', background: '#007cea', height: '70px'}}>GET GUARDIAN</button>
+                <img className='duck'  src={duck} alt='duck' />
               </Col>
             </Row>
           </div> 
@@ -86,7 +86,7 @@ export class Controller extends Component {
         <Row >
           <div className='controllerFeatures'>
            <Row>
-             <h2 style={{paddingTop: '180px', color: '#449ddf'}}>MORE THAN JUST AN AUTOMATIC VALVE</h2>
+             <h2 style={{color: '#449ddf'}}>MORE THAN JUST AN AUTOMATIC VALVE</h2>
             <Col l={6} m={12}>
               <img src={one} alt='valve schematic ' className='width90 ' />
 
@@ -112,6 +112,7 @@ export class Controller extends Component {
             <Row>
              
             <Col l={6} m={12} className='schemaFlex special'>
+            <div className='left80'>
               <p>
                 <span>3RD PARTY INTEROPERABILITY</span>    Our well-documented and open API lets you control and monitor Guardian with 3rd party systems using the same app as your other smart home devices.
               </p>
@@ -126,6 +127,7 @@ export class Controller extends Component {
               </p>
 
               <img className='app' src={appstore} alt='app store' />
+              </div>
             </Col>
 
             <Col l={6} m={12}>
@@ -150,7 +152,7 @@ export class Controller extends Component {
           </Col>
           
         </Row> 
-        <button className='tileButton'>GET GUARDIAN</button>
+        <button className='tileButton' onClick={() => this.props.history.push('/buy')}>GET GUARDIAN</button>
         <Row>
           <Col s={12} className='valveTiles'>
             <img src={tiles} alt='yes' />

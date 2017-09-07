@@ -32,9 +32,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 export class Purchase extends Component {
     constructor() {
         super()
-            this.state = {
-                firstSlide: true
-            }
+          
 
         this.playvideo = this.playvideo.bind(this)
 
@@ -84,7 +82,7 @@ export class Purchase extends Component {
           
             <Col s={12} className='purchaseTwo'>          
                 <div className='homeOne'>
-                    <h2>#YOUCOULDEASILY</h2>
+                    <h2>You Could Easily</h2>
                     <h1>PREVENT WATER DAMAGE</h1>
                     <button><Link to='/buy'>GET GUARDIAN</Link></button>
                 </div>
