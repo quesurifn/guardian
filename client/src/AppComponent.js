@@ -7,7 +7,7 @@ import './css/valve.css'
 import {Row, Col} from 'react-materialize'
 import halfg from './images/half-g.png'
 import schematic from './images/guardian-wire-1.jpg'
-
+import {Link} from 'react-router-dom'
 import tiles from './images/valve-tiles.jpg'
 
 import leak from './images/water-detector-big-cut.png'
@@ -71,7 +71,7 @@ export class AppComponent extends Component {
               <Col s={12} m={5} className='padding20'>
                 <h2>EASY &amp; INTUITIVE </h2>
                 <p style={{maxWidth:'90%'}}>It learns your valve automatically during setup, and works as expected during setup.</p>
-                <button style={{paddingLeft: '0px', marginLeft: '120px', background: '#363636'}}>GET GUARDIAN</button>
+                <button onClick={() => this.props.history.push('/buy')} style={{paddingLeft: '0px', marginLeft: '120px', background: '#363636'}}>GET GUARDIAN</button>
               </Col>
               <Col s={12} m={7} className='relative detector'>
                 <img src={handapp} alt='half guardian' />

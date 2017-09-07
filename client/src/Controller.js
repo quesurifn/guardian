@@ -72,7 +72,7 @@ export class Controller extends Component {
               <Col s={12} m={5} className='padding20' style={{paddingLeft: '0px'}}>
                 <h2 style={{paddingLeft: '0px'}}>ROBUST &amp; RELIABLE</h2>
                 <p style={{paddingLeft: '0px'}}>Battery Backup, offline functionality, and more.</p>
-                <button style={{paddingLeft: '0px'}}>GET GUARDIAN</button>
+                <button onClick={() => this.props.history.push('/buy')} style={{paddingLeft: '0px'}}>GET GUARDIAN</button>
               
               </Col>
             </Row>

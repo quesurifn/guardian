@@ -113,8 +113,8 @@ export class Purchase extends Component {
         <Row>
             <Col s={12} className='homeFour'>
                 <h1>&ldquo;The first solution that detects the first drop and actually does something about it.&rdquo;</h1>
-                <img src={leak} alt='leak detector'/>
-                <button><Link to='/water-detector'>Get Guardian</Link></button>
+                <img onClick={() => this.props.history.push('/water-detector')} style={{cursor:'pointer'}} src={leak} alt='leak detector'/>
+                <button onClick={() => this.props.history.push('/buy')}>Get Guardian</button>
                 <h2>SHIPPING SOON</h2>
             </Col>
         </Row>

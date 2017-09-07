@@ -69,7 +69,7 @@ export class Detector extends Component {
               <Col s={12} m={5} className='padding20'>
                 <h2>3 SENSORS IN 1</h2>
                 <p style={{maxWidth:'90%'}}>Super flexible, use anywhere, anything you want to monitor.</p>
-                <button style={{paddingLeft: '0px', marginLeft: '120px', background: '#363636'}}>GET GUARDIAN</button>
+                <button  onClick={() => this.props.history.push('/buy')} style={{paddingLeft: '0px', marginLeft: '120px', background: '#363636'}}>GET GUARDIAN</button>
               </Col>
               <Col s={12} m={7} className='relative detector'>
                 <img src={leak} alt='half guardian' />
