@@ -114,16 +114,16 @@ export class Controller extends Component {
             <Col l={6} m={12} className='schemaFlex special'>
             <div className='left80'>
               <p>
-                <span>3RD PARTY INTEROPERABILITY</span>    The <Link to='/water-detector'>Water Detectors</Link> communicate directly with the Valve Controller using a proprietary wireless protocol without hubs and other unnecessary hardware.
+                <span>3RD PARTY INTEROPERABILITY</span>    Our well-documented and open API lets you control and monitor Guardian with 3rd party systems using the same app as your other smart home devices.
               </p>
 
 
                <p>
-                <span>IOS &amp; ANDROID APP</span>  Our well-documented and open API lets you control and monitor Guardian with 3rd party systems using the same app as your other smart home devices.
+                <span>IOS &amp; ANDROID APP</span>  The simple and intuitive iOS and Android apps let your system and interact with it easily, from anywhere in the world.
               </p>
 
                <p>
-                <span>Valve Calibration</span>   The simple and intuitive iOS and Android apps let your system and interact with it easily, from anywhere in the world. 
+                <span>Direct Communication</span>    The <Link to='/water-detector'>Water Detectors</Link> communicate directly with the Valve Controller using a proprietary wireless protocol without hubs and other unnecessary hardware.
               </p>
 
               <img className='app' src={appstore} alt='app store' />
