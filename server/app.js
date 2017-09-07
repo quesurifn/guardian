@@ -10,6 +10,8 @@ var session = require('express-session');
 var index = require('./routes/index');
 var root = require('./routes/root')
 
+var favicon = require('serve-favicon')
+
 var app = express();
 
 
@@ -19,16 +21,14 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 app.use(logger('dev'));
 
-app.use(function(req, res, next) {
- res.setHeader('Cache-Control', 'no-cache');
- next();
-});
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 //app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(favicon(path.join(__dirname, '../client/build/favicon.ico')))
 
 app.use('/', root)
 app.use('/api', index);
