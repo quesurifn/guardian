@@ -434,7 +434,7 @@ nav ul a.blueButton:hover {
 }
 .fourthResearchTwo {
   height: 100vh;
-  background: #0077b5;
+  background: #005fdb;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1961,6 +1961,9 @@ a img.two {
   .homeTwo h1 {
     max-width: 100%;
     font-size: 40px;
+  }
+  .buyAbout {
+    margin: 0 20px 30px 20px !important;
   }
   .homeTwo p {
     font-size: 20px;
