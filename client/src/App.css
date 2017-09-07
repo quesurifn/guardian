@@ -1266,10 +1266,19 @@ video.purchase {
   position: relative;
 }
 .featuresInline h2 {
-  font-size: 25px;
+
+    font-weight: bold;
+    color: #449ddf;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+    right: 10px;
+
 }
 .featuresInline p {
-  margin-left:10px;
+  font-weight: 300;
 }
 .moreFeatures {
   max-width: 90%;
@@ -1839,6 +1848,9 @@ a img.two {
   .featureFourContainer img {
     max-width: 100% !important;
     width: 100% !important;
+  }
+  .featuresInline h2, .featuresInline p {
+    font-size: 14px;
   }
  .featureFiveContainer img {
    max-width: 100% !important;
