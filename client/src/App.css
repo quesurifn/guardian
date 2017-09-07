@@ -2161,6 +2161,11 @@ a img.two {
     left: 50%;
     width:100vw;
   }
+  .featureTwoContainer p {
+    position: absolute;
+    bottom: 30px;
+    top:  auto !important;
+  }
 
 }
 @media screen and (max-width: 400px) {
