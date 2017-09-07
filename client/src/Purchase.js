@@ -55,7 +55,7 @@ export class Purchase extends Component {
                 document.querySelector('.headerLogo').style.color = '#1C56C0'
                 var nodes = document.querySelector('nav').getElementsByTagName('a');
                 for(var i=0; i<nodes.length; i++) {
-                    nodes[i].style.color = '#2C60BF';
+                    nodes[i].style.color = '#2050C2';
                 }    
  
          window.scrollTo(0, 0)

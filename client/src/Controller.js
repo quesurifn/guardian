@@ -34,6 +34,7 @@ export class Controller extends Component {
     }
 
    componentDidMount() {
+        document.querySelector('#root').style.borderTop = '10px solid #007cea'
         document.querySelector('nav').style.backgroundColor = 'transparent'
         document.querySelector('nav').style.position = 'absolute'
         document.querySelector('nav').style.boxShadow = 'none'
@@ -49,7 +50,8 @@ export class Controller extends Component {
         var nodes = document.querySelector('nav').getElementsByTagName('a')
 
         for(var i=0; i<nodes.length; i++) {
-            nodes[i].style.color = '#363636';
+            nodes[i].style.color = '#2050C2'
+            nodes[i].style.fontWeight = 'bold'
         }
                 
     }
@@ -109,7 +111,7 @@ export class Controller extends Component {
           <hr />
             <Row>
              
-            <Col l={6} m={12} className='schemaFlex'>
+            <Col l={6} m={12} className='schemaFlex special'>
               <p>
                 <span>3RD PARTY INTEROPERABILITY</span>    The <Link to='/water-detector'>Water Detectors</Link> communicate directly with the Valve Controller using a proprietary wireless protocol without hubs and other unnecessary hardware.
               </p>
@@ -131,10 +133,10 @@ export class Controller extends Component {
 
             </Col>
           </Row>
-
+            <hr />
           </div>
         </Row>
-        <hr />
+  
         <Row>
           <Col s={12} className='thirdvalve'>
             <h2>Battery Backup</h2>

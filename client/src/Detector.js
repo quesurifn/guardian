@@ -36,6 +36,7 @@ export class Detector extends Component {
     }
 
    componentDidMount() {
+         document.querySelector('#root').style.borderTop = '10px solid #007cea'
         document.querySelector('nav').style.backgroundColor = 'transparent'
         document.querySelector('nav').style.position = 'absolute'
         document.querySelector('nav').style.boxShadow = 'none'
@@ -51,7 +52,7 @@ export class Detector extends Component {
         var nodes = document.querySelector('nav').getElementsByTagName('a')
 
         for(var i=0; i<nodes.length; i++) {
-            nodes[i].style.color = '#363636';
+            nodes[i].style.color = '#2050C2'
         }
                 
     }
