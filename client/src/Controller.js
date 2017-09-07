@@ -74,7 +74,7 @@ export class Controller extends Component {
               <Col s={12} m={5} className='padding20' style={{paddingLeft: '0px'}}>
                 <h2 style={{paddingLeft: '0px'}}>ROBUST &amp; RELIABLE</h2>
                 <p style={{paddingLeft: '0px'}}>Battery Backup, offline functionality, and more.</p>
-                <button onClick={() => this.props.history.push('/buy')} style={{paddingLeft: '0px'}}>GET GUARDIAN</button>
+                <button onClick={() => this.props.history.push('/buy')} style={{paddingLeft: '0px', background: '#007cea', height: '70px'}}>GET GUARDIAN</button>
               
               </Col>
             </Row>
@@ -86,7 +86,7 @@ export class Controller extends Component {
         <Row >
           <div className='controllerFeatures'>
            <Row>
-             <h2 style={{paddingTop: '180px'}}>MORE THAN JUST AN AUTOMATIC VALVE</h2>
+             <h2 style={{paddingTop: '180px', color: '#449ddf'}}>MORE THAN JUST AN AUTOMATIC VALVE</h2>
             <Col l={6} m={12}>
               <img src={one} alt='valve schematic ' className='width90 ' />
 
@@ -148,7 +148,9 @@ export class Controller extends Component {
             <h2>Extreme Longrange</h2>
             <p>The <Link to='/water-detector'>Water Detectors</Link> can be placed up to 1000' away from the Valve Controller, which means Guardian will protect large homes and even apartment buildings</p> 
           </Col>
+          
         </Row> 
+        <button className='tileButton'>GET GUARDIAN</button>
         <Row>
           <Col s={12} className='valveTiles'>
             <img src={tiles} alt='yes' />

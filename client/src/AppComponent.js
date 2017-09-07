@@ -22,15 +22,10 @@ import appstore from './images/appstores.png'
 export class AppComponent extends Component {
        constructor() {
         super()
-           
-
-        this.playvideo = this.playvideo.bind(this)
-
- 
+        this.playvideo = this.playvideo.bind(this);
     }
     playvideo() {
         const video = this.refs.video;
-
         if (video.paused) {
             video.play()
         } else {

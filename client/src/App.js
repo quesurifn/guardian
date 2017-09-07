@@ -12,12 +12,9 @@ import {Research} from './Research'
 import {Purchase} from './Purchase'
 
 // NEW
-import {Team} from './Team'
-import {Blog} from './Blog'
-import {RF} from './RF'
+
 import {Controller} from './Controller'
 import {Detector} from './Detector'
-import {About} from './About'
 import {Howto} from './Howto'
 import {Buy} from './Buy'
 import {AppComponent} from './AppComponent'
@@ -34,10 +31,6 @@ export const App = () => (
         <Route exact path="/" component={Purchase} />
         <Route exact path="/options" component={Options} />
         <Route exact path='/newsletter' component={Newsletter} />
-        <Route exact path='/about' component={About} />
-        <Route exact path='/team' component={Team} />
-        <Route exact path='/technology' component={RF} />
-        <Route exact path='/blog' component={Blog} />
         <Route exact path='/valve-controller' component={Controller} />
         <Route exact path='/water-detector' component={Detector} />
         <Route exact path='/notify' component={GetNotified} />

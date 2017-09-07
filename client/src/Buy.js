@@ -43,6 +43,7 @@ export class Buy extends Component {
     }
     componentDidMount() {
         window.scrollTo(0, 0)
+        document.querySelector('#root').style.borderTop = 'none'
         document.querySelector('nav').style.position = 'relative'
         document.querySelector('nav').style.boxShadow = 'none'
         document.querySelector('.nav-wrapper').style.backgroundColor = 'white'
