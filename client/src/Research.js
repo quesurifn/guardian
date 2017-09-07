@@ -67,7 +67,7 @@ export class Research extends Component {
             </Row>
             <Row>
                 <Col s={12} className='thirdResearch'>
-                <p>&nbsp;</p>
+                
                   <p>We conceived the overarching vision of Guardian in Chicago, and work with our mechanical, software, and electrical engineering teams to make it come to life.  Meanwhile, our sales and marketing teams work tirelessly to build relationships and put strategies into place to have a successful product launch.
 </p>
                 </Col>

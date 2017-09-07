@@ -2225,7 +2225,7 @@ a img.two {
     max-width: 90%;
   }
   .firstResearch p{
-    font-size: 22px !important;
+    font-size: 22px ;
   }
   .sixthResearch  {
     height: auto !important;
@@ -2235,7 +2235,7 @@ a img.two {
     line-height: 30px;
   }
   .fifthResearch p:first-child {
-    font-size: 22px !important;
+    font-size: 22px;
   }
   .fourthResearchOne div {
     background-size: cover !important;
@@ -2245,7 +2245,7 @@ a img.two {
     height: auto !important;
   }
   .fifthResearch p:last-child {
-    font-size: 18px !important;
+    font-size: 18px;
     line-height: 30px;
   }
   .centerHeader {
@@ -2280,6 +2280,16 @@ a img.two {
   }
 }
 @media screen and (max-width:768px) { 
+  .research p {
+    font-size: 14px !important;
+    width: 90% !important;
+    display: block;
+    margin: 20pxpx auto;
+    max-width: 90% !important;
+  }
+  .thirdResearch {
+    flex-direction: column-reverse;
+  }
  .sectionTwo p{
    font-size: 25px;
  }
