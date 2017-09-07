@@ -58,7 +58,7 @@ export class AppComponent extends Component {
     return (
       <div className="valvePage">
        
-          <div className="item bgValve controllerSlideOne">
+          <div className="item bgValve  controllerSlideOne">
             <Row>
               <Col s={12}>
                 <h1 style={{textAlign:'center'}}>A Top Class Mobile Experience</h1>
