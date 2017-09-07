@@ -162,7 +162,7 @@ export class Buy extends Component {
                     <div className='buyAbout'>
                         <img src={cardThree} alt='blog one' />
                         <div>
-                            <h2>Give Peace Of Mind</h2>
+                            <h2>Gives Peace Of Mind</h2>
 
                             <p> Keep your home safe from earthquakes, flash floods, and plumbing failures.</p>
                             
