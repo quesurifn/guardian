@@ -5,6 +5,7 @@ import './css/valve.css'
 import {Row, Col} from 'react-materialize'
 import halfg from './images/half-g.png'
 import schematic from './images/guardian-wire-1.jpg'
+import {Link} from 'react-router-dom'
 
 import tiles from './images/valve-tiles.jpg'
 
@@ -95,11 +96,11 @@ export class Controller extends Component {
 
 
                <p>
-                <span>Use Your Existing Valve</span>    You don't need a special valve to use Guardian - only a standard quarter-turn ball valve. Click here to see what valves Guardian is compatible with. 
+                <span>Use Your Existing Valve</span>    You don't need a special valve to use Guardian - only a standard quarter-turn ball valve.  
               </p>
 
                <p>
-                <span>Valve Calibration</span>   You don't need a special valve to use Guardian - only a standard quarter-turn ball valve. Click here to see what valves Guardian is compatible with. 
+                <span>Valve Calibration</span>   You don't need a special valve to use Guardian - only a standard quarter-turn ball valve.  
               </p>
 
             </Col>
@@ -110,7 +111,7 @@ export class Controller extends Component {
              
             <Col l={6} m={12} className='schemaFlex'>
               <p>
-                <span>3RD PARTY INTEROPERABILITY</span>    The Water Detectors communicate directly with the Valve Controller using a proprietary wireless protocol without hubs and other unnecessary hardware.
+                <span>3RD PARTY INTEROPERABILITY</span>    The <Link to='/water-detector'>Water Detectors</Link> communicate directly with the Valve Controller using a proprietary wireless protocol without hubs and other unnecessary hardware.
               </p>
 
 
@@ -143,7 +144,7 @@ export class Controller extends Component {
             <p>Once configured, the internet is only required for off-site control and monitoring of the system, so the Valve Controller will still shut off your water even without the internet during a leak.</p>
 
             <h2>Extreme Longrange</h2>
-            <p>The Water Detectors can be placed up to 1000' away from the Valve Controller, which means Guardian will protect large homes and even apartment buildings</p> 
+            <p>The <Link to='/water-detector'>Water Detectors</Link> can be placed up to 1000' away from the Valve Controller, which means Guardian will protect large homes and even apartment buildings</p> 
           </Col>
         </Row> 
         <Row>
