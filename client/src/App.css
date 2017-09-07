@@ -2048,6 +2048,20 @@ a img.two {
   .firstBuyTwo  button {
     font-size: 13px !important;
   }
+  .padding20 * {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    max-width: 100% !important;
+  }
+  .padding20 button {
+     margin-left: 0 !important;
+     padding-right: 0 !important;
+     left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+
+  }
   nav ul .l3 img {
     padding-top:25px !important;
   }
@@ -2389,6 +2403,9 @@ a img.two {
     padding-bottom:40px;
     position: relative;
     top:30px;
+  }
+  .specialMarg {
+    margin-bottom:40px !important;
   }
 }
 @media screen and (max-width: 482px) {

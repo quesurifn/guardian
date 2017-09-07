@@ -103,7 +103,7 @@ export class AppComponent extends Component {
                <p>
                 <span>EASY SETUP</span>   The app walks you through steps to calibrate Guardian to your valve and provides instructions for installing all equipment.
               </p>
-               <p>
+               <p className='specialMarg'>
                 <span>EASY INTERFACE</span> No frills interface lets you get on with your life and focus on what matters.
               </p>
         
