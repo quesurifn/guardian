@@ -51,7 +51,7 @@ export class Controller extends Component {
 
         for(var i=0; i<nodes.length; i++) {
             nodes[i].style.color = '#2050C2'
-            nodes[i].style.fontWeight = 'bold'
+            nodes[i].style.fontWeight = 'normal'
         }
                 
     }
