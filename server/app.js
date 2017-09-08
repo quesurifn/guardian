@@ -30,6 +30,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../client/build')));
 app.use(favicon(path.join(__dirname, '../client/build/favicon.ico')))
 
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/build/favicon.ico'));
+});
 app.use('/', root)
 app.use('/api', index);
 
