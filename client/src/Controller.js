@@ -71,7 +71,7 @@ export class Controller extends Component {
               <Col s={12} m={7} className='relative' >
                 <img src={halfg} alt='half guardian' />
               </Col>
-              <Col s={12} m={5} className='padding20' style={{paddingLeft: '28px'}}>
+              <Col s={12} m={5} className='padding20' style={{paddingLeft: '0px'}}>
                 <h2 style={{paddingLeft: '0px'}}>ROBUST &amp; RELIABLE</h2>
                 <p style={{paddingLeft: '0px'}} className='respHeight'>Battery Backup, offline functionality, and more.</p>
                 <button className='respvbutton' onClick={() => this.props.history.push('/buy')} style={{paddingLeft: '0px', background: '#007cea', height: '70px'}}>GET GUARDIAN</button>

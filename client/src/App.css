@@ -1676,6 +1676,8 @@ a img.two {
   position: absolute;
   right:0;
   left: initial !important;
+  width:80%;
+  padding-top:5%;
 }
 .col.m5.padding20 * {
   padding-left: 80px;
