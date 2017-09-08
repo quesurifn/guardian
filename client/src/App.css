@@ -854,7 +854,7 @@ video.purchase {
   font-size: 25px;
 }
 .bannerBuy {
-  background: #1c56c0;
+  background:rgb(0, 124, 234);
   color:white;
   height: 75px;
   display: flex;
@@ -886,7 +886,7 @@ video.purchase {
     font-size: 22px;
   }
   .firstBuyTwo  button.yolo{
-    background: #1c56c0;
+    background: #ff0022;
     color: white;
     border:none;
     height: 50px;
@@ -1213,7 +1213,7 @@ video.purchase {
     max-width: 100%;
   }
   .bgValve {
-    background: url('./images/photo.png') !important;
+    background: url('./images/tiles.jpg') !important;
     background-size: cover !important;
     background-position: center !important;
     height: 100vh;
@@ -1669,6 +1669,9 @@ a img.two {
   height: 140vh; 
 
 }
+
+.shim-valve img {margin-right:30px;}
+
 .relative.detector img {
   position: absolute;
   right:0;

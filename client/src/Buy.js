@@ -21,6 +21,10 @@ import sliderTwo from './images/buy-2.jpg'
 import sliderTwoThumb from './images/buy-2-thumb.jpg'
 import sliderThree from './images/buy-3.jpg'
 import sliderThreeThumb from './images/buy-3-thumb.jpg'
+import sliderFour from './images/buy-4.jpg'
+import sliderFourThumb from './images/buy-4-thumb.jpg'
+import sliderFive from './images/buy-5.jpg'
+import sliderFiveThumb from './images/buy-5-thumb.jpg'
 
 
 import cardOne from './images/buy-page-card-1.jpg'
@@ -89,6 +93,14 @@ export class Buy extends Component {
       {
         original:   sliderThree,
         thumbnail: sliderThreeThumb,
+      },
+      {
+        original:   sliderFour,
+        thumbnail: sliderFourThumb,
+      },
+      {
+        original:   sliderFive,
+        thumbnail: sliderFiveThumb,
       }
     ]
     return (
