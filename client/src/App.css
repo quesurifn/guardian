@@ -1678,7 +1678,8 @@ a img.two {
   left: initial !important;
 }
 .col.m5.padding20 * {
-  padding-left: 120px;
+  padding-left: 80px;
+  margin-left:100px;
 }
 .blockAuto {
   margin: auto;

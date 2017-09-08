@@ -61,13 +61,13 @@ export class AppComponent extends Component {
           <div className="item bgValve  controllerSlideOne">
             <Row>
               <Col s={12}>
-                <h1 style={{textAlign:'center'}}>A Top Class Mobile Experience</h1>
+                <h1 style={{textAlign:'center'}}>The Handiest App your Plumbing has Ever Seen.</h1>
               </Col>
               
               <Col s={12} m={5} className='padding20'>
                 <h2>EASY &amp; INTUITIVE </h2>
                 <p style={{maxWidth:'90%'}}>It learns your valve automatically during setup, and works as expected during setup.</p>
-                <button onClick={() => this.props.history.push('/buy')} style={{paddingLeft: '0px', marginLeft: '120px', background: '#363636'}}>GET GUARDIAN</button>
+                <button onClick={() => this.props.history.push('/buy')} style={{paddingLeft: '0px', marginLeft: '180px', background: '#363636'}}>GET GUARDIAN</button>
               </Col>
               <Col s={12} m={7} className='relative detector'>
                 <img src={handapp} alt='half guardian' />
@@ -80,13 +80,13 @@ export class AppComponent extends Component {
 
         <Row >
           <div className='controllerFeatures'>
-           <Row>
-             <h2>FOR PEACE OF MIND</h2>
+           <Row style={{paddingTop: '50px'}}>
+             <h2 >FOR PEACE OF MIND</h2>
             <Col l={6} m={12}>
               <img src={handextras} alt='valve schematic' />
 
             </Col>
-            <Col l={6} m={12} className='schemaFlex'>
+            <Col l={6} m={12} className='schemaFlex' style={{paddingLeft: '28px'}}>
               <p>
                 <span>Weather Alerts</span> Receive notifications when severe weather conditions are headed your way.
               </p>
