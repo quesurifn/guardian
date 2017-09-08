@@ -24,6 +24,9 @@ body {
 #root {
   overflow-x: hidden;
 }
+
+/* ovveride to nav items */
+
 /* Bootstrap RESETS */
 .col-md-12, .col-md-6 {
   padding: 0;
@@ -64,8 +67,8 @@ nav ul {
   padding-left: 40px;
 }
 .nav-wrapper li a{
-  color: #363636;
-  font-weight: 600;
+  color: rgb(0, 124, 234);
+ 
 }
 .logo img {
   width: 150px !important;
@@ -75,9 +78,11 @@ nav ul {
   justify-content: center;
   align-items: center;
   height: 65px;
+  margin-left:-25px !important;
+  margin-right:25px;
 }
 .centerHeader li a {
-  font-weight: 400;
+  font-weight: 300 !important;
 }
 .row .col {
   padding: 0;
@@ -1485,13 +1490,16 @@ video.purchase {
 }
 .homeFour {
   background: #B1A4A0;
+  background:url('./images/blue-burst.jpg');
+  background-size:cover;
+
   position: relative;
 }
 .homeFour img {
   display: block;
   margin: 40px auto;
 
-  max-width: 40%;
+  max-width: 60%;
 }
 .homeFour h1 {
   color:white;
@@ -1504,7 +1512,7 @@ video.purchase {
 }
 .homeFour button {
   display: block;
-  background:#6F5A53;
+  background:#2050c2;
   margin: 40px auto;
   border:none;
   color: white;

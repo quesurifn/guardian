@@ -20,7 +20,7 @@ import poster from './images/video-slate.jpg'
 import pipe from './images/leaking-pipe.jpg'
 
 import recut from './images/home-valve-recut.png'
-import leak from './images/leaksensor.png'
+import leak from './images/drip-drip.png'
 import last from './images/guardian-set.jpg'
 
 
