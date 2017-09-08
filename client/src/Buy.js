@@ -105,9 +105,6 @@ export class Buy extends Component {
     ]
     return (
         <div className='buyPage'>
-            <div className='bannerBuy'>
-                Guardian will begin shipping again in October, 2017.
-            </div>
             <Row className='firstBuyOne'>
                 <Col s={12} m={12} l={6}>
                         <ImageGallery

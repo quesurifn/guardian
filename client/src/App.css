@@ -25,6 +25,10 @@ body {
   overflow-x: hidden;
 }
 
+.navbarTweaks {
+ margin-top: 60px !important; 
+}
+
 /* ovveride to nav items */
 
 /* Bootstrap RESETS */
