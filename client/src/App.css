@@ -913,11 +913,15 @@ video.purchase {
   .buyAbout {
     height: 450px;
     margin: 0 20px 80px 20px;
-    width:70%;
     flex-direction: column;
     position: relative;
-    background:white;
     width:341px;
+  }
+  .buyAbout img {
+    display: block; 
+    margin: auto;
+    width: 200px !important;
+    max-width: 100%;
   }
   .thirdvalve h2 {
     margin-right: 5px;
@@ -943,7 +947,7 @@ video.purchase {
   
   
   .buyAbout div {
-    padding: 0 20px;
+    padding: 0 10px;
   }
   .buyAbout h2 {
     font-size: 16px;
@@ -955,11 +959,11 @@ video.purchase {
     text-align: center;
   }
   .buyAbout p {
-    margin-top: 17px;
+    margin: 0;
     line-height: 1.8;
     width:321px;
     color:#777;
-    padding-top: 20px;
+    text-align: center;
   }
   .buyAbout a {
     text-align: center;
@@ -987,8 +991,23 @@ video.purchase {
     position: relative;
     top: 10px;
   }
+  .buyAbout button {
+    background: #2050C2;
+    border: none;
+    color: white;
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    bottom: 40px;
+    transform: translateX(-50%);
+    left:50%;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight:600;
+  }
   .secondBuy h2.yup {
-    
+    font-weight: 300;
     text-align: center;
     font-size: 22px;
     padding: 60px 0 40px 0;
@@ -1023,8 +1042,8 @@ video.purchase {
      max-width:40%;
      font-weight: 300;
      line-height: 40px;
-         position: relative;
-    bottom: 20px;
+     position: relative;
+     bottom: 20px;
     
 
    }

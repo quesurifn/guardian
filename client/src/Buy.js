@@ -27,9 +27,9 @@ import sliderFive from './images/buy-5.jpg'
 import sliderFiveThumb from './images/buy-5-thumb.jpg'
 
 
-import cardOne from './images/buy-page-card-1.jpg'
-import cardTwo from './images/buy-page-card-2.jpg'
-import cardThree from './images/buy-page-card-3.jpg'
+import cardOne from './images/buy-card-1.png'
+import cardTwo from './images/buy-card-2.png'
+import cardThree from './images/buy-card-3.png'
 
 import iconOne from './images/icon-1.png'
 import iconTwo from './images/icon-2.png'
@@ -140,14 +140,15 @@ export class Buy extends Component {
                 <div className='width70 flex'>
          
                     <div className='buyAbout'>
-                        <img src={cardOne} alt='blog one' />
+                        
                         <div>
                         <h2>Detects Leaks &amp; Floods</h2>
+                        <img src={cardOne} alt='blog one' />
 
                         <p>
                            Water Detectors placed throughout your home will notify you and take action when a leak is detected.
                         </p>
-                        <Link to='/water-detector'>Explore</Link>
+                         <button onClick={() => this.props.history.push('/water-detector')}>Learn About</button>
 
                         </div>
 
@@ -156,29 +157,31 @@ export class Buy extends Component {
        
 
                     <div className='buyAbout'>
-                        <img src={cardTwo} alt='blog one' />
+                        
                             <div>
                                 <h2>Stops the Leak</h2>
+                                <img src={cardTwo} alt='blog one' />
 
                                 <p>
                                 The Valve Controller will automatically shut off your water when leaks are detected to avoid damage.
                                 </p>
-                                <Link to='valve-controller'>Explore</Link>
+                                <button onClick={() => this.props.history.push('/valve-controller')}>Learn About</button>
                             </div>
 
                     </div>
 
                 
                     <div className='buyAbout'>
-                        <img src={cardThree} alt='blog one' />
+                       
                         <div>
                             <h2>Gives Peace Of Mind</h2>
+                             <img src={cardThree} alt='blog one' />
 
                             <p> Keep your home safe from earthquakes, flash floods, and plumbing failures.</p>
                             
 
 
-                            <Link to='app'>Explore</Link>
+                             <button onClick={() => this.props.history.push('/app')}>Learn About</button>
                         </div>
 
                     </div>
