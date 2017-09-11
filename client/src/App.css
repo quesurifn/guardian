@@ -1399,6 +1399,20 @@ video.purchase {
 }
 .homeOne span {
   font-family: 'evogria', sans-serif;
+
+}
+.poster {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+.homeTwo h3 {
+  font-weight: 200 !important;
+  text-align: center;
+  font-size: 18px;
+  color:white;
+  margin: 0;
+
 }
 .homeOne h1 {
   font-family: 'evogria', sans-serif;
@@ -1941,6 +1955,12 @@ a img.two {
   .width70.flex {
     flex-direction: column;
   }
+  .poster { 
+    width: 100px;
+  }
+  .homeTwo p {
+    margin-top: 40px !important;
+  }
 }
 @media screen and (max-width: 1081px) {
   .homeTwo {
@@ -2147,7 +2167,7 @@ a img.two {
     bottom: 140px;
   }
   .homeTwo {
-    max-height: 100vh;
+    max-height: 125vh;
   }
   .homeTwo p {
     margin-top: 50px;
@@ -2170,6 +2190,9 @@ a img.two {
   }
   .controllerFeatures h2:first-child {
     padding-top: 0 !important;
+  }
+  .poster {
+    width: 200px !important;
   }
 }
 @media screen and (max-width: 500px) {

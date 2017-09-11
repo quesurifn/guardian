@@ -82,8 +82,11 @@ export class Purchase extends Component {
           
             <Col s={12} className='purchaseTwo'>          
                 <div className='homeOne'>
-                    <h2>There's now a <span>G</span> in Proactive</h2>
+                    {/* <h2>There's now a <span>G</span> in Proactive</h2>
                     <h1>STOP WATER DAMAGE</h1>
+                    */}
+                    <h2>You Could Easily</h2>
+                    <h1>PREVENT WATER DAMAGE</h1>
                     <button><Link to='/buy'>GET GUARDIAN</Link></button>
                 </div>
             </Col>
@@ -95,6 +98,8 @@ export class Purchase extends Component {
                     <h1>&ldquo;MORE PEOPLE SUFFER FROM WATER DAMAGE THAN FIRE&rdquo;</h1>
                     <Link to='buy'><img src={red} alt='red button' style={{display: 'block', margin: 'auto'}} /></Link>
                     <h2>SHIPPING SOON</h2>
+                    <a href='#video'><img src={poster} className='poster' alt='video bg' /></a>
+                    <h3>HAVING IS BELIEVING</h3>
                     <p>Water damage costs time, money, aggravation and ruins family heirlooms.</p>
                 </div>
                 
@@ -118,7 +123,7 @@ export class Purchase extends Component {
         </Row>
         <Row>
             <Col s={12}>
-                <video className='purchase' ref='video' poster='http://www.cityrider.com/fixed/43aspect.png' onClick={this.playvideo}>
+                <video className='purchase' ref='video' poster='http://www.cityrider.com/fixed/43aspect.png' onClick={this.playvideo} id='video'>
                     <source src='https://s3-us-west-2.amazonaws.com/getguardian/guardian-background.mp4' type='video/mp4' />
                     Your browser does not support HTML5
                 </video>
