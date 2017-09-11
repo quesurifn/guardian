@@ -1044,8 +1044,6 @@ video.purchase {
      line-height: 40px;
      position: relative;
      bottom: 20px;
-    
-
    }
   .featuresOneContainer img {
       width:100%;
@@ -1142,9 +1140,9 @@ video.purchase {
   .moreFeatures h2 {
     margin: 0 0 0 10px;
   }
+
   .moreFeatures img {
     max-width: 100%;
-
     width:121px;
     margin-top: -20px;
     padding: 0 20px;
@@ -1923,6 +1921,9 @@ a img.two {
 @media screen and (max-width: 689px) {
   .duck {
     display: none;
+  }
+  .m5 p.respHeight {
+    padding: 0 20px;
   }
 }
 @media screen and (max-width: 1200px) {
