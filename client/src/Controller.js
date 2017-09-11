@@ -34,7 +34,7 @@ export class Controller extends Component {
     }
 
    componentDidMount() {
-        document.querySelector('#root').style.borderTop = '10px solid #007cea'
+
         document.querySelector('nav').style.backgroundColor = 'transparent'
         document.querySelector('nav').style.position = 'absolute'
         document.querySelector('nav').style.boxShadow = 'none'
