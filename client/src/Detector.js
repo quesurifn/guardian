@@ -108,32 +108,32 @@ export class Detector extends Component {
           <hr />
             <Row>
              
-            <Col l={6} m={12} className='schemaFlex'>
-              <p>
+            <Col l={6} m={12}>
+              <p className='pshim'>
                 <span>3RD PARTY INTEROPERABILITY</span>    Our well-documented and open API lets you control and monitor Guardian with 3rd party systems using the same app as your other smart home devices.
               </p>
 
 
-               <p>
+               <p className='pshim'>
                 <span>IOS &amp; ANDROID APP</span>  The simple and intuitive iOS and Android apps let your system and interact with it easily, from anywhere in the world.
               </p>
 
-               <p>
+               <p className='pshim'>
                 <span>Valve Calibration</span>    The Valve Controller “learns” your unique valve, so it will sense any obstructions in the future.  
               </p>
 
-              <img className='app' src={appstore} alt='app store' />
+              <img className='app pshim' src={appstore} alt='app store' style={{display:'block', margin: 'auto', float: 'left'}} />
             </Col>
 
             <Col l={6} m={12}>
-              <img className='specialCase' src={two} alt='valve schematic' />
+              <img className='specialCase' src={two} alt='valve schematic' style={{display:'block', margin: 'auto'}} />
 
             </Col>
           </Row>
             <hr />
         <Row>
             <Col l={6} m={12}>
-              <img src={three} alt='valve schematic' />
+              <img src={three} alt='valve schematic' style={{width:'80%'}} />
 
             </Col>
             <Col l={6} m={12} className='schemaFlex'>

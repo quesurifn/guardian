@@ -1750,6 +1750,12 @@ a img.two {
   .specialCase {
     margin: 80px auto;
   }
+   .pshim {
+    margin-left:20px !important;
+  }
+  img.pshim {
+    margin-left:20px !important;
+  }
   .left80 {
     left: 40px !important;
   }
@@ -1859,11 +1865,12 @@ a img.two {
   .featuresCard {
     margin: 20px 0;
   }
-  .schemaFlex p {
+  .schemaFlex p, .controllerFeatures p {
     right: 0!important;
     left: 0 !important;
     max-width: 90%;
   } 
+
   .controllerFeatures img {
     display: block;
     margin:auto;
@@ -1976,6 +1983,7 @@ a img.two {
   .gBlue {
     height: 80vh;
   }
+ 
 }
 @media screen and (max-width: 749px) {
   .featureFourContainer img {
@@ -2010,8 +2018,13 @@ a img.two {
   .moreFeatures {
     max-width: 100%;
   }
-  .schemaFlex p {
+  .schemaFlex p, .controllerFeatures p {
     font-size: 14px;  
+  }
+  .controllerFeatures {
+    position: relative;
+    left: 20px !important;
+    padding: 0 20px;
   }
   .controllerFeatures {
     max-width: 95%;

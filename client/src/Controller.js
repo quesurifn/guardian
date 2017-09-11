@@ -113,7 +113,7 @@ export class Controller extends Component {
              
             <Col l={6} m={12} className='schemaFlex special'>
             <div className='left80'>
-              <p>
+              <p >
                 <span>3RD PARTY INTEROPERABILITY</span>    Our well-documented and open API lets you control and monitor Guardian with 3rd party systems using the same app as your other smart home devices.
               </p>
 
