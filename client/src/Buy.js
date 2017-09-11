@@ -59,6 +59,7 @@ export class Buy extends Component {
         for(var i=0; i<nodes.length; i++) {
             nodes[i].style.color = '#1C56C0';
         }  
+       document.querySelector('body').click()
     }
     submitEmail() {
         let email = this.refs.emailBuy.value

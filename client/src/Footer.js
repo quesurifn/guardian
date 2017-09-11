@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import {Row, Col, Container} from 'react-materialize'
 
-export class Foot extends Component {
 
+
+
+export class Foot extends Component {
 
 
   render() {

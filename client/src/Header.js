@@ -8,11 +8,21 @@ import reserve from './images/reserveOne.png'
 
 import appstore from './images/appstores.png'
 
-export class Header extends Component {
+import {withRouter} from 'react-router-dom'
 
-  
+import uno from './images/leftNavOne.png'
+import dos from './images/leftNavTwo.png'
+import tres from './images/leftNavThree.png'
+
+
+
+class Header extends Component {
 
   render() {
+         const { match, location, history } = this.props
+
+
+
       var logoFactor;
       var button;
 
@@ -28,7 +38,7 @@ export class Header extends Component {
       <div className='row'>
           <div className='col s12'>
 
-            <Navbar fixed ref='navbar' brand='GUARDIAN'>
+            <Navbar fixed ref='navbar' brand='GUARDIAN' options={{closeOnClick: true}}>
 
                     <Row>
                         
@@ -42,6 +52,14 @@ export class Header extends Component {
                         <Col s={12} m={12} l={6} className="col-6 centerHeader">
                             <li className='blackit'><Link to='/buy'>Get Guardian</Link></li>
                             <li className='blackit'><Link to='/valve-controller'>Explore</Link></li>
+                            <li className='hideDesktop'>
+                                <div>
+                                    <Link to='/valve-controller'><img src={uno}alt='place' />the valve controller</Link>
+                                    <Link to='/water-detector'><img src={dos} alt='place' />Water Detector</Link>
+                                    <Link to='/buy'><img src={tres} alt='place' />Purchase</Link>
+                                </div>
+                          
+                            </li> 
                             <li className='blackit'><Link to='/research'>About</Link></li>
                             <li className='blackit'><a href='https://support.getguardian.com' target='_blank'>Support</a></li>
 
@@ -58,4 +76,5 @@ export class Header extends Component {
     );
   }
 }
+export default withRouter(Header)
 

@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import {Home} from './Home'
 import {NotFound} from './NotFound'
 
-import {Header} from './Header'
+import Header from './Header'
 import {Foot} from './Footer'
 import {Options} from './Options'
 import {Newsletter} from './Newsletter'

@@ -1732,6 +1732,48 @@ a img.two {
   margin: auto;
   display: block;
 }
+.hideDesktop div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.hideDesktop hr {
+  display: block;
+  margin: 20px auto !important; 
+}
+.hideDesktop div a { 
+  font-family: 'evogria', sans-serif;
+  color: #2050c2;
+  vertical-align: middle;
+  font-size:17px;
+}
+.hideDesktop div {
+  margin-left: 20px;
+}
+.hideDesktop div a img {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+#nav-mobile .textCenter img {
+  float: left;
+  margin: 0px !important;
+}
+#nav-mobile .logo a{
+  margin: 0 !important;
+}
+#nav-mobile a img {
+  width: 43px;
+}
+#nav-mobile .textCenter img {
+  position: relative;
+  right: 5px;
+}
+#nav-mobile hr {
+  color: #2050c2 !important; 
+  border: 1px solid #2050c2 !important;
+}
+
 @media screen and (max-width: 1072px) {
   .specs {
     flex-direction: column;
@@ -1753,6 +1795,9 @@ a img.two {
 @media screen and (max-width: 992px) {
   .specialCase {
     margin: 80px auto;
+  }
+  .moreFeatures img {
+    width: 160px;
   }
    .pshim {
     margin-left:20px !important;
@@ -2216,6 +2261,7 @@ a img.two {
   .firstBuyTwo  button {
     font-size: 13px !important;
   }
+
   .tileButton {
     display:  none;
   }
@@ -2363,6 +2409,14 @@ a img.two {
   }
   .brand-logo {
     display: none !important;
+  }
+  .controllerFeatures img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .hideDesktop {
+    display: none;
   }
  
 }
