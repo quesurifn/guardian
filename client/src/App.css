@@ -2175,6 +2175,9 @@ a img.two {
   .firstBuyTwo  button {
     font-size: 13px !important;
   }
+  .tileButton {
+    display:  none;
+  }
   .respHeight {
   font-size: 18px !important;
 }
@@ -2569,5 +2572,11 @@ a img.two {
   .sectionTwo p {
     font-size: 18px;
     line-height: 35px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .tileButton.mobi {
+    display: block !important;
+    margin-bottom: 80px;
   }
 }

@@ -149,8 +149,9 @@ export class Controller extends Component {
 
             <h2>Extreme Longrange</h2>
             <p>The <Link to='/water-detector'>Water Detectors</Link> can be placed up to 1000' away from the Valve Controller, which means Guardian will protect large homes and even apartment buildings</p> 
+            <button className='tileButton mobi' onClick={() => this.props.history.push('/buy')}>GET GUARDIAN</button>
           </Col>
-          
+           
         </Row> 
         <button className='tileButton' onClick={() => this.props.history.push('/buy')}>GET GUARDIAN</button>
         <Row>
