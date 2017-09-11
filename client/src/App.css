@@ -1144,6 +1144,10 @@ video.purchase {
   }
   .moreFeatures img {
     max-width: 100%;
+
+    width:121px;
+    margin-top: -20px;
+    padding: 0 20px;
   }
   .moreFeatures.two {
     padding-top: 40px;
@@ -1201,8 +1205,6 @@ video.purchase {
     top: 100px;
      font-weight: 300;
   }
-
-
   .featureThreeContainer img {
     width: 100%;
   }
