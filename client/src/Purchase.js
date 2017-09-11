@@ -82,8 +82,8 @@ export class Purchase extends Component {
           
             <Col s={12} className='purchaseTwo'>          
                 <div className='homeOne'>
-                    <h2>You Could Easily</h2>
-                    <h1>PREVENT WATER DAMAGE</h1>
+                    <h2>There's now a <span>G</span> in Proactive</h2>
+                    <h1>STOP WATER DAMAGE</h1>
                     <button><Link to='/buy'>GET GUARDIAN</Link></button>
                 </div>
             </Col>

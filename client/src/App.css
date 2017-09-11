@@ -1397,6 +1397,9 @@ video.purchase {
   color:#2050c2;
   margin-top: 210px;
 }
+.homeOne span {
+  font-family: 'evogria', sans-serif;
+}
 .homeOne h1 {
   font-family: 'evogria', sans-serif;
   font-size:75px;
@@ -1416,7 +1419,6 @@ video.purchase {
 .homeTwo {
   background: #2050c2;
   position: relative;
-  
 }
 .homeTwo img.one{
   display: block;
@@ -1448,7 +1450,6 @@ video.purchase {
   font-size: 25px;
   text-align: center;
   position: relative;
-
 }
 .homeTwo p {
   color:white;
