@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Navbar, NavItem, Button, Row, Col} from 'react-materialize'
+import {Navbar, Row, Col} from 'react-materialize'
 import {Link} from 'react-router-dom'
 import logoBlue from './images/guradian.png'
 import logoWhite from './images/guardian1.png'
@@ -15,14 +15,13 @@ import dos from './images/leftNavTwo.png'
 import tres from './images/leftNavThree.png'
 
 import logo from './images/guardian-logo-blue.png'
-import white from './images/guardian-logo-white.png'
 
 
 
 class Header extends Component {
 
   render() {
-         const { match, location, history } = this.props
+      const { history } = this.props
 
 
 
@@ -68,7 +67,7 @@ class Header extends Component {
                           
                             </li> 
                             <li className='blackit'><Link to='/research'>About</Link></li>
-                            <li className='blackit'><a href='https://support.getguardian.com' target='_blank'>Support</a></li>
+                            <li className='blackit'><a href='https://support.getguardian.com' rel="noopener noreferrer" target='_blank'>Support</a></li>
 
                         </Col>
 

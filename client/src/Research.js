@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Row, Col} from 'react-materialize'
-import {Link} from 'react-router-dom'
+
 
 
 
@@ -45,7 +45,7 @@ export class Research extends Component {
             </Row>
             <Row>
                 <Col s={12} className='secondResearch'>
-                    <img src={first} alt='first image' /> 
+                    <img src={first} alt='first hero image one' /> 
                 </Col>
             </Row>
             <Row>

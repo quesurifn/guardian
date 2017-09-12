@@ -5,19 +5,12 @@ import './App.css'
 import './css/gallery.css'
 import './css/valve.css'
 import {Row, Col} from 'react-materialize'
-import halfg from './images/half-g.png'
-import schematic from './images/guardian-wire-1.jpg'
-import {Link} from 'react-router-dom'
-import tiles from './images/valve-tiles.jpg'
 
-import leak from './images/water-detector-big-cut.png'
+
+
 import handapp from './images/hand-app.png'
 import handextras from './images/app-extras.png'
 
-
-import one from './images/vc-section-1.jpg'
-import two from './images/photo2.png'
-import appstore from './images/appstores.png'
 
 export class AppComponent extends Component {
        constructor() {

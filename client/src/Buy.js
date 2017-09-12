@@ -4,12 +4,11 @@ import './css/gallery.css'
 import axios from 'axios'
 import ImageGallery from 'react-image-gallery';
 
-import {Link} from 'react-router-dom'
-import {Swipeable, defineSwipe} from 'react-touch';
+import Swipeable from 'react-swipeable'
 
-import {Row, Col, Container} from 'react-materialize'
+import {Row, Col} from 'react-materialize'
 import 'react-image-gallery/styles/css/image-gallery-no-icon.css'
-import guardian from './images/herotransweb.png'
+
 import three from './images/how-slider-2.png'
 import sldier3Valve from './images/how-slider-3.png' 
 import slider4Valve from './images/how-slider-4.png'
@@ -118,7 +117,7 @@ export class Buy extends Component {
 
   
   render() {
-      const swipe = defineSwipe({swipeDistance: 50});
+
          const images = [
       
       {
@@ -238,7 +237,7 @@ export class Buy extends Component {
                  
 
                     <figure className="item" style={{height:'calc(100vh - 65px)', background: '#2050C2'}}>
-                        <Swipeable config={swipe} onSwipeLeft={this.swipeLeft} onSwipeRight={this.swipeRight}>
+                        <Swipeable onSwipingLeft={this.swipeLeft} onSwipingRight={this.swipeRight}>
                         <Row>
                             <Col s={12} className='featureTwoContainer'>
                                 <h1>How it Works</h1> 
@@ -252,7 +251,7 @@ export class Buy extends Component {
                     </figure>
 
                     <figure className="item" style={{height:'calc(100vh - 65px)', background: '#2050C2'}}>
-                    <Swipeable config={swipe} onSwipeLeft={this.swipeLeft} onSwipeRight={this.swipeRight}>
+                    <Swipeable  onSwipingLeft={this.swipeLeft} onSwipingRight={this.swipeRight}>
                        <Row>
                            <Col s={12} className='featureThreeContainer'>
                             
@@ -268,7 +267,7 @@ export class Buy extends Component {
                     </figure>
 
                     <figure className="item" style={{height:'calc(100vh - 65px)', background: '#2050C2'}}>
-                        <Swipeable config={swipe} onSwipeLeft={this.swipeLeft} onSwipeRight={this.swipeRight}>
+                        <Swipeable  onSwipingLeft={this.swipeLeft} onSwipingRight={this.swipeRight}>
                             <Row>
                                 <Col s={12} className='featureFourContainer'>
                                     <h2>CONNECT</h2>
@@ -284,7 +283,7 @@ export class Buy extends Component {
                     </figure>
 
                     <figure className="item" style={{height:'calc(100vh - 65px)', background: '#1C56C0'}}>
-                        <Swipeable config={swipe} onSwipeLeft={this.swipeLeft} onSwipeRight={this.swipeRight}>
+                        <Swipeable onSwipingLeft={this.swipeLeft} onSwipingRight={this.swipeRight}>
                             <Row>
                                 <Col s={12} className='featureFiveContainer'>
                 

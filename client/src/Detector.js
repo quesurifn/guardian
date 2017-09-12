@@ -3,10 +3,7 @@ import './App.css'
 import './css/gallery.css'
 import './css/valve.css'
 import {Row, Col} from 'react-materialize'
-import halfg from './images/half-g.png'
-import schematic from './images/guardian-wire-1.jpg'
 
-import tiles from './images/valve-tiles.jpg'
 
 import leak from './images/water-detector-big-cut.png'
 

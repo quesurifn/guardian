@@ -1,24 +1,20 @@
 import React, { Component } from 'react';
-import ScrollTrigger from 'react-scroll-trigger';
+
 import './App.css';
 import {Row, Col, Container} from 'react-materialize'
 import {Link} from 'react-router-dom'
-import {Card, CardActions, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
+
 import './css/gallery.css'
 
 
-import hero from './images/herotransweb.png'
-import duck from './images/duckie.jpg'
+
 import red from './images/btn-get-guardian-red.png'
-import splash from './images/splash2.png'
-import bluelogo from './images/guradian.png'
-import reserve from './images/btn-reserve-one.png'
-import cardone from './images/purchaseOne.png'
-import cardtwo from './images/purchaseTwo.png'
+
+
+
 import poster from './images/video-slate.jpg'
 import pipe from './images/leaking-pipe.jpg'
-import ScrollAnimation from 'react-animate-on-scroll';
+
 
 import recut from './images/home-valve-recut.png'
 import leak from './images/drip-drip.png'
