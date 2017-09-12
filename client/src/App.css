@@ -1741,7 +1741,9 @@ a img.two {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+}
+#nav-mobile li {
+  width: 100% !important;
 }
 .hideDesktop hr {
   display: block;
@@ -1751,14 +1753,15 @@ a img.two {
   font-family: 'evogria', sans-serif;
   color: #2050c2;
   vertical-align: middle;
-  font-size:17px;
+  font-size:15px;
+  margin-left: 0px !important;
 }
 .hideDesktop div {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 .hideDesktop div a img {
   vertical-align: middle;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 #nav-mobile .textCenter img {
   float: left;
@@ -1768,7 +1771,7 @@ a img.two {
   margin: 0 !important;
 }
 #nav-mobile a img {
-  width: 43px;
+  width: 53px;
 }
 #nav-mobile .textCenter img {
   position: relative;
@@ -1858,8 +1861,11 @@ a img.two {
     text-align: left;
     margin-left: 20px !important;
   }
-  #nav-mobile li a, #nav-mobile a, #nav-mobile button {
-    margin-left: 20px !important;
+  #nav-mobile li a, #nav-mobile button {
+    margin-left: 40px !important;
+  }
+  #nav-mobile .hideDesktop a {
+    margin-left: 0px !important;
   }
   #nav-mobile a.centerIt {
     float: left !important;

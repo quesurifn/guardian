@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import ScrollTrigger from 'react-scroll-trigger';
 import './App.css';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {Row, Col, Container} from 'react-materialize'
 import {Link} from 'react-router-dom'
 import {Card, CardActions, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import './css/gallery.css'
+
 
 import hero from './images/herotransweb.png'
 import duck from './images/duckie.jpg'
@@ -18,13 +18,12 @@ import cardone from './images/purchaseOne.png'
 import cardtwo from './images/purchaseTwo.png'
 import poster from './images/video-slate.jpg'
 import pipe from './images/leaking-pipe.jpg'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import recut from './images/home-valve-recut.png'
 import leak from './images/drip-drip.png'
 import last from './images/guardian-set.jpg'
 
-
-import ScrollAnimation from 'react-animate-on-scroll'
 
 
 
@@ -85,8 +84,8 @@ export class Purchase extends Component {
                     {/* <h2>There's now a <span>G</span> in Proactive</h2>
                     <h1>STOP WATER DAMAGE</h1>
                     */}
-                    <h2>You Could Easily</h2>
-                    <h1>PREVENT WATER DAMAGE</h1>
+                    <h2 className=' animated fadeInUp'>You Could Easily</h2>
+                    <h1 className='animated fadeInLeft'>PREVENT WATER DAMAGE</h1>
                     <button><Link to='/buy'>GET GUARDIAN</Link></button>
                 </div>
             </Col>
