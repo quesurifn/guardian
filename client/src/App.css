@@ -2273,6 +2273,9 @@ a img.two {
   .firstBuyTwo  button {
     font-size: 13px !important;
   }
+  .buyAbout button {
+    bottom: 70px !important;
+  }
 
   .tileButton {
     display:  none;
