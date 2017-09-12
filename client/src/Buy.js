@@ -5,6 +5,7 @@ import axios from 'axios'
 import ImageGallery from 'react-image-gallery';
 
 import {Link} from 'react-router-dom'
+import {Swipeable, defineSwipe} from 'react-touch';
 
 import {Row, Col, Container} from 'react-materialize'
 import 'react-image-gallery/styles/css/image-gallery-no-icon.css'
@@ -43,7 +44,8 @@ export class Buy extends Component {
     constructor() {
         super() 
             this.submitEmail= this.submitEmail.bind(this);
-        
+            this.swipeRight = this.swipeRight.bind(this);
+            this.swipeLeft = this.swipeLeft.bind(this);
     }
     componentDidMount() {
         window.scrollTo(0, 0)
@@ -79,8 +81,19 @@ export class Buy extends Component {
         })
     }
 
+    swipeRight() {
+        console.log('right called')
+
+    }
+
+    swipeLeft() {
+        console.log('left called')
+
+    }
+
   
   render() {
+      const swipe = defineSwipe({swipeDistance: 50});
          const images = [
       
       {
@@ -200,6 +213,7 @@ export class Buy extends Component {
                  
 
                     <figure className="item" style={{height:'calc(100vh - 65px)', background: '#2050C2'}}>
+                        <Swipeable config={swipe} onSwipeLeft={this.swipeLeft} onSwipeRight={this.swipeRight}>
                         <Row>
                             <Col s={12} className='featureTwoContainer'>
                                 <h1>How it Works</h1> 
@@ -209,9 +223,11 @@ export class Buy extends Component {
 
                             </Col>
                         </Row>
+                        </Swipeable>
                     </figure>
 
                     <figure className="item" style={{height:'calc(100vh - 65px)', background: '#2050C2'}}>
+                    <Swipeable config={swipe} onSwipeLeft={this.swipeLeft} onSwipeRight={this.swipeRight}>
                        <Row>
                            <Col s={12} className='featureThreeContainer'>
                             
@@ -222,42 +238,43 @@ export class Buy extends Component {
                                 </p>
                                 <a href='#item-4'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
                             </Col>
-
                         </Row>
+                        </Swipeable>
                     </figure>
 
                     <figure className="item" style={{height:'calc(100vh - 65px)', background: '#2050C2'}}>
-                       <Row>
-                           <Col s={12} className='featureFourContainer'>
-            
-                                <h2>CONNECT</h2>
-                                <img src={slider4Valve} alt='Guardian' />
-                                <p>
-                                    Connect the Valve Controller to your WiFi and control and monitor your system from the app. Take the Water Detector out of the box and place it anywhere in your home.
-                                    It will connect automatically to your Valve Controller.
-                                </p>
-                                <a href='#item-5'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
-
-
-                           </Col>
-                        </Row>
+                        <Swipeable config={swipe} onSwipeLeft={this.swipeLeft} onSwipeRight={this.swipeRight}>
+                            <Row>
+                                <Col s={12} className='featureFourContainer'>
+                                    <h2>CONNECT</h2>
+                                    <img src={slider4Valve} alt='Guardian' />
+                                    <p>
+                                        Connect the Valve Controller to your WiFi and control and monitor your system from the app. Take the Water Detector out of the box and place it anywhere in your home.
+                                        It will connect automatically to your Valve Controller.
+                                    </p>
+                                    <a href='#item-5'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+                                </Col>
+                            </Row>
+                        </Swipeable>
                     </figure>
 
                     <figure className="item" style={{height:'calc(100vh - 65px)', background: '#1C56C0'}}>
-                       <Row>
-                           <Col s={12} className='featureFiveContainer'>
-             
-                                <h2>PROTECT</h2>
-                                <img src={slider5Valve} alt='Guardian' />
-                                <p>
-                                    The Valve Controller automatically shuts off the water when the Water Detectors detect leaks, floods, earthquakes, or other events to limit the damage done to your home. Manage your 
-                                    system remotely and get notifications when things go wrong from anywhere in then world.
-                                </p>
-                                <a href='#item-2'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
+                        <Swipeable config={swipe} onSwipeLeft={this.swipeLeft} onSwipeRight={this.swipeRight}>
+                            <Row>
+                                <Col s={12} className='featureFiveContainer'>
+                
+                                    <h2>PROTECT</h2>
+                                    <img src={slider5Valve} alt='Guardian' />
+                                    <p>
+                                        The Valve Controller automatically shuts off the water when the Water Detectors detect leaks, floods, earthquakes, or other events to limit the damage done to your home. Manage your 
+                                        system remotely and get notifications when things go wrong from anywhere in then world.
+                                    </p>
+                                    <a href='#item-2'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
 
 
-                           </Col>
-                        </Row>
+                                </Col>
+                            </Row>
+                        </Swipeable>
                     </figure>
 
                 

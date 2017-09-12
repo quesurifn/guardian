@@ -20,6 +20,8 @@ import {Buy} from './Buy'
 import {AppComponent} from './AppComponent'
 
 
+import './Routes.css'
+
 
 
 export const App = () => (
@@ -43,6 +45,9 @@ export const App = () => (
       </Switch>
 
     </main>
+    <div className='legal'> 
+    <small>US and International Patent(s) Pending</small>
+    </div>
 
     {/*<Foot /> */}
 

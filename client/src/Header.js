@@ -14,6 +14,9 @@ import uno from './images/leftNavOne.png'
 import dos from './images/leftNavTwo.png'
 import tres from './images/leftNavThree.png'
 
+import logo from './images/guardian-logo-blue.png'
+import white from './images/guardian-logo-white.png'
+
 
 
 class Header extends Component {
@@ -26,6 +29,7 @@ class Header extends Component {
       var logoFactor;
       var button;
 
+
       if (document.location.pathname === '/purchase' || document.location.pathname === '/') {
           logoFactor = logoWhite; 
           button =  <Link to='/options' className='blueButton nohoverb centerIt'><img src={reserve} alt='resrve' className='reserve' /></Link>
@@ -33,7 +37,8 @@ class Header extends Component {
           logoFactor = logoBlue;
           button =  <Link to='/options' className='blueButton'>PURCHASE OPTIONS</Link>;
       }
-  
+      
+      
     return (
       <div className='row'>
           <div className='col s12'>
@@ -44,7 +49,9 @@ class Header extends Component {
                         
                         <Col s={12} m={12} l={3} className="logo col-3">
                             <Link to='/'>
-                                <span className='headerLogo' >Guardian</span>
+                            
+                                   <img style={{float: 'left'}} className='headerLogo' src={logo} alt='guardian logo' />
+                           
                             </Link>
                         </Col>
 
