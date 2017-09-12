@@ -2703,4 +2703,7 @@ a img.two {
   .homeTwo p {
       margin: 15px 0 0 0 !important;
   }
+  .fifthResearch p {
+    font-size: 20px !important;
+  }
 }

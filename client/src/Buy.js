@@ -82,12 +82,37 @@ export class Buy extends Component {
     }
 
     swipeRight() {
-        console.log('right called')
+        
+        if (document.location.hash === '' || document.location.hash === 'item-2') {
+            document.location.hash = 'item-5'
+        } else if (document.location.hash === 'item-3') {
+            document.location.hash = 'item-2'
 
-    }
+        } else if (document.location.hash === 'item-4') {
+            document.location.hash = 'item-3' 
+        } else if (document.location.hash === 'item-5') {
+            document.location.hash = 'item-4'
+        }
+        
+        
+
+            
+        }
+        
+
+    
 
     swipeLeft() {
-        console.log('left called')
+       if (document.location.hash === '' || document.location.hash === 'item-2') {
+            document.location.hash = 'item-3'
+        } else if (document.location.hash === 'item-3') {
+            document.location.hash = 'item-4'
+
+        } else if (document.location.hash === 'item-4') {
+            document.location.hash = 'item-4' 
+        } else if (document.location.hash === 'item-5') {
+            document.location.hash = 'item-2'
+        }
 
     }
 
@@ -239,7 +264,7 @@ export class Buy extends Component {
                                 <a href='#item-4'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
                             </Col>
                         </Row>
-                        </Swipeable>
+                       </Swipeable>
                     </figure>
 
                     <figure className="item" style={{height:'calc(100vh - 65px)', background: '#2050C2'}}>
@@ -255,7 +280,7 @@ export class Buy extends Component {
                                     <a href='#item-5'><span><l>continue</l><i className="fa fa-chevron-right" aria-hidden="true"></i></span></a>
                                 </Col>
                             </Row>
-                        </Swipeable>
+                     </Swipeable>
                     </figure>
 
                     <figure className="item" style={{height:'calc(100vh - 65px)', background: '#1C56C0'}}>
@@ -274,7 +299,7 @@ export class Buy extends Component {
 
                                 </Col>
                             </Row>
-                        </Swipeable>
+                       </Swipeable>
                     </figure>
 
                 
