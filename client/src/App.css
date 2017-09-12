@@ -1566,6 +1566,11 @@ video.purchase {
   padding: 10px 20px;
 
 }
+.featureTwoContainer h1 { 
+  transform: translateX(-50%);
+  left:50%;
+}
+
 
 .homeFour h2 {
    color:white; 
@@ -1773,6 +1778,7 @@ a img.two {
   color: #2050c2 !important; 
   border: 1px solid #2050c2 !important;
 }
+
 
 @media screen and (max-width: 1072px) {
   .specs {
@@ -2673,5 +2679,8 @@ a img.two {
   .tileButton.mobi {
     display: block !important;
     margin-bottom: 80px;
+  }
+  .homeTwo p {
+      margin: 15px 0 0 0 !important;
   }
 }
