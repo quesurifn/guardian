@@ -1745,6 +1745,12 @@ a img.two {
 #nav-mobile li {
   width: 100% !important;
 }
+.firstBuyTwo p {
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  
+}
 .hideDesktop hr {
   display: block;
   margin: 20px auto !important; 
@@ -2274,7 +2280,7 @@ a img.two {
     font-size: 13px !important;
   }
   .buyAbout button {
-    bottom: 70px !important;
+    bottom: 60px !important;
   }
 
   .tileButton {
