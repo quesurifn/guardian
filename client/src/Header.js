@@ -14,7 +14,7 @@ import uno from './images/leftNavOne.png'
 import dos from './images/leftNavTwo.png'
 import tres from './images/leftNavThree.png'
 
-import logo from './images/guardian-logo-blue.png'
+import logo from './images/guadian-logo-new.png'
 
 
 
