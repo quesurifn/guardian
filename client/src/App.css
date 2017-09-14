@@ -1745,12 +1745,7 @@ a img.two {
 #nav-mobile li {
   width: 100% !important;
 }
-.firstBuyTwo p {
-  display: block; 
-  margin-left: auto;
-  margin-right: auto;
 
-}
 .hideDesktop hr {
   display: block;
   margin: 20px auto !important; 
@@ -2057,6 +2052,12 @@ a img.two {
     max-width: 100% !important;
     width: 100% !important;
   }
+  .firstBuyTwo p {
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+
+}
   .featuresInline h2, .featuresInline p {
     font-size: 14px;
   }
