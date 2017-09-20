@@ -18,6 +18,7 @@ import {Detector} from './Detector'
 import {Howto} from './Howto'
 import {Buy} from './Buy'
 import {AppComponent} from './AppComponent'
+import xml from './sitemap.xml'
 
 
 import './Routes.css'

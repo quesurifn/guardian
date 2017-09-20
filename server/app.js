@@ -27,13 +27,29 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 //app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, '../client/build')));
+
 app.use(favicon(path.join(__dirname, '../client/build/favicon.ico')))
+
+
+app.use('/', express.static(path.join(__dirname, '../client/build')));
+app.use('/seo/', express.static(path.join(__dirname, './public')));
+
+
+app.get('/seo/robots.txt', function (req, res) {
+    res.type('text/plain');
+    res.send("User-agent: * \nAllow: /");
+});
+
+app.get('/seo/sitemap.xml', (req, res) => {
+  res.type('text/xml');
+  res.sendFile(path.resolve(__dirname, '../client/build/sitemap.xml'))
+})
 
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/build/index.html'));
 });
-app.use('/', root)
+
+
 app.use('/api', index);
 
 
