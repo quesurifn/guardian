@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.e92fd7d9.css",
   "main.css.map": "static/css/main.e92fd7d9.css.map",
-  "main.js": "static/js/main.0cff1758.js",
-  "main.js.map": "static/js/main.0cff1758.js.map",
+  "main.js": "static/js/main.dff265e9.js",
+  "main.js.map": "static/js/main.dff265e9.js.map",
   "static/media/077.jpg": "static/media/077.5d1a02ea.jpg",
   "static/media/098.jpg": "static/media/098.ace574fc.jpg",
   "static/media/Evogria Italic.woff": "static/media/Evogria Italic.811e4ccd.woff",
@@ -43,6 +43,7 @@
   "static/media/photo2.png": "static/media/photo2.5084515e.png",
   "static/media/programming.png": "static/media/programming.5107beb5.png",
   "static/media/researchFirst.png": "static/media/researchFirst.b794e8c7.png",
+  "static/media/sitemap.xml": "static/media/sitemap.bfdebc03.xml",
   "static/media/tiles.jpg": "static/media/tiles.1b0fd153.jpg",
   "static/media/toilet.jpg": "static/media/toilet.d3234977.jpg",
   "static/media/valve-tiles.jpg": "static/media/valve-tiles.9cbfe11f.jpg",
