@@ -16,6 +16,8 @@ import tres from './images/leftNavThree.png'
 
 import logo from './images/guadian-logo-new.png'
 
+import apple from './images/guardian-app-store.png'
+import android from './images/guardian-android.png'
 
 
 class Header extends Component {
@@ -72,7 +74,11 @@ class Header extends Component {
                         </Col>
 
                         <Col s={12} m={12} l={3} className="col-3 textCenter">
-                           <img src={appstore} alt='app store' />
+                            <div className='appFlex'>
+                                <img src={apple} alt='apple' />
+                                <img src={android} alt='android' />
+                            </div>
+                          
                         </Col>
                 </Row>
             </Navbar>

@@ -47,7 +47,6 @@ nav ul a {
 
 
 nav ul .l3 img {
-    margin-right: 60px;
     max-width: 70%;
     float: right;
     padding-top: 5px;
@@ -1781,6 +1780,15 @@ a img.two {
 #nav-mobile hr {
   color: #2050c2 !important; 
   border: 1px solid #2050c2 !important;
+}
+.appFlex {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.appFlex img {
+  height: 60px;
+  width:150px;
 }
 
 
