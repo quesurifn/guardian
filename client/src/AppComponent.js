@@ -63,7 +63,8 @@ export class AppComponent extends Component {
                 <button onClick={() => this.props.history.push('/buy')} style={{paddingLeft: '0px', marginLeft: '180px', background: '#363636'}}>GET GUARDIAN</button>
               </Col>
               <Col s={12} m={7} className='relative detector'>
-                <img src={handapp} alt='half guardian' />
+                <img src={handapp} alt='half guardian'  />
+                
               </Col>
             </Row>
           </div> 
@@ -76,7 +77,11 @@ export class AppComponent extends Component {
            <Row style={{paddingTop: '50px'}}>
              <h2 >FOR PEACE OF MIND</h2>
             <Col l={6} m={12}>
-              <img src={handextras} alt='valve schematic' />
+             <map name="image-map">
+                   <area target="" alt="" title="" href="https://itunes.apple.com/us/app/guardian-by-elexa/id1173682335?mt=8" coords="113,734,271,787" shape="rect" />
+                </map>
+
+              <img src={handextras} alt='valve schematic' useMap="#image-map" />
 
             </Col>
             <Col l={6} m={12} className='schemaFlex' style={{paddingLeft: '28px'}}>

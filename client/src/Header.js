@@ -75,10 +75,9 @@ class Header extends Component {
 
                         <Col s={12} m={12} l={3} className="col-3 textCenter">
                             <div className='appFlex'>
-                                <img src={apple} alt='apple' />
+                                <img src={apple} onClick={() => window.open('https://itunes.apple.com/us/app/guardian-by-elexa/id1173682335?mt=8', '_blank')} alt='apple' style={{cursor: 'pointer'}} />
                                 <img src={android} alt='android' />
                             </div>
-                          
                         </Col>
                 </Row>
             </Navbar>
