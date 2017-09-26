@@ -13,6 +13,10 @@ import one from './images/vc-section-1.jpg'
 import two from './images/photo2.png'
 import appstore from './images/appstores.png'
 
+
+import apple from './images/guardian-app-store.png'
+import android from './images/guardian-android.png'
+
 export class Controller extends Component {
     constructor() {
         super()
@@ -125,13 +129,16 @@ export class Controller extends Component {
                 <span>Direct Communication</span>    The <Link to='/water-detector'>Water Detectors</Link> communicate directly with the Valve Controller using a proprietary wireless protocol without hubs and other unnecessary hardware.
               </p>
 
-              <img className='app' src={appstore} alt='app store' />
+              <div className='appFlex2'>
+                  <img src={apple} onClick={() => window.open('https://itunes.apple.com/us/app/guardian-by-elexa/id1173682335?mt=8', '_blank')} alt='apple' style={{cursor: 'pointer', margin: '0'}} />
+                  <img src={android} alt='android' style={{margin: '0'}}/>
+                </div>
               </div>
             </Col>
 
             <Col l={6} m={12}>
               <img className='specialCase blockAuto' src={two} alt='valve schematic' />
-
+              
             </Col>
           </Row>
             <hr />

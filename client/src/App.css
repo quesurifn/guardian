@@ -1786,6 +1786,14 @@ a img.two {
  justify-content: center;
  align-items: center;
 }
+.appFlex2 {
+ display: flex;
+ align-items: center;
+}
+.appFlex2 img {
+  height: 60px;
+  width:150px;
+}
 .appFlex img {
   height: 60px;
   width:150px;
@@ -1819,6 +1827,10 @@ img.special {
   }
   .moreFeatures img {
     width: 160px;
+  }
+  .appFlex2 img {
+    width: 40%;
+    height: auto;
   }
   
    .pshim {
