@@ -7,8 +7,14 @@ import './css/valve.css'
 import {Row, Col} from 'react-materialize'
 
 
+import apple from './images/guardian-app-store.png'
+import android from './images/guardian-android.png'
+
+
+
 
 import handapp from './images/hand-app.png'
+import app from './images/appby.png'
 import handextras from './images/app-extras.png'
 
 
@@ -65,6 +71,7 @@ export class AppComponent extends Component {
               <Col s={12} m={7} className='relative detector'>
                 <img src={handapp} alt='half guardian'  />
                 
+                
               </Col>
             </Row>
           </div> 
@@ -77,11 +84,14 @@ export class AppComponent extends Component {
            <Row style={{paddingTop: '50px'}}>
              <h2 >FOR PEACE OF MIND</h2>
             <Col l={6} m={12}>
-             <map name="image-map">
-                   <area target="" alt="" title="" href="https://itunes.apple.com/us/app/guardian-by-elexa/id1173682335?mt=8" coords="113,734,271,787" shape="rect" />
-                </map>
+            
 
-              <img src={handextras} alt='valve schematic' useMap="#image-map" />
+              <img src={app} alt='valve schematic' />
+              <div className='appFlex'>
+                  <img src={apple} className='special' onClick={() => window.open('https://itunes.apple.com/us/app/guardian-by-elexa/id1173682335?mt=8', '_blank')} alt='apple' style={{cursor: 'pointer', margin: '0'}} />
+                  <img src={android} alt='android' className='special' style={{margin: '0'}}/>
+                </div>
+              
 
             </Col>
             <Col l={6} m={12} className='schemaFlex' style={{paddingLeft: '28px'}}>

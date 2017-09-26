@@ -1790,6 +1790,9 @@ a img.two {
   height: 60px;
   width:150px;
 }
+img.special {
+    margin: 40px 0 !important;
+}
 
 
 @media screen and (max-width: 1072px) {
@@ -1817,6 +1820,7 @@ a img.two {
   .moreFeatures img {
     width: 160px;
   }
+  
    .pshim {
     margin-left:20px !important;
   }
@@ -2017,6 +2021,11 @@ a img.two {
   .m5 p.respHeight {
     padding: 0 20px;
   }
+  img.special {
+    width: 30%;
+    height: auto;
+  }
+
 }
 @media screen and (max-width: 1200px) {
   .gBlue {
