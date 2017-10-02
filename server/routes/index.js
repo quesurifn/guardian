@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
+var r = require('request')
 
 
 router.post('/email', (req, res) => {
@@ -76,6 +77,59 @@ router.post('/email', (req, res) => {
           })
           res.end()
     }
+})
+
+
+router.post('/addtocart', (req, res) => {
+  let url = 'https://www.nexternal.com/shared/xml/ordercreate.rest'
+  let data = 
+  `<?xml version="1.0" encoding="utf-8"?>
+    <OrderCreateRequest>
+      <Credentials>
+        <AccountName>fairway</AccountName>
+        <UserName>xmlbob</UserName>
+        <Password>XMLDem0Pwd</Password>
+      </Credentials>
+      <OrderCreate Mode="Add">
+        <Customer MatchingField="Email">
+          <Email DefaultTo="Most Recently Created">demo@demo.com</Email>
+        </Customer>
+        <Payment>
+          <PaymentMethod>CreditCard</PaymentMethod>
+          <CreditCard>
+            <CreditCardType>Visa</CreditCardType>
+            <CreditCardNumber>4111111111111111</CreditCardNumber>
+            <CreditCardExpDate>08/2018</CreditCardExpDate>
+          </CreditCard>
+        </Payment>
+        <ShipTos>
+          <ShipTo Label="yourself">
+            <Products>
+              <Product>
+                <ProductName>Caddyshack DVD</ProductName>
+                <Qty>1</Qty>
+              </Product>
+            </Products>
+          </ShipTo>
+        </ShipTos>
+      </OrderCreate>
+    </OrderCreateRequest>`
+
+  let options = {
+    url: url,
+    body: data,
+    headers: {'Content-Type':'text/xml'}
+  }
+
+  r.post(options, (err, req, body) => {
+    if(err) {
+      console.log(err)
+      res.send({"status":"400", "msg": err})
+    } else {
+      console.log(body)
+      res.send({"status": "200", "msg": "OK"})
+    }
+  })
 })
 
 

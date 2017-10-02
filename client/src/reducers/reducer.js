@@ -2,6 +2,7 @@ export function reducer(
     state = {
         fbkey: '',
         userSuccess: null,
+        cart: {}
     }, action) {
 
 
@@ -23,6 +24,13 @@ export function reducer(
             return { 
                 ...state,
                 userSuccess: false
+            }
+        }
+        
+        case "ADD_TO_CART" : {
+            return {
+                ...state,
+                cart: action.payload
             }
         }
 
