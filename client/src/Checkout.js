@@ -29,30 +29,30 @@ export class Checkout extends Component {
   render() {
 
     var items;
+    console.log(this.props.cart)
+    if (this.props.cart.length !== 0 ) {
     
-    if (this.props.cart.length !== 0) {
     
     
-    
-   items = <div class="shopify-buy__cart-item" style="background: white;width:100%;height:110px;box-sizing:border-box;border:1px solid #e5e5e4;">	
-				<div style="margin:20px 0;padding: 0 15px;">
-				    <div style="{ backgroundImage: 'url(' + item.image + ')' }" class="shopify-buy__cart-item__image" alt="Product" style="background-repeat:no-repeat;background-size: contain;"></div>
-					    <span class="shopify-buy__cart-item__title" style="text-align:left;font-weight:600;">{{ item.name }}</span>
-						<span style="position:absolute;top:0;left:5px;cursor:pointer;">×</span>
-						<span class="shopify-buy__cart-item__price">${{ (item.price * item.quantity).toFixed(2) }}</span>
-						<div class="shopify-buy__quantity-container" style="margin-left:80px;">
-							<button class="shopify-buy__btn--seamless shopify-buy__quantity-decrement" type="button">
+   items = <div className="shopify-buy__cart-item" style={{background:'white',width:'100%',height:'110px', boxSizing: 'border-box', border:'1px solid #e5e5e4'}}>	
+				<div style={{margin:'20px 0px', padding: '0 15px'}}>
+				    <div className="shopify-buy__cart-item__image" alt="Product" style={{backgroundRepeat:'no-repeat', backgroundSize: 'contain'}}></div>
+					    <span className="shopify-buy__cart-item__title" style={{textAlign:'left',fontWeight:'600'}}></span>
+						<span style={{position:'absolute', top:'0',left:'5px',cursor:'pointer'}}>×</span>
+						<span className="shopify-buy__cart-item__price"></span>
+						<div className="shopify-buy__quantity-container" style={{marginLeft:'80px'}}>
+							<button className="shopify-buy__btn--seamless shopify-buy__quantity-decrement" type="button">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4 7h8v2H4z"></path></svg>
 							</button>
-							<input class="shopify-buy__quantity shopify-buy__cart-item__quantity-input" type="number" min="0" aria-label="Quantity"style="height: 30px; border:solid 1px #d3dbe2 !important;" />
-							<button class="shopify-buy__btn--seamless shopify-buy__quantity-increment" type="button">
+							<input className="shopify-buy__quantity shopify-buy__cart-item__quantity-input" type="number" min="0" aria-label="Quantity" style={{height: '30px', border:'solid 1px #d3dbe2'}} />
+							<button className="shopify-buy__btn--seamless shopify-buy__quantity-increment" type="button">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M12 7H9V4H7v3H4v2h3v3h2V9h3z"></path></svg>
 							</button>
 						</div>
 					</div>
                 </div>
     } else {
-        items = <h2>Your Cart is Empty!!</h2>
+        items = <h2 className='empty-cart' >Your Cart is Empty!!</h2>
     }
 	
 
@@ -240,7 +240,7 @@ export class Checkout extends Component {
 								<span className='span2'>CONFIRM</span>
 							</div>
 
-                            <div class="shopify-buy__cart-items" style="padding:0;height:265px;overflow-y:scroll;">
+                            <div className="shopify-buy__cart-items" style={{padding:'0',height:'265px',overflowY:'scroll'}}>
 								{items}
 							</div>
 						

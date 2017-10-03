@@ -19,6 +19,7 @@ import {Howto} from './Howto'
 import {Buy} from './Buy'
 import {AppComponent} from './AppComponent'
 import {Checkout} from './Checkout'
+import {Shop} from './Shop'
 import xml from './sitemap.xml'
 
 
@@ -45,6 +46,7 @@ export const App = () => (
         <Route exact path='/buy' component={Buy} />
         <Route exact path='/app' component={AppComponent} />
         <Route exact path='/checkout' component={Checkout} />
+        <Route exact path='/shop' component={Shop} />
         <Route path='*' component={NotFound} />
       </Switch>
 

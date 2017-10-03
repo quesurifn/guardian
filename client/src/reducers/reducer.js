@@ -2,7 +2,7 @@ export function reducer(
     state = {
         fbkey: '',
         userSuccess: null,
-        cart: {}
+        cart: []
     }, action) {
 
 
