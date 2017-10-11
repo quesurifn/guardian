@@ -2698,6 +2698,94 @@ input[type=number]::-webkit-outer-spin-button {
 .shop-card img {
   width:80%;
 }
+.newcustomer {
+  background: #3077B0;
+  height: 100vh;
+  width: 100vw;
+}
+.newcustomer h1, .newcustomer h2 {
+  font-family: 'evogria', sans-serif;
+  text-align: center;
+  color: white;
+}
+.newcustomer div {
+  width: 350px;
+  margin: auto;
+}
+.newcustomer div .password {
+  margin-top: 20px;
+}
+.newcustomer div .form-inline:first-child {
+  margin: 20px 0;
+}
+.red-button {
+  background: #eb3332;
+  color:white;
+  font-family: 'evogria', sans-serif;
+  padding: 1rem 3rem;
+  border: none;
+  margin: 40px auto;
+  font-size: 30px;
+  display: block;
+  text-shadow: 2px 2px black;
+  width: 350px;
+}
+
+#main {
+    transition: margin-right .5s;
+}
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 99999; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    transition:0.5s;
+}
+ .navbar-fixed {
+   transition: right 0.5s;
+ }
+.floatingTab {
+	position: fixed; 
+	top: 50vh;
+	right: 0; 
+	width: 55px;
+	height: 100px;
+	background-color:#262626; 
+	border-radius: 6px 0px 0px 6px;
+	z-index: 200;
+	display:none;
+}
+.cart-icon {
+  color:white;
+  font-size:2rem;
+  position:relative;
+  top:15px;
+  left:20px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
 
 @media screen and (max-width:1270px) {
   .checkout-col {

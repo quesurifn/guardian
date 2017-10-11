@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var compression = require('compression')
 var session = require('express-session');
+var cors = require('cors')
 
 var index = require('./routes/index');
 var root = require('./routes/root')
@@ -14,7 +15,7 @@ var favicon = require('serve-favicon')
 
 var app = express();
 
-
+app.use(cors())
 app.use(compression({level: 9}))
 
 app.engine('html', require('ejs').renderFile);
@@ -33,8 +34,6 @@ app.use(favicon(path.join(__dirname, '../client/build/favicon.ico')))
 
 
 
-
-
 app.get('/robots.txt', function (req, res) {
     res.type('text/plain');
     res.send("User-agent: * \nAllow: /");
@@ -47,11 +46,14 @@ app.get('/sitemap.xml', (req, res) => {
 
 app.use('/', express.static(path.join(__dirname, '../client/build')));
 
+app.use('/api', index);
+
+
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/build/index.html'));
 });
 
-app.use('/api', index);
+
 
 
 // catch 404 and forward to error handler

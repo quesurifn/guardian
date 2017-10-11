@@ -21,6 +21,9 @@ import {AppComponent} from './AppComponent'
 import {Checkout} from './Checkout'
 import {Shop} from './Shop'
 import xml from './sitemap.xml'
+import {NewCustomer} from './NewCustomer'
+import {LeftNav} from './LeftNav'
+import {Update} from './Update'
 
 
 
@@ -29,10 +32,13 @@ import './Routes.css'
 
 
 export const App = () => (
-  <div>
-
+  <div id='main'>
+  
     <Header />
+    <div id="overlay"></div>
+    <LeftNav />
     <main>
+      
       <Switch>
         <Route exact path="/" component={Purchase} />
         <Route exact path="/options" component={Options} />
@@ -47,6 +53,8 @@ export const App = () => (
         <Route exact path='/app' component={AppComponent} />
         <Route exact path='/checkout' component={Checkout} />
         <Route exact path='/shop' component={Shop} />
+        <Route exact path='/new-customer' component={NewCustomer} />
+        <Route exact path='/update' component={Update} />
         <Route path='*' component={NotFound} />
       </Switch>
 

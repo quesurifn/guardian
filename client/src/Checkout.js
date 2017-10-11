@@ -19,13 +19,6 @@ export class Checkout extends Component {
     super() 
   }
 
-
-
-
-
-
-
-
   render() {
 
     var items;
@@ -256,9 +249,7 @@ export class Checkout extends Component {
 											<div className='tax'></div>
 											<div className='total'>$</div>
 										</div>
-											
-								
-											<button className='placeorder' onClick={this.checkout}>PLACE ORDER</button>
+										<button className='placeorder' onClick={this.checkout}>PLACE ORDER</button>
 									</div>
 									
 								</div>
