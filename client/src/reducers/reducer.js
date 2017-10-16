@@ -1,6 +1,5 @@
 export function reducer(
     state = {
-        fbkey: '',
         userSuccess: null,
         cart: [],
         nav: null,
@@ -12,13 +11,6 @@ export function reducer(
 
 
     switch (action.type) {
-          case "FBTOKEN": {
-            return {
-                ...state,
-                fbkey: action.payload
-            }
-          }
-        
         case "NAV_OPEN" : {
             return {
                 ...state, 
@@ -31,6 +23,22 @@ export function reducer(
                 ...state,
                 nav: false
             }
+        }
+
+         case "ADD_TO_CART": {
+           let oldState = [...state.cart]
+           let index = oldState.findIndex(x => x.name === action.payload.name)
+
+
+
+            if (index > -1) {
+            oldState[index] = {...oldState[index], quantity: oldState[index].quantity + 1};
+                return {...state, cart: oldState};
+            } else {
+                oldState.push({...action.payload, quantity: 1});
+                return {...state, cart: oldState};
+            }
+            
         }
 
         case "USER_SUCCESS" : {
@@ -95,10 +103,25 @@ export function reducer(
             }
         }
 
-        case "ADD_TO_CART": {
+       
+        case "REMOVE_FROM_CART": {
+            return {
+                ...state,
+                cart: action.payload
+            }
+        }
+
+        case "INCREMENT_CART": {
             return {
                 ...state, 
-                cart: [...state.cart, action.payload]
+                cart: action.payload
+            }
+        }
+
+        case "DECREMENT_CART": {
+            return {
+                ...state,
+                cart: action.payload
             }
         }
 

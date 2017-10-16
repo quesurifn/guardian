@@ -90,7 +90,7 @@ export class AppComponent extends Component {
               <p style={{textAlign: 'center', margin: '20px 0 0 0'}}>Download App Here:</p>
               <div className='appFlex'>
                   <img src={apple} className='special' onClick={() => window.open('https://itunes.apple.com/us/app/guardian-by-elexa/id1173682335?mt=8', '_blank')} alt='apple' style={{cursor: 'pointer', margin: '0'}} />
-                  <img src={android} alt='android' className='special' style={{margin: '0'}}/>
+                  <img src={android} alt='android' className='special' onClick={() => window.open('https://play.google.com/store/apps/details?id=com.domeguardian', '_blank')} style={{margin: '0'}}/>
                 </div>
               
 

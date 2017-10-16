@@ -1,4 +1,5 @@
 var express = require('express');
+
 var router = express.Router();
 require('dotenv').config()
 
@@ -154,34 +155,42 @@ router.post('/email', (req, res) => {
 
 
 router.post('/addtocart', (req, res) => {
+/*
+
+  Product Schema
+
+  <Product>
+    <ProductName>Caddyshack DVD</ProductName>
+    <Qty>1</Qty>
+  </Product>
+
+*/
+
+
   let url = 'https://www.nexternal.com/shared/xml/ordercreate.rest'
   let data = 
   `<?xml version="1.0" encoding="utf-8"?>
     <OrderCreateRequest>
       <Credentials>
-        <AccountName>elexa</AccountName>
-        <UserName>kfahey</UserName>
-        <Password>DomeHome14</Password>
+        <AccountName>guardian</AccountName>
+        <Key>${process.env.NEXTERNAL}</Key>
       </Credentials>
       <OrderCreate Mode="Add">
         <Customer MatchingField="Email">
-          <Email DefaultTo="Most Recently Created">kyle.c.r.fahey@gmail.com</Email>
+          <Email DefaultTo="Most Recently Created">${req.body.email}</Email>
         </Customer>
         <Payment>
           <PaymentMethod>CreditCard</PaymentMethod>
           <CreditCard>
-            <CreditCardType>Visa</CreditCardType>
-            <CreditCardNumber>4111111111111111</CreditCardNumber>
-            <CreditCardExpDate>08/2018</CreditCardExpDate>
+            <CreditCardType>${req.body.cctype}</CreditCardType>
+            <CreditCardNumber>${req.body.ccnumber}</CreditCardNumber>
+            <CreditCardExpDate>${req.body.ccexp}</CreditCardExpDate>
           </CreditCard>
         </Payment>
         <ShipTos>
           <ShipTo Label="yourself">
             <Products>
-              <Product>
-                <ProductName>Caddyshack DVD</ProductName>
-                <Qty>1</Qty>
-              </Product>
+              
             </Products>
           </ShipTo>
         </ShipTos>
@@ -223,7 +232,9 @@ router.post('/products', (req, res) => {
     name: req.body.name,
     price: req.body.price,
     desc: req.body.desc,
-    images: req.body.images
+    images: req.body.images,
+    comingSoon: req.body.comingSoon,
+    link: req.body.link
   })
 
   product.save(function (err, product) {
@@ -232,5 +243,6 @@ router.post('/products', (req, res) => {
   })
 
 })
+
 
 module.exports = router;

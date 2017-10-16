@@ -23,7 +23,7 @@ export class NewCustomer extends Component {
       <div className="newcustomer">
          <h1>New to Guardian?</h1>
          <h2>Sign up here.</h2>
-            <form name="Customer" method="post" action="https://store.elexausa.com/default.aspx"> 
+            <form name="Customer" method="post" action="http://www.nexternal.com/myguardian/default.aspx"> 
                 <div className='inline-form'>
                     <div className='form-container'>
                         <input type="text" className='form-text' name="FIRST_NAME" placeholder='First Name'/> 

@@ -8,7 +8,9 @@ var productSchema = new Schema({
     price: Number,
     desc: String,
     images: Array,
-    link: String
+    link: String,
+    comingSoon: Boolean,
+    quantity: Number
 })
 
 var Product = mongoose.model('Product', productSchema)

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 import './App.css';
+import './css/shop.css'
 
 import axios from 'axios'
 
 
-import {LOAD_PRODUCTS} from './actions/action'
+import {LOAD_PRODUCTS, ADD_TO_CART, NAV_OPEN} from './actions/action'
 
 
 import valve from './images/buy-card-2.png'
@@ -22,11 +23,17 @@ import {connect} from 'react-redux'
 })
 export class Shop extends Component {
     constructor() {
-        super()
+        super() 
 
-
-        this.state={products: []}
+        this.addToCart = this.addToCart.bind(this)
     }
+ 
+
+    addToCart(obj) {
+        this.props.dispatch(ADD_TO_CART(obj))
+        this.props.dispatch(NAV_OPEN())
+    }
+
     componentDidMount() {
         window.scrollTo(0, 0)
         document.querySelector('#root').style.borderTop = 'none'
@@ -48,24 +55,10 @@ export class Shop extends Component {
     }
 
   componentWillMount() {
-      /*axios.get('http://localhost:3000/api/products')
-      .then((res) => {
-          console.log(res.data)
-          this.setState({products: res.data})
-      })
-      .catch((err) => {
-        console.log(err)
-      })
-    */
-
       this.props.dispatch(LOAD_PRODUCTS())
   }
 
   render() {
-
-    
-
-
     return (
       <div className='shop'>
 
@@ -76,34 +69,18 @@ export class Shop extends Component {
                         <img src={e.images[0]} alt='Valve Controller' /> 
                     </Link>
                     </div>
+                    {e.comingSoon === true ? (
+                        <p className='coming-soon'>Coming Soon!</p>
+                    ): (
+                        <p className='coming-soon'>Available Now!</p>
+                    )
+                        
+                    
+                    }
                     <h3>{e.name}</h3>
+                    <button className='red-button' onClick={() => this.addToCart(e)}>add to cart</button>
                  </div>})}
-        {/*
-        <div className='shop-card-container'>
-            <div className='shop-card'>
-                <Link to='/valve-controller'>
-                    <img src={valve} alt='Valve Controller' /> 
-                </Link>
-            </div>
-        <h3>Valve Controller</h3>
-        </div>
-        <div className='shop-card-container'>
-            <div className='shop-card'>
-                <Link to='/water-detector'>
-                    <img src={detector} alt='Leak Detector' /> 
-                </Link>
-            </div>
-         <h3>Leak Detector</h3>
-        </div>
-        <div className='shop-card-container'>
-            <div className='shop-card'>
-                <Link to='/buy'>
-                    <img src={kit} alt='Guardian Kit' /> 
-                </Link>
-            </div>
-            <h3>Guardian Bundle</h3>
-        </div>
-         */}
+       
 
 
       </div>   

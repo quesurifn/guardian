@@ -24,6 +24,7 @@ import xml from './sitemap.xml'
 import {NewCustomer} from './NewCustomer'
 import {LeftNav} from './LeftNav'
 import {Update} from './Update'
+import {Terms} from './Terms'
 
 
 
@@ -55,6 +56,7 @@ export const App = () => (
         <Route exact path='/shop' component={Shop} />
         <Route exact path='/new-customer' component={NewCustomer} />
         <Route exact path='/update' component={Update} />
+        <Route exact path='/terms' component={Terms} />
         <Route path='*' component={NotFound} />
       </Switch>
 
