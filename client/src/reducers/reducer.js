@@ -11,6 +11,50 @@ export function reducer(
 
 
     switch (action.type) {
+      
+        case "ADD_TO_CART": {
+           let oldState = [...state.cart]
+           let index = oldState.findIndex(x => x.name === action.payload.name)
+
+            if (index > -1) {
+            oldState[index] = {...oldState[index], quantity: oldState[index].quantity + 1};
+                return {...state, cart: oldState};
+            } else {
+                oldState.push({...action.payload, quantity: 1});
+                return {...state, cart: oldState};
+            }
+            
+        }
+
+        case "REMOVE_FROM_CART": {
+           let oldState = [...state.cart]
+           let index = oldState.findIndex(x => x.name === action.payload.name)
+           oldState.splice(index, 1)
+           return {
+               ...state, 
+               cart: oldState
+           }
+
+
+        }
+
+
+        case "DECREMENT_CART": {
+            let oldState = [...state.cart]
+            let index = oldState.findIndex(x => x.name === action.payload.name)
+
+            if (index > -1) {
+                if (oldState[index].quantity === 1) {
+                    oldState.splice(index, 1)
+                    return {...state, cart: oldState}
+                } else {
+                    oldState[index] = {...oldState[index], quantity: oldState[index].quantity - 1};
+                    return {...state, cart: oldState};
+                }
+            }
+        
+        }
+        
         case "NAV_OPEN" : {
             return {
                 ...state, 
@@ -23,22 +67,6 @@ export function reducer(
                 ...state,
                 nav: false
             }
-        }
-
-         case "ADD_TO_CART": {
-           let oldState = [...state.cart]
-           let index = oldState.findIndex(x => x.name === action.payload.name)
-
-
-
-            if (index > -1) {
-            oldState[index] = {...oldState[index], quantity: oldState[index].quantity + 1};
-                return {...state, cart: oldState};
-            } else {
-                oldState.push({...action.payload, quantity: 1});
-                return {...state, cart: oldState};
-            }
-            
         }
 
         case "USER_SUCCESS" : {
@@ -55,12 +83,6 @@ export function reducer(
             }
         }
         
-        case "ADD_TO_CART" : {
-            return {
-                ...state,
-                cart: action.payload
-            }
-        }
         case "TAB_CLOSE": {
             return {
                 ...state,
@@ -100,28 +122,6 @@ export function reducer(
             return {
                 ...state,
                 loading: action.payload
-            }
-        }
-
-       
-        case "REMOVE_FROM_CART": {
-            return {
-                ...state,
-                cart: action.payload
-            }
-        }
-
-        case "INCREMENT_CART": {
-            return {
-                ...state, 
-                cart: action.payload
-            }
-        }
-
-        case "DECREMENT_CART": {
-            return {
-                ...state,
-                cart: action.payload
             }
         }
 

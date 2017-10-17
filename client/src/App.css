@@ -13,11 +13,6 @@ font-weight: normal;
 src: local('Evogria Italic'), url('./css/fonts/Evogria Italic.woff') format('woff');
 }
 
-
-html, body {
-  height:100%;
-
-}
 body {
   overflow-x: hidden !important; 
 }

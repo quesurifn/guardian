@@ -1,0 +1,9 @@
+main {
+    height: calc(65px - 100vh) !important;
+    width:100%;
+}
+
+
+.legal {
+    display: none !important;
+}

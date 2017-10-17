@@ -36,9 +36,8 @@ export const App = () => (
   <div id='main'>
   
     <Header />
-    <div id="overlay"></div>
     <LeftNav />
-    <main>
+
       
       <Switch>
         <Route exact path="/" component={Purchase} />
@@ -60,7 +59,7 @@ export const App = () => (
         <Route path='*' component={NotFound} />
       </Switch>
 
-    </main>
+
     <div className='legal'> 
     <small>US and International Patent(s) Pending</small>
     </div>

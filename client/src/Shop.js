@@ -60,7 +60,7 @@ export class Shop extends Component {
 
   render() {
     return (
-      <div className='shop'>
+      <div className='shop' style={{height: '100vh'}}>
 
           {this.props.products.map((e) => {
         return  <div className='shop-card-container' key={e._id}>

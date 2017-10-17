@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import './css/card.css'
 
+import {NAV_CLOSE, INCREMENT_CART, DECREMENT_CART, REMOVE_FROM_CART} from './actions/action'
+import './css/checkout.css'
 
 import {connect} from 'react-redux';
 
@@ -10,43 +12,39 @@ import CardReactFormContainer from 'card-react';
 
 
 @connect((store) => {
-  return {
-	cart: store.reducer.cart
-  }
+    return {
+        cart: store.reducer.cart
+    }
 })
 export class Checkout extends Component {
-  constructor() {
-    super() 
+  componentDidMount() {
+	  this.props.dispatch(NAV_CLOSE())
   }
+
 
   render() {
 
-    var items;
-    console.log(this.props.cart)
-    if (this.props.cart.length !== 0 ) {
-    
-    
-    
-   items = <div className="shopify-buy__cart-item" style={{background:'white',width:'100%',height:'110px', boxSizing: 'border-box', border:'1px solid #e5e5e4'}}>	
-				<div style={{margin:'20px 0px', padding: '0 15px'}}>
-				    <div className="shopify-buy__cart-item__image" alt="Product" style={{backgroundRepeat:'no-repeat', backgroundSize: 'contain'}}></div>
-					    <span className="shopify-buy__cart-item__title" style={{textAlign:'left',fontWeight:'600'}}></span>
-						<span style={{position:'absolute', top:'0',left:'5px',cursor:'pointer'}}>×</span>
-						<span className="shopify-buy__cart-item__price"></span>
-						<div className="shopify-buy__quantity-container" style={{marginLeft:'80px'}}>
-							<button className="shopify-buy__btn--seamless shopify-buy__quantity-decrement" type="button">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4 7h8v2H4z"></path></svg>
-							</button>
-							<input className="shopify-buy__quantity shopify-buy__cart-item__quantity-input" type="number" min="0" aria-label="Quantity" style={{height: '30px', border:'solid 1px #d3dbe2'}} />
-							<button className="shopify-buy__btn--seamless shopify-buy__quantity-increment" type="button">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M12 7H9V4H7v3H4v2h3v3h2V9h3z"></path></svg>
-							</button>
-						</div>
-					</div>
+  
+	let items = this.props.cart.length > 0 ? this.props.cart.map((e) => 
+		
+            <div className="shopify-buy__cart-item" key={e._id}>
+                <div className="shopify-buy__cart-item__image" alt="Product" style={{backgroundRepeat:"no-repeat", backgroundSize: 'contain', margin: "0 1rem", backgroundImage: `url(${e.images[0]})`, backgroundPosition: 'center'}}></div>
+                    <span className="shopify-buy__cart-item__title">{e.title}</span>
+                    <span style={{position:"absolute", top:'0',left: "5px", cursor:"pointer",color:'#333'}} onClick={() => this.props.dispatch(REMOVE_FROM_CART(e))}>×</span>
+                    <span className="shopify-buy__cart-item__price">{e.price}</span>
+                    <div className="shopify-buy__quantity-container" style={{marginLeft:"120px"}}>
+                        <button className="shopify-buy__btn--seamless shopify-buy__quantity-decrement" type="button" onClick={() => this.props.dispatch(DECREMENT_CART(e))}>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4 7h8v2H4z"></path></svg>
+                        </button>
+                        <input className="shopify-buy__quantity shopify-buy__cart-item__quantity-input" type="number" min="0" value={e.quantity}  style={{height: "30px" , border:"solid 1px #d3dbe2"}} readOnly/>
+                        <button className="shopify-buy__btn--seamless shopify-buy__quantity-increment" type="button" onClick={() => this.props.dispatch(INCREMENT_CART(e))}>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M12 7H9V4H7v3H4v2h3v3h2V9h3z"></path></svg>
+                        </button>
+                    </div>
                 </div>
-    } else {
-        items = <h2 className='empty-cart' >Your Cart is Empty!!</h2>
-    }
+
+
+	) :  <h3 className='add-items'>Please add items to your cart</h3>
 	
 
     return (
@@ -74,7 +72,7 @@ export class Checkout extends Component {
 								</div>
 								<hr />
 
-								<h3 className='shippingTitle'>Billing Address</h3>
+								<h3 className='shippingTitle'>Shipping Address</h3>
 								<div className='form-inline'>
 									<div className="form-container"> 
 										<input ref='first' id='first' className="form-text" type="text" placeholder="First Name" required />

@@ -75,6 +75,27 @@ export function ADD_TO_CART(obj) {
     }
 }
 
+export function REMOVE_FROM_CART(obj) {
+    return {
+        type: "REMOVE_FROM_CART",
+        payload: obj
+    }
+}
+
+export function INCREMENT_CART(obj) {
+    return {
+        type: "ADD_TO_CART",
+        payload: obj
+    }
+}
+
+export function DECREMENT_CART(obj) {
+    return {
+        type: "DECREMENT_CART",
+        payload: obj
+    }
+}
+
 export function LOAD_PRODUCTS () {
   return (dispatch) => axios.get('http://localhost:3000/api/products')
     .then(res => {
