@@ -17,10 +17,54 @@ import CardReactFormContainer from 'card-react';
     }
 })
 export class Checkout extends Component {
+	constructor() {
+		super() 
+
+		this.state = {
+			taxation: false,
+			tax: 0,
+			total: 0,
+			shipping: 0
+		}
+		this.getTotal = this.getTotal.bind(this)
+		this.computeTax = this.computeTax.bind(this)
+	}
   componentDidMount() {
 	  this.props.dispatch(NAV_CLOSE())
+	  this.getTotal()
+  }
+  
+
+  computeTax() {
+	  console.log('compute tax called')
+	  if(this.refs.state.value === 'IL') {
+		if(this.props.cart.length > 0) {
+			let total = this.props.cart.reduce((a,b) => a + b.price * b.quantity, 0)
+			let tax = (total * 0.075).toFixed(2)
+			this.setState({tax: parseFloat(tax)})
+			this.getTotal()
+		} else {
+			this.setState({tax:0})
+		}
+	  } else {
+		this.setState({tax:0})
+	  }
   }
 
+  
+
+  getTotal() {
+
+	if (this.props.cart.length > 0)	{ 
+	  let shipping = this.state.shipping
+	  let total = this.props.cart.reduce((a,b) => a + b.price * b.quantity, 0)
+	  let tax = this.state.taxation === true ? (total * 0.075).toFixed(2) : 0
+
+	  this.setState({total: shipping + total + parseFloat(tax)})
+	} else {
+		return 0
+	}
+  }
 
   render() {
 
@@ -91,7 +135,7 @@ export class Checkout extends Component {
 									<div className="form-container"> 
 										<input ref='city' id='city' className="form-text" type="text" placeholder="City"  pattern="[a-zA-z]{2,}"  required />
 									</div>
-									<select name="state" ref='state' id='state' onChange={this.computeTax} required>
+									<select name="state" ref='state' id='state' onChange={() => this.computeTax()} required>
 										<option value="">Select State</option>
 										<option value="AL">Alabama</option>
 										<option value="AK">Alaska</option>
@@ -166,10 +210,10 @@ export class Checkout extends Component {
 								<span className='span2'>PAYMENT</span>
 						
 							</div>
-							<hr />
+		
 							<div className='cardContainer'>
 								<div id="card-wrapper"></div>
-									<CardReactFormContainer
+					<CardReactFormContainer
 					// the id of the container element where you want to render the card element.
 					// the card component can be rendered anywhere (doesn't have to be in ReactCardFormContainer).
 					container="card-wrapper" // required
@@ -231,7 +275,7 @@ export class Checkout extends Component {
 								<span className='span2'>CONFIRM</span>
 							</div>
 
-                            <div className="shopify-buy__cart-items" style={{padding:'0',height:'265px',overflowY:'scroll'}}>
+                            <div className="shopify-buy__cart-items" style={{padding:'0',height:'360px',overflowY:'scroll'}}>
 								{items}
 							</div>
 						
@@ -243,9 +287,9 @@ export class Checkout extends Component {
 										    <div className='total'>Total Due Today:</div>
 										</div>
 										<div className='totals'>
-										    <div className='shipping'>Included</div>
-											<div className='tax'></div>
-											<div className='total'>$</div>
+										    <div className='shipping'>${this.state.shipping}</div>
+											<div className='tax'>${this.state.tax}</div>
+											<div className='total'>${this.state.total}</div>
 										</div>
 										<button className='placeorder' onClick={this.checkout}>PLACE ORDER</button>
 									</div>
