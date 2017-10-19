@@ -100,7 +100,7 @@ export class Buy extends Component {
         
         this.props.dispatch(ADD_TO_CART(kit))
 
-        this.props.history.push('checkout')
+         this.props.history.push('checkout')
     }
 
   
@@ -157,7 +157,7 @@ export class Buy extends Component {
                             <button  onClick={() => this.buy}>Buy</button>
 
                         </div>
-                        <span ref='thankyou'>Notify me when it's back in stock.</span>
+                        <span style={{visibility: 'hidden'}} ref='thankyou'>Notify me when it's back in stock.</span>
                     </div>
                 </Col>
             </Row>

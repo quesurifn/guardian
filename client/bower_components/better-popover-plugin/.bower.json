@@ -1,0 +1,31 @@
+{
+  "name": "better-popover-plugin",
+  "version": "0.5.2",
+  "main": [
+    "dist/better-popover-plugin.js"
+  ],
+  "ignore": [
+    ".*",
+    "test",
+    "src",
+    "index.html",
+    "package.json",
+    "bower.json"
+  ],
+  "keywords": [
+    "better-dom"
+  ],
+  "dependencies": {
+    "better-dom": "^2.1.0"
+  },
+  "homepage": "https://github.com/chemerisuk/better-popover-plugin",
+  "_release": "0.5.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.5.2",
+    "commit": "33e8bf206d462bde63be0375b2c946bf6823399f"
+  },
+  "_source": "https://github.com/chemerisuk/better-popover-plugin.git",
+  "_target": "~0.5.1",
+  "_originalSource": "better-popover-plugin"
+}

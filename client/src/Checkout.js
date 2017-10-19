@@ -32,6 +32,7 @@ export class Checkout extends Component {
 		this.checkout = this.checkout.bind(this)
 	}
   componentDidMount() {
+	  document.querySelector('body').style.height = '100%'
 	  this.props.dispatch(NAV_CLOSE())
 	  this.getTotal()
   }
@@ -127,7 +128,7 @@ export class Checkout extends Component {
 			<form ref='checkoutForm' onSubmit={this.checkout} style={{height:'100%'}}>
 			<div className="bgColor" style={{height:'100%'}}>
 		
-				<div className='checkoutRow'>
+				<div className='checkoutRow' style={{paddingTop:'20px'}}>
 					
 					<div className='checkout-col'>
 
