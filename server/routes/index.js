@@ -157,14 +157,16 @@ router.post('/email', (req, res) => {
 router.post('/checkout', (req, res) => {
   console.log(req.body)
 
+  //array to push xml to
   let products = []
   
+  // push each product to array
   req.body.cart_data.forEach(e => {
     products.push(`<Product><ProductName>${e.name}</ProductName><Qty>${e.quantity}</Qty></Product>`)
   })
 
+  //stringify to put into xml
   products = products.toString()
-  console.log(products)
 
 
   let url = 'https://www.nexternal.com/shared/xml/ordercreate.rest'
@@ -219,7 +221,6 @@ router.post('/checkout', (req, res) => {
       </OrderCreate>
     </OrderCreateRequest>`
 
-  console.log(data)
 
   let options = {
     url: url,

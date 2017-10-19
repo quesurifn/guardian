@@ -30,6 +30,7 @@ export class Shop extends Component {
  
 
     addToCart(obj) {
+        console.log(obj,'obj')
         this.props.dispatch(ADD_TO_CART(obj))
         this.props.dispatch(NAV_OPEN())
     }
@@ -60,7 +61,7 @@ export class Shop extends Component {
 
   render() {
     return (
-      <div className='shop' style={{height: '100vh'}}>
+      <div className='shop'>
 
           {this.props.products.map((e) => {
         return  <div className='shop-card-container' key={e._id}>

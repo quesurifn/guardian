@@ -46,6 +46,7 @@ export class Controller extends Component {
         document.querySelector('.navbar-fixed').style.width = '100%'
         document.querySelector('.headerLogo').style.color = '#2050c2'
         document.querySelector('.navbar-fixed').style.top = '20px'
+        document.querySelector('body').style.height = 'initial'
         
         window.scrollTo(0, 0)
         

@@ -4,7 +4,9 @@ import './css/gallery.css'
 import axios from 'axios'
 import ImageGallery from 'react-image-gallery';
 
-import Swipeable from 'react-swipeable'
+import {LOAD_PRODUCTS, ADD_TO_CART} from './actions/action'
+import {connect} from 'react-redux'
+
 
 import {Row, Col} from 'react-materialize'
 import 'react-image-gallery/styles/css/image-gallery-no-icon.css'
@@ -38,13 +40,21 @@ import iconFour from './images/icon-4.png'
 import iconFive from './images/icon-5.png'
 import iconSix from './images/icon-6.png'
 
-
+@connect((store) => {
+  return {
+    products: store.reducer.products,
+    cart: store.reducer.cart
+  }
+})
 export class Buy extends Component {
     constructor() {
         super() 
             this.submitEmail= this.submitEmail.bind(this);
-            this.swipeRight = this.swipeRight.bind(this);
-            this.swipeLeft = this.swipeLeft.bind(this);
+            this.buy = this.buy.bind(this)
+    }
+    componentWillMount() {
+      this.props.dispatch(LOAD_PRODUCTS())
+
     }
     componentDidMount() {
         window.scrollTo(0, 0)
@@ -79,40 +89,18 @@ export class Buy extends Component {
             console.log(e)
         })
     }
-
-    swipeRight() {
-        
-        if (document.location.hash === '' || document.location.hash === 'item-2') {
-            document.location.hash = 'item-5'
-        } else if (document.location.hash === 'item-3') {
-            document.location.hash = 'item-2'
-
-        } else if (document.location.hash === 'item-4') {
-            document.location.hash = 'item-3' 
-        } else if (document.location.hash === 'item-5') {
-            document.location.hash = 'item-4'
-        }
-        
-        
-
-            
-        }
-        
-
     
+    
+    buy() {
+       let kit = this.props.products.filter((e) => {
+             return e.name.indexOf('Guardian') > -1
+        })
 
-    swipeLeft() {
-       if (document.location.hash === '' || document.location.hash === 'item-2') {
-            document.location.hash = 'item-3'
-        } else if (document.location.hash === 'item-3') {
-            document.location.hash = 'item-4'
+        kit = kit[0]
+        
+        this.props.dispatch(ADD_TO_CART(kit))
 
-        } else if (document.location.hash === 'item-4') {
-            document.location.hash = 'item-4' 
-        } else if (document.location.hash === 'item-5') {
-            document.location.hash = 'item-2'
-        }
-
+        this.props.history.push('checkout')
     }
 
   
@@ -160,13 +148,13 @@ export class Buy extends Component {
                         <h4>MSRP</h4>
                         <h3>$399.97</h3>
                         
-                        <button className='yolo'>Temporarily Sold Out</button>
+                        <button className='yolo red-button' onClick={this.buy}>Buy</button>
 
-                        <div className='inline-form' ref='BuyContainer'>
+                        <div className='inline-form' ref='BuyContainer' style={{display:'none'}}>
                             <div className='form-container'> 
                                 <input className='form-text' style={{borderBottom: 'none', width:'100%'}} placeholder='Email Address' ref='emailBuy'/>
                             </div>
-                            <button  onClick={this.submitEmail} >Notify Me</button>
+                            <button  onClick={() => this.buy}>Buy</button>
 
                         </div>
                         <span ref='thankyou'>Notify me when it's back in stock.</span>

@@ -38,30 +38,36 @@ export class Checkout extends Component {
 
   checkout(evt) {
 	evt.preventDefault()
-	if(this.refs.checkoutForm.checkValidity()) {
-		axios.post('http://localhost:3000/api/checkout', {
-				"form_data":{
-					"first": document.getElementById('first').value,
-					"last": document.getElementById('last').value,
-					"email": document.getElementById('email').value,
-					"phone": document.getElementById('phone').value,
-					"address": document.getElementById('address').value,
-					"address2": document.getElementById('address2').value,
-					"city": document.getElementById('city').value,
-					"state": document.getElementById('zip').value,
-					"ccname":this.refs.ccname,
-					"ccnumber":this.refs.ccnumber,
-					"ccexp": this.refs.ccmmdd,
-					"cccvc": this.refs.cccvc,
-					}, 
-				    "cart_data":this.props.cart
-		})
-		.then((res) => console.log(res))
-		.catch((err) => console.error(err))
+
+	if(this.props.cart.length > 0) {
+		if(this.refs.checkoutForm.checkValidity()) {
+			axios.post('http://localhost:3000/api/checkout', {
+					"form_data":{
+						"first": document.getElementById('first').value,
+						"last": document.getElementById('last').value,
+						"email": document.getElementById('email').value,
+						"phone": document.getElementById('phone').value,
+						"address": document.getElementById('address').value,
+						"address2": document.getElementById('address2').value,
+						"city": document.getElementById('city').value,
+						"state": document.getElementById('zip').value,
+						"ccname":this.refs.ccname,
+						"ccnumber":this.refs.ccnumber,
+						"ccexp": this.refs.ccmmdd,
+						"cccvc": this.refs.cccvc,
+						}, 
+						"cart_data":this.props.cart
+			})
+			.then((res) => console.log(res))
+			.catch((err) => console.error(err))
+		} else {
+			this.refs.alert.style.display = 'flex'
+		}
 	} else {
-		this.refs.alert.display = 'flex'
+		this.refs.alert.style.display='flex'
 	}
   }
+  
   
 
   computeTax() {
@@ -100,7 +106,7 @@ export class Checkout extends Component {
                 <div className="shopify-buy__cart-item__image" alt="Product" style={{backgroundRepeat:"no-repeat", backgroundSize: 'contain', margin: "0 1rem", backgroundImage: `url(${e.images[0]})`, backgroundPosition: 'center'}}></div>
                     <span className="shopify-buy__cart-item__title">{e.title}</span>
                     <span style={{position:"absolute", top:'0',left: "5px", cursor:"pointer",color:'#333'}} onClick={() => this.props.dispatch(REMOVE_FROM_CART(e))}>×</span>
-                    <span className="shopify-buy__cart-item__price">${e.price * e.quantity}</span>
+                    <span className="shopify-buy__cart-item__price">${(e.price * e.quantity).toFixed(2)}</span>
                     <div className="shopify-buy__quantity-container" style={{marginLeft:"120px"}}>
                         <button className="shopify-buy__btn--seamless shopify-buy__quantity-decrement" type="button" onClick={() => this.props.dispatch(DECREMENT_CART(e))}>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4 7h8v2H4z"></path></svg>
@@ -117,9 +123,9 @@ export class Checkout extends Component {
 	
 
     return (
-        <div className="App"> 
-			<form ref='checkoutForm' onSubmit={this.checkout}>
-			<div className="bgColor">
+        <div className="App" style={{height:'100%'}}> 
+			<form ref='checkoutForm' onSubmit={this.checkout} style={{height:'100%'}}>
+			<div className="bgColor" style={{height:'100%'}}>
 		
 				<div className='checkoutRow'>
 					

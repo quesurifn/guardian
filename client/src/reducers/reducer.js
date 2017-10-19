@@ -17,7 +17,7 @@ export function reducer(
            let index = oldState.findIndex(x => x.name === action.payload.name)
 
             if (index > -1) {
-            oldState[index] = {...oldState[index], quantity: oldState[index].quantity + 1};
+                oldState[index] = {...oldState[index], quantity: oldState[index].quantity + 1};
                 return {...state, cart: oldState};
             } else {
                 oldState.push({...action.payload, quantity: 1});

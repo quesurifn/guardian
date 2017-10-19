@@ -16,6 +16,9 @@ src: local('Evogria Italic'), url('./css/fonts/Evogria Italic.woff') format('wof
 body {
   overflow-x: hidden !important; 
 }
+html, body {
+  height: 100%;
+}
 #root {
   overflow-x: hidden;
 }
@@ -3150,11 +3153,11 @@ input[type=number]::-webkit-outer-spin-button {
   height:80px;
   width: 100%;
   background:rgba(255, 153, 153,.7);
-  display:none;
   justify-content: center;
   align-items:center;
   border-radius: 6px;
   position:relative;
+  display:none;
 }
 .checkout-alert span:first-child {
   position: absolute;
