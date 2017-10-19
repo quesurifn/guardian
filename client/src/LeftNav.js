@@ -35,7 +35,7 @@ export class LeftNav extends Component {
                 <div className="shopify-buy__cart-item__image" alt="Product" style={{backgroundRepeat:"no-repeat", backgroundSize: 'contain', margin: "0 1rem", backgroundImage: `url(${e.images[0]})`, backgroundPosition: 'center'}}></div>
                     <span className="shopify-buy__cart-item__title">{e.title}</span>
                     <span style={{position:"absolute", top:'0',left: "5px", cursor:"pointer",color:'#333'}} onClick={() => this.props.dispatch(REMOVE_FROM_CART(e))}>×</span>
-                    <span className="shopify-buy__cart-item__price">{e.price}</span>
+                    <span className="shopify-buy__cart-item__price">${e.price * e.quantity}</span>
                     <div className="shopify-buy__quantity-container" style={{marginLeft:"120px"}}>
                         <button className="shopify-buy__btn--seamless shopify-buy__quantity-decrement" type="button" onClick={() => this.props.dispatch(DECREMENT_CART(e))}>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4 7h8v2H4z"></path></svg>

@@ -2211,9 +2211,6 @@ img.special {
   border-bottom: none !important;
   padding: 0 15px;
 }
-form {
-  margin-top: 40px;
-}
 .form-inline {
   display: flex;
   justify-content: center;
@@ -3148,7 +3145,26 @@ input[type=number]::-webkit-outer-spin-button {
   .terms {
     padding:20px 40px;
   }
-
+.checkout-alert {
+  margin: 40px 0;
+  height:80px;
+  width: 100%;
+  background:rgba(255, 153, 153,.7);
+  display:none;
+  justify-content: center;
+  align-items:center;
+  border-radius: 6px;
+  position:relative;
+}
+.checkout-alert span:first-child {
+  position: absolute;
+  top:5px;
+  right:10px;
+  font-size: 20px;
+}
+.checkout-alert span:nth-child(2) {
+  font-weight: bold;
+}
 
 
 	@media screen and (max-width:770px) {

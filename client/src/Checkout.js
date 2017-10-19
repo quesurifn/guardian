@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios'
 import './App.css';
 import './css/card.css'
 
@@ -28,15 +29,42 @@ export class Checkout extends Component {
 		}
 		this.getTotal = this.getTotal.bind(this)
 		this.computeTax = this.computeTax.bind(this)
+		this.checkout = this.checkout.bind(this)
 	}
   componentDidMount() {
 	  this.props.dispatch(NAV_CLOSE())
 	  this.getTotal()
   }
+
+  checkout(evt) {
+	evt.preventDefault()
+	if(this.refs.checkoutForm.checkValidity()) {
+		axios.post('http://localhost:3000/api/checkout', {
+				"form_data":{
+					"first": document.getElementById('first').value,
+					"last": document.getElementById('last').value,
+					"email": document.getElementById('email').value,
+					"phone": document.getElementById('phone').value,
+					"address": document.getElementById('address').value,
+					"address2": document.getElementById('address2').value,
+					"city": document.getElementById('city').value,
+					"state": document.getElementById('zip').value,
+					"ccname":this.refs.ccname,
+					"ccnumber":this.refs.ccnumber,
+					"ccexp": this.refs.ccmmdd,
+					"cccvc": this.refs.cccvc,
+					}, 
+				    "cart_data":this.props.cart
+		})
+		.then((res) => console.log(res))
+		.catch((err) => console.error(err))
+	} else {
+		this.refs.alert.display = 'flex'
+	}
+  }
   
 
   computeTax() {
-	  console.log('compute tax called')
 	  if(this.refs.state.value === 'IL') {
 		if(this.props.cart.length > 0) {
 			let total = this.props.cart.reduce((a,b) => a + b.price * b.quantity, 0)
@@ -51,15 +79,12 @@ export class Checkout extends Component {
 	  }
   }
 
-  
 
   getTotal() {
-
 	if (this.props.cart.length > 0)	{ 
 	  let shipping = this.state.shipping
 	  let total = this.props.cart.reduce((a,b) => a + b.price * b.quantity, 0)
 	  let tax = this.state.taxation === true ? (total * 0.075).toFixed(2) : 0
-
 	  this.setState({total: shipping + total + parseFloat(tax)})
 	} else {
 		return 0
@@ -75,7 +100,7 @@ export class Checkout extends Component {
                 <div className="shopify-buy__cart-item__image" alt="Product" style={{backgroundRepeat:"no-repeat", backgroundSize: 'contain', margin: "0 1rem", backgroundImage: `url(${e.images[0]})`, backgroundPosition: 'center'}}></div>
                     <span className="shopify-buy__cart-item__title">{e.title}</span>
                     <span style={{position:"absolute", top:'0',left: "5px", cursor:"pointer",color:'#333'}} onClick={() => this.props.dispatch(REMOVE_FROM_CART(e))}>×</span>
-                    <span className="shopify-buy__cart-item__price">{e.price}</span>
+                    <span className="shopify-buy__cart-item__price">${e.price * e.quantity}</span>
                     <div className="shopify-buy__quantity-container" style={{marginLeft:"120px"}}>
                         <button className="shopify-buy__btn--seamless shopify-buy__quantity-decrement" type="button" onClick={() => this.props.dispatch(DECREMENT_CART(e))}>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4 7h8v2H4z"></path></svg>
@@ -93,7 +118,7 @@ export class Checkout extends Component {
 
     return (
         <div className="App"> 
-			
+			<form ref='checkoutForm' onSubmit={this.checkout}>
 			<div className="bgColor">
 		
 				<div className='checkoutRow'>
@@ -107,35 +132,36 @@ export class Checkout extends Component {
 								</div>
 								<span className='span2'>CUSTOMER INFO</span>
 							</div>
-							<form>
+							
+					
 								<div className="form-container"> 
-									<input ref='email' className="form-text" type="email" id='email' placeholder="Enter email" required />
+									<input ref='email' className="form-text" type="email" id='email' name='email' placeholder="Enter email" required />
 								</div>
 								<div className="form-container"> 
-									<input ref="phone" className="form-text" type="tel" id='phone' placeholder="847-222-5555" required />
+									<input ref="phone" className="form-text" type="tel" id='phone' name='phone' placeholder="847-222-5555" required />
 								</div>
 								<hr />
 
 								<h3 className='shippingTitle'>Shipping Address</h3>
 								<div className='form-inline'>
 									<div className="form-container"> 
-										<input ref='first' id='first' className="form-text" type="text" placeholder="First Name" required />
+										<input ref='first' id='first' className="form-text" type="text" name='first' placeholder="First Name" required />
 									</div>
 									<div className="form-container"> 
-										<input ref='last' id='last' className="form-text" type="text" placeholder="Last Name"  required />
+										<input ref='last' id='last' className="form-text" type="text" name='last' placeholder="Last Name"  required />
 									</div>
 								</div>
 								<div className="form-container"> 
-									<input ref='address' id='address' className="form-text" type="text" placeholder="Address" required />
+									<input ref='address' id='address' className="form-text" type="text" name='address' placeholder="Address" required />
 								</div>
 								<div className="form-container"> 
-									<input ref='address2' className="form-text" type="text" placeholder="Address 2" />
+									<input ref='address2' id='address2' className="form-text" type="text" name='address2' placeholder="Address 2" />
 								</div>
 								<div className='form-inline'>
 									<div className="form-container"> 
-										<input ref='city' id='city' className="form-text" type="text" placeholder="City"  pattern="[a-zA-z]{2,}"  required />
+										<input ref='city' id='city' className="form-text" type="text" name='city' placeholder="City"  pattern="[a-zA-z]{2,}"  required />
 									</div>
-									<select name="state" ref='state' id='state' onChange={() => this.computeTax()} required>
+									<select name="state" ref='state' id='state' onChange={() => this.computeTax()} name='state' required>
 										<option value="">Select State</option>
 										<option value="AL">Alabama</option>
 										<option value="AK">Alaska</option>
@@ -191,10 +217,10 @@ export class Checkout extends Component {
 									</select>
 								</div>
 								<div className="form-container"> 
-									<input ref='zip' id='zip' className="form-text" type="text" placeholder="Zip Code" pattern='[0-9]{5}' required />
+									<input ref='zip' id='zip' className="form-text" type="text" placeholder="Zip Code" name='zip' pattern='[0-9]{5}' required />
 								</div>
 								
-							</form>
+					
 
 						</div>
 					</div>
@@ -209,6 +235,10 @@ export class Checkout extends Component {
 								</div>
 								<span className='span2'>PAYMENT</span>
 						
+							</div>
+							<div className='checkout-alert' ref='alert'>
+								<span onClick={() => this.refs.alert.style.display ='none' }>x</span>
+								<span>Please check the form and try again.</span> 
 							</div>
 		
 							<div className='cardContainer'>
@@ -243,22 +273,22 @@ export class Checkout extends Component {
 					formatting={true} // optional - default true
 					>
 					
-					<form>
+				
 						<div className="form-container"> 
-							<input ref='ccname' id='ccname' placeholder="Full name" type="text" name="CCname" required/>
+							<input ref='ccname' name='ccname'placeholder="Full name" type="text" name="CCname" required/>
 						</div>
 						<div className="form-container"> 
-							<input ref='ccnumber' id='ccnumber' placeholder="Card number" type="text" name="CCnumber" required/>
+							<input ref='ccnumber' name='ccnumber' placeholder="Card number" type="text" name="CCnumber" required/>
 						</div>
 						<div className='form-inline'>
 							<div className="form-container"> 
-								<input ref='ccmmdd' id='ccmmdd' placeholder="MM/YY" type="text" name="CCexpiry" required/>
+								<input ref='ccmmdd' name='ccexp' placeholder="MM/YY" type="text" name="CCexpiry" required/>
 							</div>
 							<div className="form-container"> 
-								<input ref='cccvc' id='cccvc' placeholder="CVC" type="text" name="CCcvc" required/>
+								<input ref='cccvc' name='cccvc' placeholder="CVC" type="text" name="CCcvc" required/>
 							</div>
 						</div>
-					</form>
+					
 				</CardReactFormContainer>
 					
 							</div>
@@ -291,7 +321,7 @@ export class Checkout extends Component {
 											<div className='tax'>${this.state.tax}</div>
 											<div className='total'>${this.state.total}</div>
 										</div>
-										<button className='placeorder' onClick={this.checkout}>PLACE ORDER</button>
+										<button className='placeorder' type='submit'>PLACE ORDER</button>
 									</div>
 									
 								</div>
@@ -302,7 +332,9 @@ export class Checkout extends Component {
 
 				</div>
 			</div>
+			</form>
     	</div>
+
      
     
     );

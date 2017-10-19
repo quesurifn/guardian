@@ -154,17 +154,17 @@ router.post('/email', (req, res) => {
 })
 
 
-router.post('/addtocart', (req, res) => {
-/*
+router.post('/checkout', (req, res) => {
+  console.log(req.body)
 
-  Product Schema
+  let products = []
+  
+  req.body.cart_data.forEach(e => {
+    products.push(`<Product><ProductName>${e.name}</ProductName><Qty>${e.quantity}</Qty></Product>`)
+  })
 
-  <Product>
-    <ProductName>Caddyshack DVD</ProductName>
-    <Qty>1</Qty>
-  </Product>
-
-*/
+  products = products.toString()
+  console.log(products)
 
 
   let url = 'https://www.nexternal.com/shared/xml/ordercreate.rest'
@@ -177,25 +177,49 @@ router.post('/addtocart', (req, res) => {
       </Credentials>
       <OrderCreate Mode="Add">
         <Customer MatchingField="Email">
-          <Email DefaultTo="Most Recently Created">${req.body.email}</Email>
+          <Email DefaultTo="Most Recently Created">${req.body.form_data.email}</Email>
         </Customer>
         <Payment>
           <PaymentMethod>CreditCard</PaymentMethod>
           <CreditCard>
-            <CreditCardType>${req.body.cctype}</CreditCardType>
-            <CreditCardNumber>${req.body.ccnumber}</CreditCardNumber>
-            <CreditCardExpDate>${req.body.ccexp}</CreditCardExpDate>
+            <CreditCardType>${req.body.form_data.cctype}</CreditCardType>
+            <CreditCardNumber>${req.body.form_data.ccnumber}</CreditCardNumber>
+            <CreditCardExpDate>${req.body.form_data.ccexp}</CreditCardExpDate>
           </CreditCard>
         </Payment>
-        <ShipTos>
-          <ShipTo Label="yourself">
-            <Products>
-              
-            </Products>
-          </ShipTo>
+      <ShipTos>
+      <ShipTo>
+        <Address Type="Residential">
+          <Name>
+            <FirstName>${req.body.form_data.first}</FirstName>
+            <LastName>${req.body.form_data.last}</LastName>
+          </Name>
+          <StreetAddress1>${req.body.form_data.address}</StreetAddress1>
+          <StreetAddress2>${req.body.form_data.address2}</StreetAddress2>
+          <City>${req.body.form_data.city}</City>
+          <StateProvCode>${req.body.form_data.state}/StateProvCode>
+          <ZipPostalCode>${req.body.form_data.zip}</ZipPostalCode>
+          <CountryCode>US</CountryCode>
+          <PhoneNumber>${req.body.form_data.phone}</PhoneNumber>
+        </Address>
+        <Shipping>
+          <Shipments>
+            <DefaultShipFrom>
+              <ShipMethod>FedEx Home Delivery</ShipMethod>
+            </DefaultShipFrom>
+          </Shipments>
+        </Shipping>
+        <Products>
+          <Product>
+            ${products}
+          </Product>
+        </Products>
+      </ShipTo>
         </ShipTos>
       </OrderCreate>
     </OrderCreateRequest>`
+
+  console.log(data)
 
   let options = {
     url: url,
