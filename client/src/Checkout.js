@@ -51,11 +51,12 @@ export class Checkout extends Component {
 						"address": document.getElementById('address').value,
 						"address2": document.getElementById('address2').value,
 						"city": document.getElementById('city').value,
-						"state": document.getElementById('zip').value,
-						"ccname":this.refs.ccname,
-						"ccnumber":this.refs.ccnumber,
-						"ccexp": this.refs.ccmmdd,
-						"cccvc": this.refs.cccvc,
+						"state": document.getElementById('state').value,
+						"zip": document.getElementById('zip').value,
+						"ccname": document.getElementById('ccname').value,
+						"ccnumber":document.getElementById('ccnumber').value,
+						"ccexp": document.getElementById('ccmmdd').value,
+						"cccvc": document.getElementById('cccvc').value,
 						}, 
 						"cart_data":this.props.cart
 			})
@@ -282,17 +283,17 @@ export class Checkout extends Component {
 					
 				
 						<div className="form-container"> 
-							<input ref='ccname' name='ccname'placeholder="Full name" type="text" name="CCname" required/>
+							<input ref='ccname' id='ccname' name='ccname'placeholder="Full name" type="text" name="CCname" required/>
 						</div>
 						<div className="form-container"> 
-							<input ref='ccnumber' name='ccnumber' placeholder="Card number" type="text" name="CCnumber" required/>
+							<input ref='ccnumber' id='ccnumber' name='ccnumber' placeholder="Card number" type="text" name="CCnumber" required/>
 						</div>
 						<div className='form-inline'>
 							<div className="form-container"> 
-								<input ref='ccmmdd' name='ccexp' placeholder="MM/YY" type="text" name="CCexpiry" required/>
+								<input ref='ccmmdd' id='ccmmdd' name='ccexp' placeholder="MM/YY" type="text" name="CCexpiry" required/>
 							</div>
 							<div className="form-container"> 
-								<input ref='cccvc' name='cccvc' placeholder="CVC" type="text" name="CCcvc" required/>
+								<input ref='cccvc' id='cccvc' name='cccvc' placeholder="CVC" type="text" name="CCcvc" required/>
 							</div>
 						</div>
 					

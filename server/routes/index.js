@@ -184,7 +184,7 @@ router.post('/checkout', (req, res) => {
         <Payment>
           <PaymentMethod>CreditCard</PaymentMethod>
           <CreditCard>
-            <CreditCardType>${req.body.form_data.cctype}</CreditCardType>
+            <CreditCardType>Visa</CreditCardType>
             <CreditCardNumber>${req.body.form_data.ccnumber}</CreditCardNumber>
             <CreditCardExpDate>${req.body.form_data.ccexp}</CreditCardExpDate>
           </CreditCard>
@@ -221,7 +221,7 @@ router.post('/checkout', (req, res) => {
       </OrderCreate>
     </OrderCreateRequest>`
 
-
+    console.log(data)
   let options = {
     url: url,
     body: data,
